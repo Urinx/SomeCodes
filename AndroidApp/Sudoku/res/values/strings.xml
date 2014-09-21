@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sudoku</string>
+    <string name="main_title">Welcome to Sudoku!</string>
+    <string name="continue_label">Continue</string>
+    <string name="new_game_label">New Game</string>
+    <string name="about_label">About</string>
+    <string name="exit_label">Exit</string>
+    <string name="about_title">About Sudoku</string>
+    <string name="about_text">\
+        Sudoku is a logic-based number placement puzzle.
+        Starting with a partially completed 9x9 grid,the
+        objective is to fill the grid so that each
+        row,each column,and each of the 3x3 boxes
+        (also called <i>blocks</i>) contains the digits
+        1 to 9 exactly once.
+        </string>
+    
+    <string name="settings_label">Settings</string>
+    <string name="settings_title">Sudoku settings</string>
+    <string name="settings_shortcut">s</string>
+    <string name="music_title">Music</string>
+    <string name="music_summary">Play background music</string>
+    <string name="hints_title">Hints</string>
+    <string name="hints_summary">Show hints during play</string>
+    
+    <string name="new_game_title">Difficulty</string>
+    <string name="easy_label">Easy</string>
+    <string name="medium_label">Medium</string>
+    <string name="hard_label">Hard</string>
+</resources>

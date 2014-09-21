@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip" >
+    
+    <TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/main_title"
+	    android:layout_marginBottom="20dip"
+	    android:textSize="24.5sp"/>
+    <TableLayout 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="*">
+        <TableRow>
+            <Button 
+                android:id="@+id/continue_button"
+                android:text="@string/continue_label"/>
+            <Button 
+                android:id="@+id/new_button"
+                android:text="@string/new_game_label"/>
+        </TableRow>
+        <TableRow >
+            <Button 
+                android:id="@+id/about_button"
+                android:text="@string/about_label"/>
+            <Button 
+                android:id="@+id/exit_button"
+                android:text="@string/exit_label"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

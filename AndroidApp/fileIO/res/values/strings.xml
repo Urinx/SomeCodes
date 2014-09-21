@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">fileIO</string>
+    <string name="action_settings">Settings</string>
+    <string name="filename">文件名：</string>
+    <string name="filecontent">文件内容：</string>
+    <string name="button">保存</string>
+    <string name="readbutton">读取</string>
+    <string name="success">save successful</string>
+    <string name="readsuccess">read successful</string>
+    <string name="fail">save failed</string>
+    <string name="readfail">read failed</string>
+
+</resources>

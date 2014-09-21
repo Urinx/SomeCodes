@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">sms</string>
+    <string name="action_settings">Settings</string>
+    <string name="numberLabel">Phone Number:</string>
+    <string name="content">SMS Content:</string>
+    <string name="send">Send</string>
+    <string name="success">Send Success</string>
+
+</resources>

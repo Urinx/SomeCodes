@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">sms2uri</string>
+    <string name="dummy_button">Close</string>
+    <string name="dummy_content">Uri</string>
+    <string name="contentDescription">UriHeadPhoto</string>
+    <string name="hint">Say Some To Me..lol</string>
+    <string name="send">Send</string>
+    <string name="sendsuccess">Send Successful</string>
+
+</resources>

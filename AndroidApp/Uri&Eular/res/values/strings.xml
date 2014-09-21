@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Uri&amp;Eular</string>
+    <string name="dummy_button">Info</string>
+    <string name="dummy_content">Urinx</string>
+    <string name="contentDescription1">Eular</string>
+    <string name="contentDescription2">Uri</string>
+    <string name="info_title"></string>
+    <string name="info">\
+        				Author:Uri\n
+						Date:2013.12.13\n
+						QQ:1336006643\n
+						Wechat:google-2\n
+						Tel:18202750298\n
+						WechatPublic:urinxs\n
+						Gmail:uri.lqy@gmail.com\n
+						Website:paiplace.5gbfree.com\n
+						Github:https://github.com/urinx\n
+	</string>
+    <string name="back">Back</string>
+
+</resources>

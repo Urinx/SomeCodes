@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">uriBad</string>
+    <string name="dummy_button">Close</string>
+    <string name="dummy_content">Dudulu!!!!\nI\'m Uri.\nWechat:google-2\nPublicWechat:urinxs\nQQ:1336006643\nGithub:http://github.com/urinx</string>
+    <string name="success">Bad things have been done!!</string>
+
+</resources>
