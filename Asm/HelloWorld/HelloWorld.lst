@@ -1,0 +1,62 @@
+Microsoft (R) Macro Assembler Version 6.11		    09/19/14 13:33:24
+tempfile.asm						     Page 1 - 1
+
+
+				assume cs:code,ds:data
+
+ 0000				data segment
+ 0000 48 65 6C 6C 6F 20			msg db "Hello world"
+       77 6F 72 6C 64
+ 000B				data ends
+
+ 0000				code segment
+ 0000				start:
+					;数据段地址->ds
+ 0000  B8 ---- R			mov ax,data
+ 0003  8E D8				mov ds,ax
+					;显存地址->es
+ 0005  BB B800				mov bx,0b800h
+ 0008  8E C3				mov es,bx
+					;数据段偏移si,附加段偏移bx
+ 000A  BE 0000				mov si,0
+ 000D  BB 0000				mov bx,0
+					;终端字符RGB显示模式
+ 0010  B4 07				mov ah,00000111b
+					;字符串长度
+ 0012  B9 000B				mov cx,11
+ 0015  8A 04			  s:mov al,ds:[si]
+ 0017  26: 89 07			mov es:[bx],ax
+ 001A  46				inc si
+ 001B  83 C3 02				add bx,2
+ 001E  E2 F5				loop s
+					;PressAnyKey DOS中断
+ 0020  B8 4C00				mov ax,4c00h
+ 0023  CD 21				int 21h
+ 0025				code ends
+					end start
+
+
+Microsoft (R) Macro Assembler Version 6.11		    09/19/14 13:33:24
+tempfile.asm						     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+code . . . . . . . . . . . . . .	16 Bit	 0025	  Para	  Private 
+data . . . . . . . . . . . . . .	16 Bit	 000B	  Para	  Private 
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+msg  . . . . . . . . . . . . . .	Byte	 0000	  data	
+start  . . . . . . . . . . . . .	L Near	 0000	  code	
+s  . . . . . . . . . . . . . . .	L Near	 0015	  code	
+
+	   0 Warnings
+	   0 Errors

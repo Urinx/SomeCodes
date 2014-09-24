@@ -1,0 +1,98 @@
+Microsoft (R) Macro Assembler Version 6.11		    09/19/14 16:18:40
+tempfile.asm						     Page 1 - 1
+
+
+				assume cs:code
+
+ 0000				code segment
+ 0000				start:
+					;1.修改中断向量表
+					;中断向量表:0000:0000->0000:03FE,每个表项2字(4字节,偏移+段址)
+					;修改零号中断表项，指向自定义中断处理程序的入口地址
+					;没有其他程序使用的内存:0000:0200->0000:0300
+ 0000  B8 0000				mov ax,0
+ 0003  8E D8				mov ds,ax
+ 0005  C7 06 0000 0200			mov word ptr ds:[0],200h
+ 000B  C7 06 0002 0000			mov word ptr ds:[2],0
+					
+					;3.将自定义中断程序复制到内存0000:0200
+					;此时cs为当前代码段地址
+ 0011  8C C8				mov ax,cs
+ 0013  8E D8				mov ds,ax
+ 0015  BE 002D R			mov si,offset int0
+ 0018  B8 0000				mov ax,0
+ 001B  8E C0				mov es,ax
+ 001D  BF 0200				mov di,200h
+					;传送指定地址的字符串
+					;设置长度
+ 0020  B9 0032				mov cx,offset int0end-offset int0
+					;指定复制方向，向下
+ 0023  FC				cld
+					;ds:si->es:di
+ 0024  F3/ A4				rep movsb
+					
+					;4.引发零号中断
+ 0026  B8 1000				mov ax,1000h
+ 0029  B3 01				mov bl,1
+ 002B  F6 F3				div bl
+					
+					;2.自定义零号中断
+ 002D				int0:
+ 002D  EB 0E				jmp short int0start ; 地址:0200h
+ 002F  57 68 61 74 20 74		db "What the fuck!" ; 地址:0202h
+       68 65 20 66 75 63
+       6B 21
+ 003D				int0start:
+					;载入显存
+ 003D  B8 B800				mov ax,0b800h
+ 0040  8E C0				mov es,ax
+					;显示字符
+					;此时cs:0000h
+ 0042  8C C8				mov ax,cs
+ 0044  8E D8				mov ds,ax
+					;si->字符串
+ 0046  BE 0202				mov si,202h
+					;80x24屏幕中间偏移
+ 0049  BF 07C0				mov di,12*80*2+32*2
+ 004C  B9 000E				mov cx,14
+ 004F				s:
+ 004F  8A 04				mov al,ds:[si]
+ 0051  26: 88 05			mov es:[di],al
+ 0054  46				inc si
+ 0055  83 C7 02				add di,2
+ 0058  E2 F5				loop s
+					
+					;PressAnyKey中断
+ 005A  B8 4C00				mov ax,4c00h
+ 005D  CD 21				int 21h
+ 005F  90			int0end:nop
+
+ 0060				code ends
+					end start
+
+
+Microsoft (R) Macro Assembler Version 6.11		    09/19/14 16:18:40
+tempfile.asm						     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+code . . . . . . . . . . . . . .	16 Bit	 0060	  Para	  Private 
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+int0end  . . . . . . . . . . . .	L Near	 005F	  code	
+int0start  . . . . . . . . . . .	L Near	 003D	  code	
+int0 . . . . . . . . . . . . . .	L Near	 002D	  code	
+start  . . . . . . . . . . . . .	L Near	 0000	  code	
+s  . . . . . . . . . . . . . . .	L Near	 004F	  code	
+
+	   0 Warnings
+	   0 Errors
