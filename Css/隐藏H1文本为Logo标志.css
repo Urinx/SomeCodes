@@ -1,0 +1,7 @@
+h1 {
+    text-indent: -9999px;
+    margin: 0 auto;
+    width: 320px;
+    height: 85px;
+    background: transparent url("images/logo.png") no-repeat scroll;
+}

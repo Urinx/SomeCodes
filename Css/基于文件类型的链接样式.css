@@ -1,0 +1,17 @@
+/* external links */
+a[href^="http://"] {
+    padding-right: 13px;
+    background: url('external.gif') no-repeat center right;
+}
+
+/* emails */
+a[href^="mailto:"] {
+    padding-right: 20px;
+    background: url('email.png') no-repeat center right;
+}
+
+/* pdfs */
+a[href$=".pdf"] {
+    padding-right: 18px;
+    background: url('acrobat.png') no-repeat center right;
+}

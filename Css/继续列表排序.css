@@ -1,0 +1,24 @@
+ol.chapters {
+    list-style: none;
+    margin-left: 0;
+}
+
+ol.chapters > li:before {
+    content: counter(chapter) ". ";
+    counter-increment: chapter;
+    font-weight: bold;
+    float: left;
+    width: 40px;
+}
+
+ol.chapters li {
+    clear: left;
+}
+
+ol.start {
+    counter-reset: chapter;
+}
+
+ol.continue {
+    counter-reset: chapter 11;
+}

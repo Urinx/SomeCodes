@@ -1,0 +1,16 @@
+/*
+  它应用于一个用于保存浮动元素的盒子模型上.
+  这将确保里面的任何内容都以拉伸方式出现而不是浮动出现.
+*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }

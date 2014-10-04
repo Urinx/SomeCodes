@@ -1,0 +1,15 @@
+/*
+  应用这个基础的片段将使你能在你的图像上实现.polaroid 类。
+  这将会创建老照片风格效果，带一个很宽的白边和一些淡淡的阴影。
+  你要更新宽/高数值，以便和你的图片尺寸和网站布局相匹配。
+*/
+img.polaroid {
+    background:#000; /*Change this to a background image or remove*/
+    border:solid #fff;
+    border-width:6px 6px 20px 6px;
+    box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth */
+    -webkit-box-shadow:1px 1px 5px #333;
+    -moz-box-shadow:1px 1px 5px #333;
+    height:200px; /*Set to height of your image or desired div*/
+    width:200px; /*Set to width of your image or desired div*/
+}

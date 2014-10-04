@@ -1,0 +1,44 @@
+/*
+  Pull-引文(Pull-quotes)与块引用(blockquotes)不同，它们出现在你的博客或者新闻文章的一边。
+  这些引文经常从文章中引用文本，所以它们和块引用显示的稍许不一样。
+  这些默认类具有一些基础的属性，带有3个可供选择的独特的字体类型。
+*/
+.has-pullquote:before {
+    /* Reset metrics. */
+    padding: 0;
+    border: none;
+
+    /* Content */
+    content: attr(data-pullquote);
+
+    /* Pull out to the right, modular scale based margins. */
+    float: right;
+    width: 320px;
+    margin: 12px -140px 24px 36px;
+
+    /* Baseline correction */
+    position: relative;
+    top: 5px;
+
+    /* Typography (30px line-height equals 25% incremental leading) */
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.pullquote-adelle:before {
+    font-family: "adelle-1", "adelle-2";
+    font-weight: 100;
+    top: 10px !important;
+}
+
+.pullquote-helvetica:before {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    top: 7px !important;
+}
+
+.pullquote-facit:before {
+    font-family: "facitweb-1", "facitweb-2", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    top: 7px !important;
+}

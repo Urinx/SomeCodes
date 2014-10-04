@@ -1,0 +1,24 @@
+a {
+    color: #00e;
+}
+a:visited {
+    color: #551a8b;
+}
+a:hover {
+    color: #06e;
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover, a:active {
+    outline: 0;
+}
+a, a:visited, a:active {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+}
+a:hover, .glow {
+    color: #ff0;
+    text-shadow: 0 0 10px #ff0;
+}

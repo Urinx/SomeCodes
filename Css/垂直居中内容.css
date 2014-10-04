@@ -1,0 +1,5 @@
+.container {
+    min-height: 6.5em;
+    display: table-cell;
+    vertical-align: middle;
+}

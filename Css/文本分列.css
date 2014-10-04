@@ -1,0 +1,9 @@
+#columns-3 {
+    text-align: justify;
+    -moz-column-count: 3;
+    -moz-column-gap: 12px;
+    -moz-column-rule: 1px solid #c4c8cc;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 12px;
+    -webkit-column-rule: 1px solid #c4c8cc;
+}

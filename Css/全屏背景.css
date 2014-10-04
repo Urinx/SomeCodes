@@ -1,0 +1,7 @@
+html {
+    background: url('images/bg.jpg') no-repeat center centerfixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

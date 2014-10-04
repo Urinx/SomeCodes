@@ -1,0 +1,62 @@
+a {
+    border-bottom:1px solid #bbb;
+    color:#666;
+    display:inline-block;
+    position:relative;
+    text-decoration:none;
+}
+a:hover,
+a:focus {
+    color:#36c;
+}
+a:active {
+    top:1px;
+}
+
+/* Tooltip styling */
+a[data-tooltip]:after {
+    border-top: 8px solid #222;
+    border-top: 8px solid hsla(0,0%,0%,.85);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    content: "";
+    display: none;
+    height: 0;
+    width: 0;
+    left: 25%;
+    position: absolute;
+}
+a[data-tooltip]:before {
+    background: #222;
+    background: hsla(0,0%,0%,.85);
+    color: #f6f6f6;
+    content: attr(data-tooltip);
+    display: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 32px;
+    left: 0;
+    line-height: 32px;
+    padding: 0 15px;
+    position: absolute;
+    text-shadow: 0 1px 1px hsla(0,0%,0%,1);
+    white-space: nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+a[data-tooltip]:hover:after {
+    display: block;
+    top: -9px;
+}
+a[data-tooltip]:hover:before {
+    display: block;
+    top: -41px;
+}
+a[data-tooltip]:active:after {
+    top: -10px;
+}
+a[data-tooltip]:active:before {
+    top: -42px;
+}
