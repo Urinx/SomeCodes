@@ -1,17 +1,22 @@
 
 以专业的眼光看美剧《天蝎》
 =========================
+
 ![Alt text](screenshot/1.png)
-前言：每周二更新的《天蝎》，作为一部备受好评的秋季档神剧，第一集的横空出世确实表现不错，令人眼前亮，奈何后劲不足，第二集对抗生物黑客表现平平顶，其收集目标DNA定制病毒攻击的思想出于几年前的《想当厨子的生物学家是个好黑客》一书，最多当个科普看看。
+
+前言：每周二更新的《天蝎》，作为一部备受好评的秋季档神剧，第一集的横空出世确实表现不错，令人眼前亮，奈何后劲不足，第二集对抗生物黑客表现平平顶，其收集目标DNA定制病毒攻击的思想出于几年前的《想当厨子的生物学家是个好黑客》一书，最多当个科普看看。<br>
 第三集则探讨了如何消除互联网上的信息问题。片中罪犯给出一种方法，为了阻止已发出的邮件，哪怕先后炸毁运营商的本地缓存还有主干网，主角光环照样能在万千路由器中找到一份备份。。
+
 ![Alt text](screenshot/2.jpg)
 
 ### Preface
 今天我们看看其中一个寻找嫌疑人的片段。
+
 ![Alt text](screenshot/3.PNG)
 ![Alt text](screenshot/4.PNG)
 ![Alt text](screenshot/5.PNG)
 ![Alt text](screenshot/6.PNG)
+
 来，我们来运行一个高斯滤波算法。。先不管是否能够去除静止的录像画面，你能把Photoshop玩成这样神通广大不明觉厉。
 
 ### 图像滤波
@@ -45,26 +50,36 @@
 
 说白了就是一个函数来对输入的信号（其实这里的信号就是图像的像素值）进行计算然后得出结果作为该信号的值，只不过函数是高斯函数而已，就是这么简单。
 
-高斯函数，也可以叫做高斯分布，这个比较熟悉。
+高斯函数，也可以叫做高斯分布，这个比较熟悉。<br>
 一维高斯分布：
+
 ![Alt text](screenshot/7.png)
 ![Alt text](screenshot/8.png)
+
 二维高斯分布：
+
 ![Alt text](screenshot/9.png)
 ![Alt text](screenshot/10.png)
 
 ### Gaussian Kernel
-理论上，高斯分布在所有定义域上都有非负值，这就需要一个无限大的卷积核。实际上，仅需要取均值周围3倍标准差内的值，以外部份直接去掉即可。 如下图为标准差为1.0的整数值高斯核。
+理论上，高斯分布在所有定义域上都有非负值，这就需要一个无限大的卷积核。实际上，仅需要取均值周围3倍标准差内的值，以外部份直接去掉即可。如下图为标准差为1.0的整数值高斯核。<br>
 3x3的高斯核
+
 ![Alt text](screenshot/11.png)
+
 5x5的高斯核
+
 ![Alt text](screenshot/12.png)
+
 完成了高斯核的构造后，高斯滤波就是用此核来执行标准的卷积。
 
-下面给出效果预览（代码在后面）
+下面给出效果预览（代码在后面）<br>
 原图和3x3高斯核的对比：
+
 ![Alt text](screenshot/13.png)
+
 原图和5x5高斯核的对比：
+
 ![Alt text](screenshot/14.png)
 
 高斯滤波后图像被平滑的程度取决于标准差。它的输出是领域像素的加权平均，同时离中心越近的像素权重越高。因此，相对于均值滤波（mean filter）它的平滑效果更柔和，而且边缘保留的也更好。
@@ -72,11 +87,13 @@
 高斯滤波被用作为平滑滤波器的本质原因是它是一个低通滤波器。而且，大部份基于卷积平滑滤波器都是低通滤波器。
 
 ### 代码实现
-在matlab中你可以用fspecial函数来构造一个高斯核，然而在Octave3中没有fspecial函数，因为已经被移出核心包了，放到额外的`octave-image`包中。
-你也可以`apt-get install octave-image`（Debian）。
+在matlab中你可以用fspecial函数来构造一个高斯核，然而在Octave3中没有fspecial函数，因为已经被移出核心包了，放到额外的`octave-image`包中。<br>
+你也可以`apt-get install octave-image`（Debian）。<br>
 当然你也可以下载[fspecial源码](http://www.csse.uwa.edu.au/~pk/research/matlabfns/OctaveCode/fspecial.m)直接使用。
+
 ![Alt text](screenshot/15.png)
-生成一个3x3高斯核。
+
+生成一个3x3高斯核。<br>
 下面是自己用Octave写的脚本：
 ```octave
 #! /usr/bin/octave
@@ -243,6 +260,7 @@ if __name__=='__main__':
 
 		GaussianFilter(image_file,k)
 ```
+
 最后附上C++代码：
 ```c++
 /** 
@@ -291,9 +309,14 @@ void gaussianFilter2 (unsigned char* corrupted, unsigned char* smooth, int width
 - 高斯函数的参数sigma决定了平滑程度。sigma越大，平滑的就越厉害。
 - 二维高斯函数卷积可以分两步来进行，首先将图像与一维高斯函数进行卷积，然后将卷积结果与方向垂直的相同一维高斯函数卷积。因此，二维高斯滤波的计算量随滤波模板宽度成线性增长而不是成平方增长。
 
+### 话在最后
+说真的，想不明白，一个用来去噪的算法，究竟是如何被利用来去除录像中的静止画面。<br>
+再说了，现在监控设备一般采用动态侦测录像，就是在画面面有变化时才会录像，没有变化时是不录像的。<br>
+至于如何判断画面变化，且听下回道来。
+
 ### Reference
-[0].[图像处理－线性滤波－3 高斯滤波器](http://www.cnblogs.com/pegasus/archive/2011/05/20/2052031.html)
-[1].[高斯图像滤波原理及其编程离散化实现方法](http://blog.csdn.net/likezhaobin/article/details/6835049)
-[2].[高斯平滑 高斯模糊 高斯滤波器 ( Gaussian Smoothing, Gaussian Blur, Gaussian Filter ) C++ 实现](http://blog.csdn.net/hhygcy/article/details/4329056)
-[3].[读OpenCV之小侃高斯滤波](http://blog.csdn.net/xizero00/article/details/6719915)
+[0].[图像处理－线性滤波－3 高斯滤波器](http://www.cnblogs.com/pegasus/archive/2011/05/20/2052031.html)<br>
+[1].[高斯图像滤波原理及其编程离散化实现方法](http://blog.csdn.net/likezhaobin/article/details/6835049)<br>
+[2].[高斯平滑 高斯模糊 高斯滤波器 ( Gaussian Smoothing, Gaussian Blur, Gaussian Filter ) C++ 实现](http://blog.csdn.net/hhygcy/article/details/4329056)<br>
+[3].[读OpenCV之小侃高斯滤波](http://blog.csdn.net/xizero00/article/details/6719915)<br>
 [4].[影像卷积和滤波运算（高斯滤波模板）](http://www.360doc.com/content/12/0921/16/10724725_237423041.shtml)
