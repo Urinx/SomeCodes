@@ -2,32 +2,30 @@
 ;Func:
 ;    Print a string into the center of screen.
 
-;���ó���ʼ��ַ->0x7c00��ԭʼ��ַΪ0x0000��
-org 0x7c00
+;设置程序开始地址->0x7c00（原始地址为0x0000）
+org 07c00h
+    jmp start
+    msg db 'Welcome to Urinx OS ...'
+    len equ $-msg
+start:
+    mov ax,cs
+    mov ds,ax
+    mov es,ax
+    ;要输出的字符串
+    mov bp,msg
+    ;字符串长度
+    mov cx,len
+    ;显示的串结构
+    mov ax,0x1301
+    ;字符属性
+    mov bx,0x7
+    ;dx->行号 列号
+    mov dl,0
+    int 10h
 
-	;����10h�ж�����Ļ����ַ���
-	mov ax,cs
-	mov es,ax
-	;es:bp->&str
-	mov bp,msgstr
-	
-	;�ַ�������
-	mov cx,26
-	;dx->�к� �к�
-	mov dh,0
-	mov dl,0
-	;��ʾ��ҳ��
-	mov bh,0
-	;��ʾ�Ĵ��ṹ
-	mov al,1
-	;�ַ�����
-	mov bl,07h
-	msgstr: db "Welcome to my Urinx OS 1.0"
-	int 10h
-	
-	;�ظ������ֵ0
-	times 510-($-$$) db 0
-	;������־��������ֽڣ�Ϊ55AAa
-	dw 0xaa55
-	;����ѭ����ǰָ��
-	jmp $
+    ;无限循环当前指令
+    jmp $
+    ;重复填充数值0
+    times 510-($-$$) db 0
+    ;结束标志最后两个字节，为55AA
+    dw 0xaa55
