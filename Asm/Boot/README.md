@@ -89,7 +89,7 @@ start:
 
 如何制作软盘镜像，这里给出两种方法：
 
-**1.Windows下**
+**1.Windows下**<br>
 首先用WinImage生成空白的软盘镜像文件。
 
 ![Alt text](screenshot/3.jpg)
@@ -136,7 +136,7 @@ int main(int argc,char *argv[]){
 文件名写死了，自己修改啊。<br>
 当然你也可以用那啥软件直接复制修改软盘的16进制数据。
 
-**2.Linux下**
+**2.Linux下**<br>
 这个就比较简单了。<br>
 如果想要创建一个空白的镜像可以使用这条命令：<br>
 `dd if=/dev/zero of=floppy.img bs=1474560 count=1`<br>
