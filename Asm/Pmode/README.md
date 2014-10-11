@@ -383,9 +383,9 @@ main:
 也许会不甘心，在最美的年龄没有遇见最美的你，可还是能够，看看背影，不是吗。
 
 ### Reference
-[0]. [保护模式 - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/%E4%BF%9D%E8%AD%B7%E6%A8%A1%E5%BC%8F)
-[1]. [实模式与保护模式解惑之（一）——二者的起源与区别](http://blog.csdn.net/trochiluses/article/details/8954527)
-[2]. [A20地址线](http://blog.csdn.net/ruyanhai/article/details/7181842)
-[3]. [GDT(Global Descriptor Table)全局描述符表](http://www.cnblogs.com/starlitnext/archive/2013/03/07/2948929.html)
-[4]. [Bochs - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/Bochs)
+[0]. [保护模式 - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/%E4%BF%9D%E8%AD%B7%E6%A8%A1%E5%BC%8F)<br>
+[1]. [实模式与保护模式解惑之（一）——二者的起源与区别](http://blog.csdn.net/trochiluses/article/details/8954527)<br>
+[2]. [A20地址线](http://blog.csdn.net/ruyanhai/article/details/7181842)<br>
+[3]. [GDT(Global Descriptor Table)全局描述符表](http://www.cnblogs.com/starlitnext/archive/2013/03/07/2948929.html)<br>
+[4]. [Bochs - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/Bochs)<br>
 [5]. [bochs 的使用](http://www.mouseos.com/os/tools/bochs.html)
