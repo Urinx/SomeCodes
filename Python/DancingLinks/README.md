@@ -1,6 +1,5 @@
 X算法
 =====
-@(随笔)[Python|Sudoku|舞蹈链]
 
 ### 精确覆盖问题
 在一个全集X中若干子集的集合为S，精确覆盖是指，S的子集S\*，满足X中的每一个元素在S*中恰好出现一次。
@@ -19,7 +18,7 @@ X算法
 S* = {B, D, F} 便是一个精确覆盖。<br>
 用图论表示的话：
 
-![Alt text](./1.png)
+![Alt text](screenshot/1.png)
 
 左侧每个节点表示S的每个集合，右侧每个节点表示X的每个元素，而精确覆盖便是一种匹配，满足右侧的每个点恰好有一条边。
 
@@ -48,33 +47,33 @@ S={
 
 我们得到A，B。<br>
 **L2** 从A，B中选出一个。<br>
-    **L2.1** 这里选择A，选出A包含的列：
+**L2.1** 这里选择A，选出A包含的列：
 
-    ![Alt text](screenshot/4.png)
+![Alt text](screenshot/4.png)
 
-    我们得到1，4，7。<br>
-    **L3.1** 选出1，4，7包含的行：
+我们得到1，4，7。<br>
+**L3.1** 选出1，4，7包含的行：
 
-    ![Alt text](screenshot/5.png)
+![Alt text](screenshot/5.png)
 
-    我们得到A，B，C，E，F。<br>
-    **L4.1** 去除A，B，C，E，F：
+我们得到A，B，C，E，F。<br>
+**L4.1** 去除A，B，C，E，F：
 
-    ![Alt text](screenshot/6.png)
+![Alt text](screenshot/6.png)
 
-    只剩下D，然而不满足条件，回到**L2**。<br>
-    **L2.2** 这次选择B：
+只剩下D，然而不满足条件，回到**L2**。<br>
+**L2.2** 这次选择B：
 
-    ![Alt text](screenshot/7.png)
+![Alt text](screenshot/7.png)
 
-    按照上述步骤进行依次得到：
+按照上述步骤进行依次得到：
 
-    ![Alt text](screenshot/8.png)<br>
-    ![Alt text](screenshot/9.png)<br>
-    ![Alt text](screenshot/10.png)<br>
-    ![Alt text](screenshot/11.png)<br>
-    ![Alt text](screenshot/12.png)<br>
-    ![Alt text](screenshot/13.png)
+![Alt text](screenshot/8.png)<br>
+![Alt text](screenshot/9.png)<br>
+![Alt text](screenshot/10.png)<br>
+![Alt text](screenshot/11.png)<br>
+![Alt text](screenshot/12.png)<br>
+![Alt text](screenshot/13.png)
 
 **L3** 成功找到，结束。<br>
 以上就是X算法的基本步骤。在此基础上，Knuth提出了一种高效的实现技术叫舞蹈链，使用双向链表来表示该问题的矩阵。
@@ -112,57 +111,57 @@ X算法：
 #! /usr/bin/env python
 
 def solve(X,Y,solution=[]):
-	if not X:
-		yield list(solution)
-	else:
-		c=min(X,key=lambda c: len(X[c]))
-		for r in list(X[c]):
-			solution.append(r)
-			cols=select(X,Y,r)
-			for s in solve(X,Y,solution):
-				yield s
-			deselect(X,Y,r,cols)
-			solution.pop()
+    if not X:
+        yield list(solution)
+    else:
+        c=min(X,key=lambda c: len(X[c]))
+        for r in list(X[c]):
+            solution.append(r)
+            cols=select(X,Y,r)
+            for s in solve(X,Y,solution):
+                yield s
+            deselect(X,Y,r,cols)
+            solution.pop()
 
 def select(X,Y,r):
-	cols=[]
-	for j in Y[r]:
-		for  i in X[j]:
-			for k in Y[i]:
-				if k!=j:
-					X[k].remove(i)
-		cols.append(X.pop(j))
-	return cols
+    cols=[]
+    for j in Y[r]:
+        for  i in X[j]:
+            for k in Y[i]:
+                if k!=j:
+                    X[k].remove(i)
+        cols.append(X.pop(j))
+    return cols
 
 def deselect(X,Y,r,cols):
-	for j in reversed(Y[r]):
-		X[j]=cols.pop()
-		for i in X[j]:
-			for k in Y[i]:
-				if k!=j:
-					X[k].append(i)
+    for j in reversed(Y[r]):
+        X[j]=cols.pop()
+        for i in X[j]:
+            for k in Y[i]:
+                if k!=j:
+                    X[k].append(i)
 
 def T(Y):
-	X={}
-	for i,j in Y.items():
-		for k in j:
-			if k in X:
-				X[k].append(i)
-			else:
-				X[k]=[i]
-	return X
+    X={}
+    for i,j in Y.items():
+        for k in j:
+            if k in X:
+                X[k].append(i)
+            else:
+                X[k]=[i]
+    return X
 
 if __name__=='__main__':
-	Y={
-		'A':[1,4,7],
-		'B':[1,4],
-		'C':[4,5,7],
-		'D':[3,5,6],
-		'E':[2,3,6,7],
-		'F':[2,7]
-	}
-	X=T(Y)
-	print list(solve(X,Y))
+    Y={
+        'A':[1,4,7],
+        'B':[1,4],
+        'C':[4,5,7],
+        'D':[3,5,6],
+        'E':[2,3,6,7],
+        'F':[2,7]
+    }
+    X=T(Y)
+    print list(solve(X,Y))
 ```
 
 ### Sudoku
@@ -198,28 +197,7 @@ sudoku=[
 r，c，b，n分别代表行，列，第几个宫格，填入的数字，其中r，c，b的索引是从0开始。<br>
 我们构造了这样的一个矩阵：
 
-| |(0,0,1)|(0,0,2)|(0,0,3)|...|(r,c,n)|...|(8,8,9)|
-|-|-|-|-|-|
-|**('rc',(0,0))**|1|1|1|||||
-|**('rc',(0,1))**||||||||
-|**...**||||||||
-|**('rc',(8,7))**||||||||
-|**('rc',(8,8))**|||||||1|
-|**('rn',(0,1))**|1|||||||
-|**('rn',(0,2))**||1||||||
-|**...**||||||||
-|**('rn',(8,8))**||||||||
-|**('rn',(8,9))**|||||||1|
-|**('cn',(0,1))**|1|||||||
-|**('cn',(0,2))**||1||||||
-|**...**||||||||
-|**('cn',(8,8))**||||||||
-|**('cn',(8,9))**|||||||1|
-|**('bn',(0,1))**|1|||||||
-|**('bn',(0,2))**||1||||||
-|**...**||||||||
-|**('bn',(8,8))**||||||||
-|**('bn',(8,9))**|||||||1|
+![Alt text](screenshot/15.png)
 
 于是构造下列X，Y：
 ```python
@@ -266,45 +244,45 @@ for solution in solve(X, Y, []):
 from itertools import product
 
 def solve(X,Y,solution=[]):
-	if not X:
-		yield list(solution)
-	else:
-		c=min(X,key=lambda c: len(X[c]))
-		for r in list(X[c]):
-			solution.append(r)
-			cols=select(X,Y,r)
-			for s in solve(X,Y,solution):
-				yield s
-			deselect(X,Y,r,cols)
-			solution.pop()
+    if not X:
+        yield list(solution)
+    else:
+        c=min(X,key=lambda c: len(X[c]))
+        for r in list(X[c]):
+            solution.append(r)
+            cols=select(X,Y,r)
+            for s in solve(X,Y,solution):
+                yield s
+            deselect(X,Y,r,cols)
+            solution.pop()
 
 def select(X,Y,r):
-	cols=[]
-	for j in Y[r]:
-		for  i in X[j]:
-			for k in Y[i]:
-				if k!=j:
-					X[k].remove(i)
-		cols.append(X.pop(j))
-	return cols
+    cols=[]
+    for j in Y[r]:
+        for  i in X[j]:
+            for k in Y[i]:
+                if k!=j:
+                    X[k].remove(i)
+        cols.append(X.pop(j))
+    return cols
 
 def deselect(X,Y,r,cols):
-	for j in reversed(Y[r]):
-		X[j]=cols.pop()
-		for i in X[j]:
-			for k in Y[i]:
-				if k!=j:
-					X[k].add(i)
+    for j in reversed(Y[r]):
+        X[j]=cols.pop()
+        for i in X[j]:
+            for k in Y[i]:
+                if k!=j:
+                    X[k].add(i)
 
 def T(Y):
-	X={}
-	for i,j in Y.items():
-		for k in j:
-			if k in X:
-				X[k].append(i)
-			else:
-				X[k]=[i]
-	return X
+    X={}
+    for i,j in Y.items():
+        for k in j:
+            if k in X:
+                X[k].append(i)
+            else:
+                X[k]=[i]
+    return X
 
 def exact_cover(X,Y):
     X = {j:set() for j in X}
@@ -339,19 +317,19 @@ def solve_sudoku(size,grid):
         yield grid
 
 if __name__=='__main__':
-	sudoku=[
-	    [5, 3, 0, 0, 7, 0, 0, 0, 0],
-	    [6, 0, 0, 1, 9, 5, 0, 0, 0],
-	    [0, 9, 8, 0, 0, 0, 0, 6, 0],
-	    [8, 0, 0, 0, 6, 0, 0, 0, 3],
-	    [4, 0, 0, 8, 0, 3, 0, 0, 1],
-	    [7, 0, 0, 0, 2, 0, 0, 0, 6],
-	    [0, 6, 0, 0, 0, 0, 2, 8, 0],
-	    [0, 0, 0, 4, 1, 9, 0, 0, 5],
-	    [0, 0, 0, 0, 8, 0, 0, 7, 9]
-	]
-	for s in solve_sudoku((3,3),sudoku):
-		for i in s: print i
+    sudoku=[
+        [5, 3, 0, 0, 7, 0, 0, 0, 0],
+        [6, 0, 0, 1, 9, 5, 0, 0, 0],
+        [0, 9, 8, 0, 0, 0, 0, 6, 0],
+        [8, 0, 0, 0, 6, 0, 0, 0, 3],
+        [4, 0, 0, 8, 0, 3, 0, 0, 1],
+        [7, 0, 0, 0, 2, 0, 0, 0, 6],
+        [0, 6, 0, 0, 0, 0, 2, 8, 0],
+        [0, 0, 0, 4, 1, 9, 0, 0, 5],
+        [0, 0, 0, 0, 8, 0, 0, 7, 9]
+    ]
+    for s in solve_sudoku((3,3),sudoku):
+        for i in s: print i
 ```
 
 ### Reference
