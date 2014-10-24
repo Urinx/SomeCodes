@@ -1,0 +1,129 @@
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>海豚篮球杯</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: url('./img/bg.png') no-repeat;
+			background-size: 100% 100%;
+		}
+		.clear{
+			clear: both;
+		}
+		.center{
+			text-align: center;
+			margin-left:auto;
+			margin-right:auto;
+			font-weight: bolder;
+		}
+		.Browser{
+			margin-top: 10%;
+			height: 8%;
+			width: 80%;
+			background: orange;
+			border-radius: 10px;
+		}
+			.Browser .title, .Game .title{
+				width: 80%;
+			}
+				.Browser .title img, .Game .title img{
+					float: left;
+					margin: 2%;
+				}
+				.Browser .title span, .Game .title span{
+					float: left;
+					font-size: 25px;
+					line-height: 40px;
+			}
+		.Game{
+			height: 8%;
+			width: 80%;
+			background: yellow;
+			border-radius: 10px;
+		}
+		.head_photo{
+			margin: 2%;
+			padding: 8%;
+		}
+		ul li{
+			list-style: none;
+			margin: 2%;
+			height: 18%;
+			width: 29%;
+			float: left;
+		}
+			ul li label{
+				display: block;
+				height: 80%;
+				width: auto;
+				color: rgba(255,0,0,0);
+				font-size: 6em;
+				font-weight: bolder;
+				text-align: center;
+				background: url('./img/1.jpg') no-repeat;
+				background-size: 100% 100%;
+			}
+			ul li div{
+				position: relative;
+				bottom: 0;
+				height: 20%;
+				width: 100%;
+				background: white;
+				text-align: center;
+			}
+			ul li div input[type=checkbox]{
+				float: right;
+			}
+	</style>
+</head>
+
+<body>
+
+	<form action='vote.php' method='post'>
+		<div class='Browser center'>
+			<div class='title center'>
+				<img src="./img/b1.png">
+				<span>Browser队号</span>
+				<div class='clear'></div>
+			</div>
+		</div>
+		<div class='head_photo'>
+			<ul id='b_ul'></ul>
+			<div class='clear'></div>
+		</div>
+
+		<div class='Browser center'>
+			<div class='title center'>
+				<img src="./img/b2.png">
+				<span>Game队号</span>
+				<div class='clear'></div>
+			</div>
+		</div>
+		<div class='head_photo'>
+			<ul id='g_ul'></ul>
+			<div class='clear'></div>
+		</div>
+
+		
+		<div class='center' ontouchend='submit()'>
+			<img src="./img/submit.png">
+		</div>
+	</form>
+
+	<script src='./js/1.js'></script>
+	<script src='./js/wechat_share.js'></script>
+	<script src='./js/ga.js'></script>
+
+</body>
+
+</html>
