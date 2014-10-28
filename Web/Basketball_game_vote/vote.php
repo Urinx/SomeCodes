@@ -5,10 +5,22 @@ include 'mysql.conf';
 $link=mysql_connect($ADDR,$USER,$PASSWORD) or die("Unable to connect to the database!");
 mysql_select_db($DB_NAME) or die("Unable to connect to database ".$DB_NAME);
 
-if ($_POST) {
-	foreach ($_POST as $name => $value) {
-		$sql_addVotes="UPDATE {$TABLE} SET votes=votes+1 WHERE name='{$name}'";
-		mysql_query($sql_addVotes);
+
+$ip=$_SERVER["REMOTE_ADDR"];
+$T2='ip';
+$IP_ADDR='ip_addr';
+$IP_R=mysql_query("SELECT * FROM {$T2} WHERE {$IP_ADDR}='{$ip}'");
+
+if (mysql_fetch_row($IP_R)) {
+	echo "<script>alert('你已经投过票了！')</script>";
+}
+else{
+	if ($_POST) {
+		foreach ($_POST as $name => $value) {
+			$sql_addVotes="UPDATE {$TABLE} SET votes=votes+1 WHERE name='{$name}'";
+			mysql_query($sql_addVotes);
+			mysql_query("INSERT INTO {$T2} VALUES ('{$ip}')");
+		}
 	}
 }
 
