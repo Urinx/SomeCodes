@@ -1,0 +1,9 @@
+<h2>To-do list</h2>
+<!-- Fixme: on-change bug -->
+<input on-change='newTodo' class='newTodo' placeholder={{placeholder}}>
+
+<ul class='todos center'>
+	{{#items:i}}
+		{{>item}}
+	{{/items}}
+</ul>

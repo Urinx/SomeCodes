@@ -1,0 +1,9 @@
+<li class='{{ done? "done" : "pending" }}'>
+	<input type='checkbox' checked='{{done}}'>
+	<span on-tap='edit'>{{description}}
+		{{#if editing}}
+			<input class='edit' value='{{description}}' on-blur='stop_editing'>
+		{{/if}}
+	</span>
+	<div class='button' on-tap='remove'>X</div>
+</li>

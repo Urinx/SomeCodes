@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'Voltaire';
+	src: url('Voltaire.woff') format('woff');
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	-background: #232323;
+}
+
+.center{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.todolist{
+	font-family: 'Voltaire';
+	text-align: center;
+}
+	.todolist h2{
+		margin-top: 8%;
+	}
+	.todolist .newTodo{
+		margin: 10px 0;
+		height: 10%;
+		width: 95%;
+		font-size: 14px;
+	}
+	.todolist ul{
+		list-style: none;
+		text-align: left;
+		width: 95%;
+	}
+		.todolist ul li{
+			height: 40px;
+			line-height: 40px;
+			color: #111111;
+		}
+		.todolist ul li:hover{
+			background: rgba(200,200,200,0.2);
+		}
+		.todolist ul li.pending span{
+			/* ... */
+		}
+		.todolist ul li.done span{
+			text-decoration: line-through;
+			color: #888888;
+		}
+			.todolist ul li input[type=checkbox]{
+				margin: 0 5px;
+			}
+			.todolist ul li div.button{
+				float: right;
+				position: relative;
+				top: 12.5px;
+				height: 15px;
+				width: 15px;
+				background: rgba(255,0,0,0.5);
+				color: white;
+				font-size: 14px;
+				line-height: 16px;
+				text-align: center;
+			}
+			.todolist ul li:hover div.button{
+				background: red;
+			}

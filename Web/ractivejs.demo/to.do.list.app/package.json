@@ -1,0 +1,24 @@
+{
+	"name": "To.do.list.app",
+	"version": "0.1.0",
+
+	"engines": {
+		"node": ">= 0.6.0"
+	},
+
+	"devDependencies": {
+		"grunt": "~0.4.5",
+		"grunt-contrib-jshint": "~0.4.3",
+		"grunt-contrib-nodeunit": "~0.4.1",
+		"grunt-contrib-uglify": "~0.5.0",
+		"grunt-contrib-concat": "~0.1.1",
+		"grunt-contrib-cssmin": "~0.6.1",
+		"grunt-contrib-imagemin": "~0.9.1",
+		"grunt-contrib-htmlmin": "~0.3.0",
+		"grunt-contrib-clean": "~0.4.0",
+		"grunt-contrib-copy": "~0.4.0",
+		"grunt-contrib-less": "~0.12.0",
+		"grunt-contrib-compass": "~1.0.1",
+		"grunt-contrib-requirejs": "~0.4.4"
+	}
+}
