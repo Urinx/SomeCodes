@@ -1,0 +1,28 @@
+<script src="../ractive.js"></script>
+
+<div id='output'></div>
+
+<script id='template' type="text/ractive">
+	<p style="color:{{color}};font-size:{{size}}em;font-family:{{font}};">{{greeting}} {{name}}!</p>
+	<button id='count'>Times this button has been clicked: {{counter}}</button>
+</script>
+
+<script type="text/javascript">
+var ractive=new Ractive({
+	el:'output',
+	template:'#template',
+	data:{
+		greeting:'Hello',
+		name:'world',
+		color:'purple',
+		size:4,
+		font:'Comic Sans MS',
+		counter:0,
+	}
+});
+
+document.getElementById('count').addEventListener('click',function(){
+	ractive.set('counter',ractive.get('counter')+1);
+});
+
+</script>

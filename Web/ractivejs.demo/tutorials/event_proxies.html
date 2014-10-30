@@ -1,0 +1,31 @@
+<script src="../ractive.js"></script>
+
+<body id='output'></body>
+
+<script id='template' type="text/ractive">
+
+<button on-click='activate'>Activate!</button>
+<button on-click='deactivate'>Deactivate!</button>
+<button on-click='silence'>Silence!</button>
+
+</script>
+
+<script type="text/javascript">
+var ractive = new Ractive({
+  el: 'output',
+  template: '#template'
+});
+
+var listener = ractive.on({
+  activate: function () {
+    alert( 'Activating!' );
+  },
+  deactivate: function () {
+    alert( 'Deactivating!' );
+  },
+  silence: function () {
+  	alert( 'No more alerts!' );
+  	listener.cancel();
+  }
+});
+</script>

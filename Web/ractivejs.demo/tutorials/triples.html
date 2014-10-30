@@ -1,0 +1,21 @@
+<script src="../ractive.js"></script>
+
+<body id='output'></body>
+
+<script id='template' type="text/ractive">
+
+<p>This is a normal mustache: {{content}}</p>
+<p>And this is a triple mustache: {{{content}}}</p>
+
+</script>
+
+<script type="text/javascript">
+var ractive = new Ractive({
+  el: 'output',
+  template: '#template',
+  data:{
+    content: '<strong>Spot the difference?</strong>'
+  }
+});
+
+</script>

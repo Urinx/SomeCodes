@@ -1,0 +1,42 @@
+<script src="../ractive.js"></script>
+
+<body id='output'></body>
+
+<script id='template' type="text/ractive">
+
+<p>red:</p>
+<div style='background-color: red;
+		height:50px;
+    	width: {{red*100}}%;'></div>
+
+<p>green:</p>
+<div style='background-color: green;
+		height:50px;
+    	width: {{green*100}}%;'></div>
+
+<p>blue:</p>
+<div style='background-color: blue;
+		height:50px;
+    	width: {{blue*100}}%;'></div>
+
+<p><strong>result:</strong></p>
+<div style='background-color:
+  	rgb({{Math.round(red   * 255)}},
+    	{{Math.round(green * 255)}},
+    	{{Math.round(blue  * 255)}});
+    height:50px;'>
+</div>
+
+</script>
+
+<script type="text/javascript">
+var ractive=new Ractive({
+	el:'output',
+	template:'#template',
+	data:{
+		red: 0.45,
+	    green: 0.61,
+	    blue: 0.2
+	}
+});
+</script>

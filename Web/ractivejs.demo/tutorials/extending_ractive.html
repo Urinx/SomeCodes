@@ -1,0 +1,63 @@
+<script src="../ractive.js"></script>
+
+<body id='output'></body>
+
+<script id='template' type="text/ractive">
+
+<div class='slideshow'>
+  <div class='main'>
+    <a class='prev' on-tap='goto:{{current-1}}'><span>&laquo;</span></a>
+    <div class='main-image'
+         style='background-image: url({{image.src}});'>
+    </div>
+    <a class='next' on-tap='goto:{{current+1}}'><span>&raquo;</span></a>
+  </div>
+
+  <div class='caption'>
+    <p>{{image.caption}}</p>
+  </div>
+</div>
+
+</script>
+
+<script type="text/javascript">
+var Slideshow = Ractive.extend({
+  template: '#template',
+
+  // method for changing the currently displayed image
+  goto: function ( imageNum ) {
+    var images = this.get( 'images' );
+
+    // Make sure the image number is between 0...
+    while ( imageNum < 0 ) {
+      imageNum += images.length;
+    }
+
+    // ...and the maximum
+    imageNum %= images.length;
+
+    // Then, update the view
+    this.set({
+      image: images[ imageNum ],
+      current: imageNum
+    });
+  },
+
+  // initialisation code
+  init: function ( options ) {
+    this.on( 'goto', function ( event, index ) {
+      this.goto( index );
+    });
+
+    // start with the first image
+    this.goto( 0 );
+  }
+});
+
+var slideshow = new Slideshow({
+  el: 'output',
+  data: { images: images }
+});
+;
+
+</script>

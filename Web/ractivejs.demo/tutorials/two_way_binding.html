@@ -1,0 +1,79 @@
+<style type="text/css">
+ul{
+	list-style: none;
+}
+ul li{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+}
+</style>
+<script src="../ractive.js"></script>
+
+<body id='output'></body>
+
+<script id='template' type="text/ractive">
+
+<label>
+  Enter your name:
+  <input value='{{name}}'>
+</label>
+
+<p>Hello, {{name}}!</p>
+
+
+<label>
+  <input type='checkbox' checked='{{checked}}'>
+  {{#if checked}}checked!{{else}}not checked{{/if}}
+</label>
+
+<fieldset>
+  <legend>Choose color</legend>
+  <label><input type='radio' name='{{color}}' value='red' checked> red</label>
+  <label><input type='radio' name='{{color}}' value='green'> green</label>
+  <label><input type='radio' name='{{color}}' value='blue'> blue</label>
+  <p>The selected colour is <span style='color: {{color}};'>{{color}}</span>.</p>
+</fieldset>
+
+<select value='{{color}}'>
+  {{#each colors}}
+    <option>{{this}}</option>
+  {{/each}}
+</select>
+<p>The selected colour is <span style='color: {{color}};'>{{color}}</span>.</p>
+
+
+<select value='{{selectedColors}}' multiple>
+  {{#each colors}}
+    <option>{{this}}</option>
+  {{/each}}
+</select>
+
+{{#if selectedColors.length}}
+  <p>The selected colours are:</p>
+  <ul>
+    {{#each selectedColors}}
+      <li style='background-color: {{this}};'>{{this}}</li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>No colours are selected.</p>
+{{/if}}
+
+</script>
+
+<script type="text/javascript">
+var colors = [ 'red', 'green', 'blue' ];
+var ractive = new Ractive({
+  el: 'output',
+  template: '#template',
+  data: {
+    colors: colors,
+    color: colors[1]
+  }
+});
+
+ractive.toggle( 'checked' );
+ractive.push( 'colors', 'purple' );
+ractive.set( 'selectedColors', [ 'green', 'purple' ]);
+</script>

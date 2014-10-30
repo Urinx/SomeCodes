@@ -1,0 +1,34 @@
+<script src="../ractive.js"></script>
+
+<body id='output'></body>
+
+<script id='template' type="text/ractive">
+
+{{#if signedIn}}
+  <!-- message for signed-in users -->
+  <p>Welcome back, {{username}}!</p>
+{{else}}
+  <!-- message for non-signed-in users -->
+  <p>Hi there! Please <a class='button' on-click='signIn'>sign in</a></p>
+{{/if}}
+
+</script>
+
+<script type="text/javascript">
+var ractive = new Ractive({
+  el: 'output',
+  template: '#template',
+  data:{
+    signedIn: false
+  }
+});
+
+ractive.on( 'signIn', function () {
+  var name = prompt( 'Enter your username to sign in', 'ractive_fan' );
+
+  ractive.set({
+    username: name,
+    signedIn: true
+  });
+});
+</script>

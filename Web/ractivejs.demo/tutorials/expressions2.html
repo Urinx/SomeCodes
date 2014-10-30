@@ -1,0 +1,38 @@
+<meta charset='utf-8'>
+<script src="../ractive.js"></script>
+
+<body id='output'></body>
+
+<script id='template' type="text/ractive">
+
+<table>
+	<tr>
+		<th>Price per {{item}}</th>
+		<th>Quantity</th>
+		<th>Total</th>
+	</tr>
+
+	<tr>
+		<td>{{price}}</td>
+		<td>{{quantity}}</td>
+		<td>{{ format(price * quantity) }}</td>
+	</tr>
+</table>
+
+</script>
+
+<script type="text/javascript">
+var ractive=new Ractive({
+	el:'output',
+	template:'#template',
+	data:{
+		item: 'pint of milk',
+	    price: 0.49,
+	    quantity: 5,
+	    format:function ( num ) {
+	      if ( num < 1 ) return ( 100 * num ) + 'p';
+	      return '£' + num.toFixed( 2 );
+	    }
+	}
+});
+</script>

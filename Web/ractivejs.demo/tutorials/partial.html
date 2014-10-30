@@ -1,0 +1,31 @@
+<script src="../ractive.js"></script>
+
+<body id='output'></body>
+
+<script id='template' type="text/ractive">
+
+<ul>
+  {{#items}}
+    {{>item}}
+  {{/items}}
+</ul>
+
+</script>
+
+<script type="text/javascript">
+var item = "<li>{{a}} {{b}}</li>";
+
+var ractive = new Ractive({
+  el: 'output',
+  template: '#template',
+  partials: { item: item },
+  data:{
+    items: [
+      { a: 1,  b: 'Add a todo item' },
+      { a: 2, b: 'Add some more todo items' },
+      { a: 3, b: 'Complete all the Ractive tutorials' }
+    ]
+  }
+});
+
+</script>

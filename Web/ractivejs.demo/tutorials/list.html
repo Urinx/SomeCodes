@@ -1,0 +1,63 @@
+<script src="../ractive.js"></script>
+
+<body id='output'></body>
+
+<script id='template' type="text/ractive">
+
+<table class='superheroes'>
+  <tr>
+    <th>#</th>
+    <th on-click='sort:name'>Superhero name</th>
+    <th on-click='sort:realname'>Real name</th>
+    <th on-click='sort:power'>Superpower</th>
+  </tr>
+
+  {{#sort(superheroes,sortColumn):num}}
+    <tr>
+      <td>{{num+1}}</td>
+      <td><a href='{{info}}'>{{name}}</a></td>
+      <td>{{realname}}</td>
+      <td>{{power}}</td>
+    </tr>
+  {{/superheroes}}
+</table>
+
+</script>
+
+<script type="text/javascript">
+var ractive, xmen, newSuperhero;
+
+xmen = [
+  { name: 'Nightcrawler', realname: 'Wagner, Kurt',     power: 'Teleportation',    info: 'http://www.superherodb.com/Nightcrawler/10-107/' },
+  { name: 'Cyclops',      realname: 'Summers, Scott',   power: 'Optic blast',      info: 'http://www.superherodb.com/Cyclops/10-50/' },
+  { name: 'Rogue',        realname: 'Marie, Anna',      power: 'Absorbing powers', info: 'http://www.superherodb.com/Rogue/10-831/' },
+  { name: 'Wolverine',    realname: 'Howlett, James',   power: 'Regeneration',     info: 'http://www.superherodb.com/Wolverine/10-161/' }
+];
+
+newSuperhero = {
+  name: 'Storm',
+  realname: 'Monroe, Ororo',
+  power: 'Controlling the weather',
+  info: 'http://www.superherodb.com/Storm/10-135/'
+};
+
+ractive = new Ractive({
+  el: 'output',
+  template: '#template',
+  data: { 
+    superheroes: xmen,
+    sort:function(array,column){
+      array=array.slice();// clone, so we don't modify the underlying data
+      return array.sort(function(a,b){
+        return a[ column ] < b[ column ] ? -1 : 1;
+      });
+    }
+  }
+});
+
+xmen.push(newSuperhero);
+
+ractive.on('sort',function(ev,column){
+  this.set( 'sortColumn', column );
+});
+</script>

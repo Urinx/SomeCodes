@@ -1,0 +1,35 @@
+<script src="../ractive.js"></script>
+
+<body id='output'></body>
+
+<script id='template' type="text/ractive">
+
+<h2>Country profile</h2>
+
+{{#with country}}
+  <p>{{name}} is a {{climate.temperature}} country with {{climate.rainfall}} rainfall and a population of {{population}}.</p>
+
+  {{#with capital}}
+    <p>The capital city is {{name}} (<a href='https://maps.google.co.uk/maps/place/{{name}}/@{{lat}},{{lon}},12z' target='_blank'>see map</a>).</p>
+  {{/with}}
+
+{{/with}}
+
+</script>
+
+<script type="text/javascript">
+var ractive=new Ractive({
+	el:'output',
+	template:'#template',
+	data:{
+		country: {
+	    	name: 'The UK',
+	    	climate: { temperature: 'cold', rainfall: 'excessive' },
+	    	population: 63230000,
+	    	capital: { name: 'London', lat: 51.5171, lon: -0.1062 }
+	    }
+	}
+});
+
+ractive.set('country.climate.rainfall', 'very high');
+</script>
