@@ -1,0 +1,68 @@
+@bgcolor: #1c1c1d;
+@span_w_h: 15px;
+@span_color: #2FAC9B;
+@process: 50%;
+
+.center{
+	text-align: center;
+	margin: 0 auto;
+}
+body{
+	background: @bgcolor;
+	.center;
+}
+div{
+	position: relative;
+	top: 50%;
+	.center;
+
+	span{
+		display: inline-block;
+		width: @span_w_h;
+		height: @span_w_h;
+		background: @span_color;
+	}
+}
+
+.generate-span(48);
+.generate-span(@n, @i: 1) when (@i =< @n) {
+	div span:nth-child(@{i}){
+		.animation( up_scale, 1s, (@i * 0.05s), infinite, cubic-bezier(0.005, 0.560, 0.580, 1.590) );
+		width: (@span_w_h/2);
+		height: (@span_w_h/2);
+		margin:0 2px;
+	}
+	.generate-span(@n, (@i + 1));
+}
+
+.foo{
+	50% {
+		.transform( scale(1,5) );
+		background:darken(@span_color, 20%);
+	}
+}
+
+.keyframes(up_scale);
+.keyframes(@name){
+	@keyframes @name { .foo; };
+	@-webkit-keyframes @name { .foo; };
+	@-moz-keyframes @name { .foo; };
+	@-ms-keyframes @name { .foo; };
+	@-o-keyframes @name { .foo; };
+}
+
+.transform(@foo){
+	transform: @arguments;
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-o-transform: @arguments;
+	-ms-transform: @arguments;
+}
+
+.animation(@name,@duration:1s,@timing:0.05s,@count:infinite,@other){
+	animation: @arguments;
+	-moz-animation: @arguments;
+	-webkit-animation: @arguments;
+	-o-animation: @arguments;
+	-ms-animation: @arguments;
+}
