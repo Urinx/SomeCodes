@@ -118,7 +118,7 @@ RequireJS API 存在于RequireJS载入时创建的命名空间requirejs下。其
 
 ![Alt text](screenshot/5.PNG)
 
-RequireJS以一个相对于baseUrl的地址来加载所有的代码。 页面顶层<script>标签含有一个特殊的属性data-main，require.js使用它来启动脚本加载过程，而baseUrl一般设置到与该属性相一致的目录。
+RequireJS以一个相对于baseUrl的地址来加载所有的代码。 页面顶层`<script>`标签含有一个特殊的属性data-main，require.js使用它来启动脚本加载过程，而baseUrl一般设置到与该属性相一致的目录。
 index.html：
 
 ```
