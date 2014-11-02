@@ -1,14 +1,13 @@
-define(function(){
+define(['app'],function(app){
 	var baseUrl="http://www.baidu.com";
-	//var baseUrl = location.href.replace(/basketball_game\/.+/g,'basketball_game');
-
 	var imgUrl=baseUrl+'/img/thumb.png';
 	var appid='';
-	var link=baseUrl;
 
 	return {
-		enableShare: function(title,desc){
+		share: function(title,desc){
 			document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+				var link=app.setWechatShareUrl();
+				
 				// 发送给好友
 				WeixinJSBridge.on('menu:share:appmessage', function(argv){
 					WeixinJSBridge.invoke('sendAppMessage',{
@@ -42,5 +41,3 @@ define(function(){
 		}
 	};
 });
-
-

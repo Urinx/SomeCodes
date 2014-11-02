@@ -16,10 +16,10 @@ require.config({
     }
 });
 
-require(['app'],function(app){
+require(['app','wechat'],function(app,wechat){
     app.build();
     // Add drag and move feature
     app.enableDrag('todolist');
     // wechat share
-    app.wechatShare('To-do list','blablabla...');
+    wechat.share('我的To-do list','关注我的微信公众号Urinx，感受三体纳米科技核心智慧。');
 });
