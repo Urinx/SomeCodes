@@ -21,5 +21,5 @@ require(['app','wechat'],function(app,wechat){
     // Add drag and move feature
     app.enableDrag('todolist');
     // wechat share
-    wechat.share('我的To-do list','关注我的微信公众号Urinx，感受三体纳米科技核心智慧。');
+    wechat.share('我的To-do list','关注我的微信公众号Urinx，感受三体纳米科技核心智慧。',app.setWechatShareUrl);
 });

@@ -72,7 +72,7 @@ define(
 			},
 
 			getItem: function(){
-				return location.search?location.search.slice(1).split('&').map(function(str){
+				return location.search?location.search.split('&from')[0].slice(1).split('&').map(function(str){
 					var a=str.split('=');
 					return {description:unescape(a[0]),done:a[1]=='true'?true:false};
 				}):null;
