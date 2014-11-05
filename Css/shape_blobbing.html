@@ -1,0 +1,69 @@
+<style type="text/css">
+@-webkit-keyframes move{
+    0%{
+        left:-20px;
+    }
+    50%{
+        left:200px;
+    }
+    100%{
+        left:-20px;
+    }
+}
+@keyframes move{
+    0%{
+        left:-20px;
+    }
+    50%{
+        left:200px;
+    }
+    100%{
+        left:-20px;
+    }
+}
+ul{
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    margin: 50px;
+    list-style: none;
+    -webkit-filter: contrast(20);
+    -moz-filter: contrast(20);
+    -ms-filter: contrast(20);
+    filter: contrast(20);
+    background: white;
+    display: inline-block;
+    font-size: 0;
+}
+li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: black;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    margin: 20px;
+}
+li:last-child{
+    position: absolute;
+    top:0;
+    -webkit-animation: move 20s linear infinite;
+    animation: move 20s linear infinite;
+}
+</style>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<!-- 
+http://www.zhouwenbin.com/css3%E5%AF%86%E9%9B%86%E5%8A%A8%E7%94%BB%E6%95%99%E7%A8%8B2-%E6%97%8B%E8%BD%AC%E7%9A%84%E7%82%B9/
+
+http://segmentfault.com/blog/windwhinny/1190000000755583
+-->
