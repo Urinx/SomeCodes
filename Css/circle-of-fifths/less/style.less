@@ -1,0 +1,115 @@
+@size: 75vw;
+@border: 1px solid #efefef;
+
+:root {
+  padding: 2em;
+}
+
+.accidental {
+  vertical-align: super;
+  font-size: 0.6em;
+}
+
+.circle-of-fifths {
+  font-family: 'Volkhov';
+  font-size: @size/20;
+  width: @size;
+  height: @size;
+  border: @border;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: border-box;
+  
+  box-shadow:
+    0 @size/40 @size/40 rgba(0,0,0,0.25),
+    inset 0 0 0 9vw white,
+    inset 0 0 0 16vw #ccc;
+  
+  @inner-size: 30%;
+  &::after {
+    content: "";
+    position: absolute;
+    top: @inner-size;
+    left: @inner-size;
+    right: @inner-size;
+    bottom: @inner-size;
+    border: @border;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow:
+      inset 0 @size/40 @size/40 rgba(0,0,0,0.25);
+  }
+}
+
+.center() {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform+_: 
+    translate(-50%, -50%);
+}
+
+.key {
+  .center();
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: rgba(0,0,0,0.1);
+    height: @size;
+  }
+  
+  > * { position: absolute; }
+  > .major { text-transform: uppercase; }
+  > .minor { text-transform: lowercase; }
+  > .sig {
+    font-size: 0.75em;
+    color: #999;
+  }
+}
+
+.key-pos(@key-pos) {
+  @a: (@key-pos - 4) * (pi()/6);
+  @dist: @size*0.33;
+  
+  transform+_: 
+    translate(cos(@a)*@dist,sin(@a)*@dist);
+  
+  >.major {
+    transform:
+      translate(cos(@a)*(@size/10),sin(@a)*(@size/10))
+      translate(-50%, -50%);
+  }
+  
+  >.minor {
+    transform:
+      translate(cos(@a)*(-@size/12),sin(@a)*(-@size/12))
+      translate(-50%, -50%);
+  }
+  
+  >.sig {
+    transform:
+      translate(-50%, -50%);
+  }
+  
+  &::before {
+    transform:
+      translate(cos(@a)*-@dist,sin(@a)*-@dist)
+      translate(0%, -50%)
+      rotate(unit(pi()/12,rad))
+      rotate(unit(@a + pi()/2, rad));
+      ;
+  }
+}
+
+.key-loop(@key) when (@key > 0) {
+  .key-loop((@key - 1));
+  .key:nth-child(@{key}) {
+    .key-pos(@key);
+  }
+}
+
+.key-loop(12);
+
