@@ -1,0 +1,54 @@
+body {
+  background: url('http://i.imgur.com/L6CzgSG.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;;
+}
+.card {
+  width: 320px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, .6);
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 0 5px 3px rgba(0,0,0,0.1), 2px 2px 8px rgba(0,0,0,0.1);
+  .card-header{
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: url(http://i.imgur.com/muzcDX7.jpg);
+    background-size: cover;
+  }
+  .card-body {
+    position: relative;
+    img {
+      height: 100px;
+      width: 100px;
+      border-radius: 10px;
+      border: 3px solid rgba(255, 255, 255, .6);
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      margin-left: -50px;
+      box-shadow: 0 6px 6px -4px rgba(0, 0, 0, .2);
+    }
+    .name {
+      font-size: 32px;
+      text-align: center;
+      padding-top: 60px;
+      margin-bottom: 10px;
+    }
+    .description {
+      padding: 0 25px;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .location {
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);

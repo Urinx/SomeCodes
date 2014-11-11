@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400);
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+    }
+
+body {
+  font-size: 100%;
+  font-family: 'Quicksand', sans-serif; 
+  background: white;
+}
+
+.preload * { 
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+.card {
+  width: 80%;
+  background: #1c252e;
+  border-radius: 4px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 25px;
+}
+
+.card img {
+  width: 220px;
+  border-radius: 50%;
+}
+
+p {
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.card p.info {
+  font-style: italic;
+  font-size: 14px;
+  padding: 15px 10px;
+  text-decoration:none; 
+  color: rgba(255,255,255,.7);
+  display: inline-block;
+}
+
+.card a {
+  font-style: italic;
+  font-size: 14px;
+  padding: 15px 10px;
+  text-decoration:none; 
+  color: rgba(255,255,255,.7);
+  display: inline-block; 
+  -webkit-transition: color 0.3s ease-in; 
+   -moz-transition: color 0.3s ease-in;
+     -o-transition: color 0.3s ease-in;
+        transition: color 0.3s ease-in;
+}
+ 
+.card a.link-fb {
+  display: block;
+  padding: 10px 5px;
+  font-style: normal;
+  background: #73102a;
+  border: 2px solid #73102a;
+  border-radius: 4px;
+  color: rgb(255,255,255);
+  -webkit-transition: background 0.3s ease-in;    
+   -moz-transition: background 0.3s ease-in;
+     -o-transition: background 0.3s ease-in;
+        transition: background 0.3s ease-in;
+}
+
+.card a.link-fb:hover {
+  background: #1c252e;
+}
