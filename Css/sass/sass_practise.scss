@@ -1,0 +1,115 @@
+$blue: #1875e7;
+$side: left;
+$var: 5;
+$color: #ff2;
+
+div{
+	color: $blue;
+}
+
+.rounded{
+	border-#{$side}-radius: 5px;
+}
+
+body{
+	margin: (14px/2);
+	top: 50px+100px;
+	right: $var * 10%;
+}
+
+div{
+	h1{
+		color: red;
+	}
+}
+
+p{
+	border:{
+		color: red;
+	}
+}
+
+a{
+	&:hover{
+		color: #ffb3ff;
+	}
+}
+
+/* comment */
+// comment
+/*!
+ * Important Comment
+ */
+
+.class1{
+	border: 1px solid lighten(#cc3,10%);
+}
+
+.class2{
+	@extend .class1;
+	font-size: 120%;
+}
+
+@mixin left($value:10px){
+	float: left;
+	margin-left: $value;
+}
+
+div{
+	@include left(20px);
+}
+
+//@import 'foo.scss';
+
+p{
+	@if 1+1 == 2 { border: 1px solid;}
+	@if 5 < 3 {border: 2px dotted;}
+	font-size: if(1 < 2, 1px, 2px);
+}
+
+div {
+	@if lightness($color) > 30% {
+		background-color: #000;
+	} @else {
+		background-color: #fff;
+	}
+}
+
+@for $i from 1 to 10 {
+	.border-#{$i}{
+		border: #{$i}px solid blue;
+	}
+}
+
+$i: 6;
+@while $i >0 {
+	.item-#{$i} {
+		width: 2em * $i;
+	}
+	$i: $i - 2;
+}
+
+@each $member in a,b,c,d {
+	.#{$member} {
+		background-image: url(/image/#{$member}.jpg);
+	}
+}
+
+@function double($n){
+	@return $n * 2;
+}
+
+#sidebar {
+	width: double(5px);
+}
+
+$aaa: 1.5 !default;
+$bbb: 3.0 !global;
+$px: 5px 10px 20px 30px;
+
+$headings: ( h1: 2em, h2 : 1.5em, h3 : 1.2em );
+@each $header,$size in $headings {
+	#{$header} {
+		font-size: $size;
+	}
+}
