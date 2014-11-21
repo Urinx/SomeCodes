@@ -1,0 +1,17 @@
+<style>
+img {
+	display: block;
+	margin: 0 auto;
+}
+</style>
+
+<picture>
+	<source
+		media="(min-width: 650px)"
+	    srcset="kitten-large.png">
+	<source 
+	    media="(min-width: 465px)"
+	    srcset="kitten-medium.png">
+	<!-- img tag for browsers that do not support picture element -->
+	<img src="kitten-small.png" alt="a cute kitten">
+</picture>
