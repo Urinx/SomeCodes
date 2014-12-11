@@ -1,0 +1,15 @@
+<img src="timing-overview.png">
+<script type="text/javascript">
+/* http://www.xuebuyuan.com/199362.html */
+var d = document,
+	p = performance,
+	attribute = ['memory','timing'];
+
+attribute.map(function(att){
+	d.write(att.toUpperCase()+'<br>');
+	for (var i in p[att]){
+		d.write(i+':'+p[att][i]+'<br>');
+	}
+});
+
+</script>
