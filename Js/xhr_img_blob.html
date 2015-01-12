@@ -1,0 +1,18 @@
+<script type="text/javascript">
+var xhr = new XMLHttpRequest();    
+xhr.open("get", "mm.jpg", true);
+xhr.responseType = "blob";
+xhr.onload = function() {
+    if (this.status == 200) {
+        var blob = this.response;  // this.response也就是请求的返回就是Blob对象
+        var img = document.createElement("img");
+        img.onload = function(e) {
+          window.URL.revokeObjectURL(img.src); // 清除释放
+        };
+        img.src = window.URL.createObjectURL(blob);
+        document.getElementById('div').appendChild(img);    
+    }
+}
+xhr.send();
+</script>
+<div id='div'></div>
