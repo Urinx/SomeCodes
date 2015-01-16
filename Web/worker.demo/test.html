@@ -1,0 +1,63 @@
+<script type="text/javascript">
+var worker = new Worker('doWork.js');
+
+worker.addEventListener('message', function(e){
+	console.log('Worker said:',e.data);
+}, false);
+
+worker.postMessage('Hello world');
+
+</script>
+
+<button onclick="sayHI()">Say HI</button>
+<button onclick="unknownCmd()">Send unknown command</button>
+<button onclick="stop()">Stop worker</button>
+<output id="result"></output>
+
+<script type="text/javascript">
+function sayHI(){
+	worker.postMessage({'cmd':'start', 'msg':'Hi'});
+}
+
+function stop(){
+	worker.postMessage({'cmd':'stop', 'msg':'Bye'});
+}
+
+function unknownCmd(){
+	worker.postMessage({'cmd':'foobard', 'msg':'???'});
+}
+
+var worker = new Worker('doWork2.js');
+
+worker.addEventListener('message', function(e){
+	document.getElementById('result').textContent=e.data;
+}, false);
+
+</script>
+
+<script type="text/javascript">
+var blob = new Blob(["onmessage=function(e){postMessage('msg from blob worker1')}"], {"type":"text\/javascript"});
+var blobURL = window.URL.createObjectURL(blob);
+
+var worker = new Worker(blobURL);
+worker.onmessage=function(e){
+	console.log(e.data);
+};
+worker.postMessage();
+</script>
+
+<script id='worker2' type="javascript/worker">
+self.onmessage = function(e){
+	console.log('msg from worker2');
+};
+</script>
+
+<script type="text/javascript">
+var blob = new Blob([document.getElementById('worker2').textContent], {"type":"text\/javascript"});
+
+var worker = new Worker(window.URL.createObjectURL(blob));
+worker.onmessage=function(e){
+	console.log(e.data);
+};
+worker.postMessage();
+</script>
