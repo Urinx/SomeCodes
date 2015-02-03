@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="http://www.example.com/styles.css">
+<link rel="stylesheet" href="http://www.example.com/styles2.css">
+
+<script>
+  // importDoc 是导入文档的引用
+  var importDoc = document.currentScript.ownerDocument;
+
+  // mainDoc 是主文档(包含导入的页面)的引用
+  var mainDoc = document;
+
+  // 获取导入中的第一个样式表，复制，
+  // 将它附加到主文档中。
+  var styles = importDoc.querySelector('link[rel="stylesheet"]');
+  mainDoc.head.appendChild(styles.cloneNode(true));
+</script>

@@ -1,0 +1,22 @@
+<script>
+  // 定义并注册 <say-hi>。
+  var proto = Object.create(HTMLElement.prototype);
+
+  proto.createdCallback = function() {
+    this.innerHTML = 'Hello, <b>' +
+                     (this.getAttribute('name') || '?') + '</b>';
+  };
+
+  document.registerElement('say-hi', {prototype: proto});
+
+  // 定义并注册使用了 Shadow DOM 的 <shadow-element>。
+  var proto2 = Object.create(HTMLElement.prototype);
+
+  proto2.createdCallback = function() {
+    var root = this.createShadowRoot();
+    root.innerHTML = "<style>::content > *{color: red}</style>" +
+                     "I'm a " + this.localName +
+                     " using Shadow DOM!<content></content>";
+  };
+  document.registerElement('shadow-element', {prototype: proto2});
+</script>

@@ -1,0 +1,24 @@
+<title>Web Components Demo</title>
+<style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url(./bg.webp) no-repeat center center fixed;
+	background-size: cover;
+	display: flex-box;
+}
+</style>
+
+<!-- 
+	This is my Web Components
+-->
+<link rel="import" href="personal_card.html">
+
+<personal-card headPhoto="./wechat.webp">
+	<span class="name">Kangkun Mao</span>
+	<span class="description">Front-end developer, love coding guy, not a father</span>
+	<span class="location">Wuhan China</span>
+</personal-card>

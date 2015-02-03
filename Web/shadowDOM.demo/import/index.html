@@ -1,0 +1,15 @@
+<head>
+  <link rel="import" href="warnings.html">
+  <link rel="import" href="import.html">
+</head>
+<body>
+  <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+
+    // 从 warning.html 的文档中获取 DOM
+    var el = content.querySelector('.warning');
+
+    document.body.appendChild(el.cloneNode(true));
+  </script>
+</body>

@@ -1,0 +1,15 @@
+<head>
+  <link rel="import" href="import.html">
+</head>
+<body>
+  <div id="container"></div>
+  <script>
+    var link = document.querySelector('link[rel="import"]');
+
+    // 从导入中复制 <template>。
+    var template = link.import.querySelector('template');
+    var content = template.content.cloneNode(true)
+
+    document.querySelector('#container').appendChild(content);
+  </script>
+</body>

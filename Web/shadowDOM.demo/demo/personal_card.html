@@ -1,0 +1,96 @@
+<template>
+<style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+*{
+	margin: 0;
+	padding: 0;
+}
+.card {
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	width: 320px;
+	height: 550px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 10px;
+	margin: auto;
+	box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.card .card-header {
+	height: 320px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	overflow: hidden;
+}
+.card .card-header img{
+	width: 100%;
+	height: 100%;
+}
+.card .card-body {
+	position: relative;
+}
+.card .card-body img {
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	border: 3px solid rgba(255, 255, 255, 0.6);
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	margin-left: -50px;
+	box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.2);
+}
+.card .card-body .name {
+	font-size: 32px;
+	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 10px;
+}
+.card .card-body .description {
+	padding: 0 25px;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.card .card-body .location {
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+}
+</style>
+
+<div class="card">
+	<div class="card-header"><img src=""></div>
+	<div class="card-body">
+		<img src="">
+		<div class="name"><content select=".name"></content></div>
+		<div class="description"><content select=".description"></content></div>
+		<div class="location"><content select=".location"></content></div>
+	</div>
+</div>
+</template>
+
+<script type="text/javascript">
+
+var checkSupport = function(){
+	console.log('import is'+('import' in document.createElement('link') ? ' ':' not ')+'supported!');
+	console.log('template is'+('content' in document.createElement('template') ? ' ':' not ')+'supported!');
+	console.log('registerElement is'+('registerElement' in document ? ' ':' not ')+'supported!');
+};
+checkSupport();
+
+var importDoc = document.currentScript.ownerDocument, // importDoc 是导入文档的引用
+	template = importDoc.querySelector('template'),
+	proto = Object.create(HTMLElement.prototype);
+
+proto.createdCallback = function(){
+	template.content.querySelectorAll('img')[0].src=this.getAttribute('headphoto');
+	template.content.querySelectorAll('img')[1].src=this.getAttribute('headphoto');
+
+	var shadow = this.createShadowRoot(),
+		clone = document.importNode(template.content, true);
+	shadow.appendChild(clone);
+};
+document.registerElement('personal-card', {prototype:proto});
+
+</script>
