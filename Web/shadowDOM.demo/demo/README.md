@@ -68,16 +68,16 @@ if (supportsImports()) {
 然后HTML import的使用确实相当的简单，看下面：
 ```html
 index.html
-<!---
+<!--
 	导入页面为import.html
 	其他域内的资源必须允许CORS 
---->
+-->
 <link rel="import" href="import.html">
 
 import.html
-<!---
+<!--
 	可以使用导入将 HTML/CSS/JS (甚至其他 HTML 导入) 打包成一个单独的可传递文件。
---->
+-->
 <link rel="stylesheet" href="bootstrap.css">
 <link rel="stylesheet" href="fonts.css">
 <script src="jquery.js"></script>
