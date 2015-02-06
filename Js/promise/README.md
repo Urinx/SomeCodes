@@ -222,7 +222,7 @@ fn.all = function (arr) {
 最后的话就是，ES5,6,7提供了众多新特性和语法糖，Iterator，Generator啥的（python党好熟悉），有时间多多更深入的了解一下，这样才能做到自己各种写polyfill写插件写框架写库。越努力，越幸运。
 
 ### Reference
-[0]. [ECMAScript 6入门](http://es6.ruanyifeng.com/#docs/promise)
-[1]. [如何实现一个ECMAScript 6 的promise功能](http://www.html-js.com/article/JavaScript-tips-on-how-to-implement-a-ECMAScript-6-promise-patch)
-[2]. [JavaScript Promise](http://www.html5rocks.com/en/tutorials/es6/promises/)
+[0]. [ECMAScript 6入门](http://es6.ruanyifeng.com/#docs/promise)<br>
+[1]. [如何实现一个ECMAScript 6 的promise功能](http://www.html-js.com/article/JavaScript-tips-on-how-to-implement-a-ECMAScript-6-promise-patch)<br>
+[2]. [JavaScript Promise](http://www.html5rocks.com/en/tutorials/es6/promises/)<br>
 [3]. [JavaScript Promise启示录](http://www.csdn.net/article/2014-05-28/2819979-JavaScript-Promise)
