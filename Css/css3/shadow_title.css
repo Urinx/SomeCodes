@@ -1,0 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:900,400,300);
+
+.shadow-title {
+background: #627D8E;
+font-family: 'Raleway', sans-serif;
+color: #fff;
+font-weight: 900;
+padding-top: 4rem;
+margin: 0;
+text-transform: uppercase;
+font-size: 6rem;
+line-height: .8;
+color: #597281;
+text-shadow: -10px 5px 30px rgba(0,0,0,.2), -20px 10px 30px rgba(0,0,0,.1), -30px 10px 30px rgba(0,0,0,.1), -3px 2px 5px #4d626f, 3px -2px 5px #6f8ea1;
+}
