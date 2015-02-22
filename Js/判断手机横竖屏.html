@@ -1,0 +1,23 @@
+<style type="text/css">
+@media screen and (orientation:portrait) {
+    /*  css[竖向定义样式]  */
+    ......
+}
+
+@media screen and (orientation:landscape) {
+    /*   css[横向定义样式]  */
+    ......
+
+}
+</style>
+
+<script type="text/javascript">
+window.addEventListener('orientationchange', function(event){
+    if ( window.orientation == 180 || window.orientation==0 ) {
+        alert("竖屏");
+    }
+    if( window.orientation == 90 || window.orientation == -90 ) {
+        alert("横屏");
+    }
+});
+</script>
