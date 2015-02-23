@@ -1,0 +1,23 @@
+<form enctype="multipart/form-data" name="imgUpload" method="POST" action="">
+	<input type="file" id="imgUploadFile" onchange="change()">
+	<img id="imgPreview" src="">
+</form>
+<script type="text/javascript">
+function change(){
+	var file = document.querySelector('#imgUploadFile'),
+		ext = file.value.substring(file.value.lastIndexOf('.')+1).toLowerCase(),
+		whiteList = ['png', 'jpg', 'jpeg', 'gif'],
+		imgFile = file.files[0],
+		fReader = new FileReader();
+	
+	if( !(whiteList.indexOf(ext)+1) ) {
+		alert('文件必须为图片！');
+		return;
+	}
+
+	fReader.readAsDataURL(imgFile);
+	fReader.onload = function(e){
+		document.querySelector("#imgPreview").src=this.result;
+    }
+}
+</script>
