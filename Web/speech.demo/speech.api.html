@@ -1,0 +1,137 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hello World</title>
+	<style type="text/css">
+	*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		display: flex;
+		font-family: Arial, Helvetica;
+	}
+	.apple{
+		background: url(Apple_logo_black.svg.png) no-repeat;
+		background-size: 100% 100%;
+		margin: auto;
+		width: 200px;
+		height: 230px;
+		opacity: 0;
+		-webkit-animation: fade ease 5s;
+				animation: fade ease 5s;
+	}
+	.hello{
+		margin: auto;
+		opacity: 0;
+		text-align: center;
+		vertical-align: center;
+		font-weight: bolder;
+		font-size: 3em;
+		-webkit-animation: fade ease 5s infinite;
+				animation: fade ease 5s infinite;
+	}
+	@-webkit-keyframes fade {
+		0% {
+			opacity: 0;
+		}
+		40% {
+			opacity: 1;
+		}
+		60% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	@keyframes fade {
+		0% {
+			opacity: 0;
+		}
+		40% {
+			opacity: 1;
+		}
+		60% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	</style>
+</head>
+
+<body>
+	<div class="apple"></div>
+</body>
+
+<script type="text/javascript">
+
+function foo(){
+	speechSynthesis.getVoices().forEach(function(voice) {
+		console.log(voice.name);
+	});
+}
+
+function $(el){
+	return document.querySelector(el);
+}
+
+var HelloWorld = {
+	'en-US': 'Hello World',
+	'en-GB': 'Hello World',
+	'es-ES': 'Hola mundo',
+	'fr-FR': 'Bonjour le monde',
+	'it-IT': 'Ciao mondo',
+	'de-DE': 'Hallo welt',
+	'ja-JP': 'こんにちは世界',
+	'ko-KR': '안녕하세요 세계',
+	'zh-CN': '你好世界',
+};
+var lang = Object.keys(HelloWorld);
+
+function speak(text, lang, cb){
+	var msg = new SpeechSynthesisUtterance();
+	msg.voiceURI = 'native';
+	msg.volume = 1;
+	msg.rate = 1;
+	msg.pitch = 2;
+	msg.text = text || "I don't know what to say";
+	msg.lang = lang || 'en-US';
+
+	msg.onend = cb || function(e) {
+	  console.log('Finished in ' + e.elapsedTime + ' seconds.');
+	};
+
+	speechSynthesis.speak(msg);
+}
+
+setTimeout(function(){
+	$('.apple').className = 'hello';
+
+	var i = 0;
+	$('.hello').textContent = HelloWorld[lang[i]];
+	speak(HelloWorld[lang[i]],lang[i]);
+	var timer = setInterval(function(){
+		i++;
+		$('.hello').textContent = HelloWorld[lang[i]];
+		if (i==2*lang.length) {
+			speak('欢迎关注我的微信公众号','zh-CN');
+			clearInterval(timer);
+			return;
+		}
+		else if (i>=lang.length) {
+			$('.hello').textContent = HelloWorld[lang[0]];
+			speak(HelloWorld[lang[0]],lang[i-lang.length]);
+		}
+		else{
+			speak(HelloWorld[lang[i]],lang[i]);
+		}
+	},5000);
+},5000);
+
+</script>
