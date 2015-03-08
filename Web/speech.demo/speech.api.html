@@ -11,6 +11,9 @@
 		padding: 0;
 	}
 	body{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
 		display: flex;
 		font-family: Arial, Helvetica;
 	}
@@ -18,11 +21,9 @@
 		background: url(Apple_logo_black.svg.png) no-repeat;
 		background-size: 100% 100%;
 		margin: auto;
-		width: 200px;
-		height: 230px;
 		opacity: 0;
-		-webkit-animation: fade ease 5s;
-				animation: fade ease 5s;
+		-webkit-animation: fade ease 5s infinite;
+				animation: fade ease 5s infinite;
 	}
 	.hello{
 		margin: auto;
@@ -30,9 +31,26 @@
 		text-align: center;
 		vertical-align: center;
 		font-weight: bolder;
-		font-size: 3em;
 		-webkit-animation: fade ease 5s infinite;
 				animation: fade ease 5s infinite;
+	}
+	@media only screen and (min-width: 300px) {
+		.apple{
+			width: 100px;
+			height: 112px;
+		}
+		.hello{
+			font-size: 2em;
+		}
+	}
+	@media only screen and (min-width: 600px) {
+		.apple{
+			width: 200px;
+			height: 230px;
+		}
+		.hello{
+			font-size: 3em;
+		}
 	}
 	@-webkit-keyframes fade {
 		0% {
@@ -71,19 +89,11 @@
 
 <script type="text/javascript">
 
-function foo(){
-	speechSynthesis.getVoices().forEach(function(voice) {
-		console.log(voice.name);
-	});
-}
-
-function $(el){
-	return document.querySelector(el);
-}
-
+//==========Constant============
 var HelloWorld = {
+	// Chrome.42 on Windows 10 -- Num:9
 	'en-US': 'Hello World',
-	'en-GB': 'Hello World',
+	'en-GB': 'Hello world',
 	'es-ES': 'Hola mundo',
 	'fr-FR': 'Bonjour le monde',
 	'it-IT': 'Ciao mondo',
@@ -91,8 +101,57 @@ var HelloWorld = {
 	'ja-JP': 'こんにちは世界',
 	'ko-KR': '안녕하세요 세계',
 	'zh-CN': '你好世界',
+	// Safari on iPhone5S -- Num:37
+	'pt-BR': 'Olá Mundo', //巴西
+	'fr-CA': 'Bonjour le monde', //加拿大
+	'sk-SK': 'Haló svet', //斯洛伐克
+	'th-TH': 'สวัสดีชาวโลก', //泰国
+	'ro-RO': 'Salut Lume', //罗马尼亚
+	'no-NO': 'Hei verden', //挪威
+	'fi-FI': 'Hei maailma', //芬兰
+	'pl-PL': 'Witaj świecie', //波兰
+	'nl-NL': 'Hallo wereld', //荷兰
+	'id-ID': 'Halo Dunia', //印度尼西亚
+	'tr-TR': 'Selam Dünya', //土耳其
+	'pt-PT': 'Olá Mundo', //葡萄牙
+	'ru-RU': 'привет мир', //俄罗斯
+	'es-MX': 'Hola Mundo', //墨西哥
+	'zh-HK': '妳好世界',
+	'sv-SE': 'Hej världen', //瑞典
+	'hu-HU': 'Helló világ', //匈牙利
+	'zh-TW': '妳好世界',
+	'nl-BE': 'Hallo wereld', //比利时
+	'ar-SA': 'مرحبا بالعالم', //沙特阿拉伯
+	'cs-CZ': 'Haló svět', //捷克
+	'en-ZA': 'Sawubona Mhlaba', //南非
+	'en-AU': 'Hello world', //澳大利亚
+	'da-DK': 'Hej verden', //丹麦
+	'en-IE': 'Dia duit ar domhan', //爱尔兰
+	'he-IL': 'שלום עולם', //以色列
+	'hi-IN': 'हैलो वर्ल्ड', //印度
+	'el-GR': 'Γεια σας κόσμο', //希腊
 };
 var lang = Object.keys(HelloWorld);
+//==========Functions============
+function checkSupport(){
+	return 'speechSynthesis' in window;
+}
+
+function foo(){
+	var tmp = '';
+	var i=0;
+	speechSynthesis.getVoices().forEach(function(voice) {
+		// console.log(voice.name);
+		tmp+=voice.lang+': '+voice.name+'\n';
+		i++;
+	});
+	alert(i);
+	document.write(tmp);
+}
+
+function $(el){
+	return document.querySelector(el);
+}
 
 function speak(text, lang, cb){
 	var msg = new SpeechSynthesisUtterance();
@@ -104,34 +163,35 @@ function speak(text, lang, cb){
 	msg.lang = lang || 'en-US';
 
 	msg.onend = cb || function(e) {
-	  console.log('Finished in ' + e.elapsedTime + ' seconds.');
+		console.log('Finished in ' + e.elapsedTime + ' seconds.');
 	};
 
 	speechSynthesis.speak(msg);
 }
 
-setTimeout(function(){
-	$('.apple').className = 'hello';
-
+function main(){
 	var i = 0;
-	$('.hello').textContent = HelloWorld[lang[i]];
-	speak(HelloWorld[lang[i]],lang[i]);
 	var timer = setInterval(function(){
-		i++;
+		if ($('.apple')) $('.apple').className = 'hello';
 		$('.hello').textContent = HelloWorld[lang[i]];
-		if (i==2*lang.length) {
+		if (i>=lang.length) {
 			speak('欢迎关注我的微信公众号','zh-CN');
 			clearInterval(timer);
 			return;
 		}
-		else if (i>=lang.length) {
-			$('.hello').textContent = HelloWorld[lang[0]];
-			speak(HelloWorld[lang[0]],lang[i-lang.length]);
-		}
-		else{
-			speak(HelloWorld[lang[i]],lang[i]);
-		}
+		speak(HelloWorld[lang[i]],lang[i]);
+		i++;
 	},5000);
-},5000);
+}
+//==========Main============
+window.onload = function(){
+	if ( checkSupport() ) {
+		// Apple logo for 5s
+		main();
+	}
+	else{
+		alert('dont support');
+	}
+};
 
 </script>
