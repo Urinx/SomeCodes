@@ -1,0 +1,32 @@
+<script type="text/javascript">
+
+fetch("/data.json").then(function(res) {
+	// res instanceof Response == true.
+	if (res.ok) {
+		res.json().then(function(data) {
+			console.log(data.entries);
+		});
+	} else {
+		console.log("Looks like the response wasn't perfect, got status", res.status);
+	}
+}, function(e) {
+	console.log("Fetch failed!", e);
+});
+
+// POST请求
+fetch("http://www.example.org/submit.php", {
+	method: "POST",
+	headers: {
+		"Content-Type": "application/x-www-form-urlencoded"
+	},
+	body: "firstName=Nikhil&favColor=blue&password=easytoguess"
+}).then(function(res) {
+	if (res.ok) {
+		alert("Perfect! Your settings are saved.");
+	} else if (res.status == 401) {
+		alert("Oops! You are not authorized.");
+	}
+}, function(e) {
+	alert("Error submitting form!");
+});
+</script>
