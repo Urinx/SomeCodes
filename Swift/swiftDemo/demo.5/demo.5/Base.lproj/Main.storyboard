@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="demo_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wzp-c1-NLe"/>
+                        <viewControllerLayoutGuide type="bottom" id="yXN-QT-RFU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0454" translatesAutoresizingMaskIntoConstraints="NO" id="y0u-rO-esP">
+                                <rect key="frame" x="60" y="20" width="200" height="422"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="50" verticalHuggingPriority="50" horizontalCompressionResistancePriority="50" verticalCompressionResistancePriority="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugc-pI-rQZ">
+                                <rect key="frame" x="135" y="484" width="50" height="50"/>
+                                <state key="normal" backgroundImage="com.android.mms">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fI9-tf-5Pa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7A-KI-ZWF">
+                                <rect key="frame" x="60" y="484" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Rlm-AN-uh5"/>
+                                    <constraint firstAttribute="height" constant="50" id="i7e-xf-fa0"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="com.android.providers.contacts.CallLogProvider">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ys0-Pb-SRM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzv-2R-Tz4">
+                                <rect key="frame" x="210" y="484" width="50" height="50"/>
+                                <state key="normal" backgroundImage="com.android.settings.MiuiPasswordGuardActivity">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sinaTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pmu-Kb-oqr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P7A-KI-ZWF" firstAttribute="top" secondItem="y0u-rO-esP" secondAttribute="bottom" constant="42" id="0Dq-6x-lOW"/>
+                            <constraint firstItem="Rzv-2R-Tz4" firstAttribute="top" secondItem="Ugc-pI-rQZ" secondAttribute="top" id="5ms-nM-B5n"/>
+                            <constraint firstItem="y0u-rO-esP" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ODq-sU-LYj"/>
+                            <constraint firstItem="y0u-rO-esP" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="Q0d-QC-BHA"/>
+                            <constraint firstItem="Ugc-pI-rQZ" firstAttribute="centerX" secondItem="y0u-rO-esP" secondAttribute="centerX" id="RyX-To-tBp"/>
+                            <constraint firstItem="yXN-QT-RFU" firstAttribute="top" secondItem="P7A-KI-ZWF" secondAttribute="bottom" constant="34" id="VSm-u9-j6Q"/>
+                            <constraint firstItem="y0u-rO-esP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="60" id="WsT-e8-U5y"/>
+                            <constraint firstItem="Rzv-2R-Tz4" firstAttribute="bottom" secondItem="Ugc-pI-rQZ" secondAttribute="bottom" id="YQz-VI-4eE"/>
+                            <constraint firstItem="Rzv-2R-Tz4" firstAttribute="leading" secondItem="Ugc-pI-rQZ" secondAttribute="trailing" constant="25" id="ZEC-rq-GfX"/>
+                            <constraint firstItem="Ugc-pI-rQZ" firstAttribute="bottom" secondItem="P7A-KI-ZWF" secondAttribute="bottom" id="lkA-kT-e4r"/>
+                            <constraint firstItem="Ugc-pI-rQZ" firstAttribute="leading" secondItem="P7A-KI-ZWF" secondAttribute="trailing" constant="25" id="oor-fn-2bp"/>
+                            <constraint firstItem="y0u-rO-esP" firstAttribute="leading" secondItem="P7A-KI-ZWF" secondAttribute="leading" id="r5f-5U-68G"/>
+                            <constraint firstItem="Ugc-pI-rQZ" firstAttribute="top" secondItem="P7A-KI-ZWF" secondAttribute="top" id="s43-80-rAM"/>
+                            <constraint firstItem="Rzv-2R-Tz4" firstAttribute="trailing" secondItem="y0u-rO-esP" secondAttribute="trailing" id="z48-tR-YHE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImg" destination="y0u-rO-esP" id="uq0-ui-EXf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="347"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_0454" width="600" height="1186"/>
+        <image name="com.android.mms" width="136" height="136"/>
+        <image name="com.android.providers.contacts.CallLogProvider" width="136" height="136"/>
+        <image name="com.android.settings.MiuiPasswordGuardActivity" width="136" height="136"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
+</document>
