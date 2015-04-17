@@ -4,11 +4,12 @@ integer,parameter :: ikind=selected_real_kind(p=15)
 real (kind=ikind),external :: f,df,g1,g2
 real,external :: dg1
 call Jacobi(f,g1,1.5)
-!call NewtonDownhill(f,df,1.5)
-!call NewtonDownhill(f,df,-1.5)
-!call NewtonDownhill(f,df,0.5)
-!call PostAcceleration(f,g1,dg1,0.5)
-!call Aitken(f,g1,1.5)
+call Jacobi(f,g2,1.5)
+call Jacobi(f,g2,-1.5)
+call NewtonDownhill(f,df,1.5)
+call NewtonDownhill(f,df,0.5)
+call PostAcceleration(f,g1,dg1,0.5)
+call Aitken(f,g1,1.5)
 end program main
 
 !================= Functions =================
@@ -72,6 +73,7 @@ k_max=100
 write(*,"(5x,'  k',5x,'        x(k)',10x,'    x(k)-x(k-1)')")
 do
 	k=k+1
+	x_=x
 	x=g(x)
 	write(*,100) k,x,x-x_
 	100 format(5x,i3,5x,f19.15,5x,f19.15)
@@ -87,6 +89,7 @@ do
 		exit
 	end if
 end do
+print *,'==========================================='
 end subroutine Jacobi
 
 !============================================
