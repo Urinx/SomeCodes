@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB395DB91AE36927002DC35C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB395DB81AE36927002DC35C /* AppDelegate.swift */; };
+		BB395DBB1AE36927002DC35C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB395DBA1AE36927002DC35C /* ViewController.swift */; };
+		BB395DBE1AE36927002DC35C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB395DBC1AE36927002DC35C /* Main.storyboard */; };
+		BB395DC01AE36927002DC35C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB395DBF1AE36927002DC35C /* Images.xcassets */; };
+		BB395DC31AE36927002DC35C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB395DC11AE36927002DC35C /* LaunchScreen.xib */; };
+		BB395DCF1AE36927002DC35C /* sensorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB395DCE1AE36927002DC35C /* sensorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB395DC91AE36927002DC35C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB395DAB1AE36927002DC35C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB395DB21AE36927002DC35C;
+			remoteInfo = sensor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB395DB31AE36927002DC35C /* sensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB395DB71AE36927002DC35C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB395DB81AE36927002DC35C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB395DBA1AE36927002DC35C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB395DBD1AE36927002DC35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB395DBF1AE36927002DC35C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB395DC21AE36927002DC35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BB395DC81AE36927002DC35C /* sensorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sensorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB395DCD1AE36927002DC35C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB395DCE1AE36927002DC35C /* sensorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sensorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB395DB01AE36927002DC35C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB395DC51AE36927002DC35C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB395DAA1AE36927002DC35C = {
+			isa = PBXGroup;
+			children = (
+				BB395DB51AE36927002DC35C /* sensor */,
+				BB395DCB1AE36927002DC35C /* sensorTests */,
+				BB395DB41AE36927002DC35C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB395DB41AE36927002DC35C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB395DB31AE36927002DC35C /* sensor.app */,
+				BB395DC81AE36927002DC35C /* sensorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB395DB51AE36927002DC35C /* sensor */ = {
+			isa = PBXGroup;
+			children = (
+				BB395DB81AE36927002DC35C /* AppDelegate.swift */,
+				BB395DBA1AE36927002DC35C /* ViewController.swift */,
+				BB395DBC1AE36927002DC35C /* Main.storyboard */,
+				BB395DBF1AE36927002DC35C /* Images.xcassets */,
+				BB395DC11AE36927002DC35C /* LaunchScreen.xib */,
+				BB395DB61AE36927002DC35C /* Supporting Files */,
+			);
+			path = sensor;
+			sourceTree = "<group>";
+		};
+		BB395DB61AE36927002DC35C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB395DB71AE36927002DC35C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB395DCB1AE36927002DC35C /* sensorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB395DCE1AE36927002DC35C /* sensorTests.swift */,
+				BB395DCC1AE36927002DC35C /* Supporting Files */,
+			);
+			path = sensorTests;
+			sourceTree = "<group>";
+		};
+		BB395DCC1AE36927002DC35C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB395DCD1AE36927002DC35C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB395DB21AE36927002DC35C /* sensor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB395DD21AE36927002DC35C /* Build configuration list for PBXNativeTarget "sensor" */;
+			buildPhases = (
+				BB395DAF1AE36927002DC35C /* Sources */,
+				BB395DB01AE36927002DC35C /* Frameworks */,
+				BB395DB11AE36927002DC35C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sensor;
+			productName = sensor;
+			productReference = BB395DB31AE36927002DC35C /* sensor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB395DC71AE36927002DC35C /* sensorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB395DD51AE36927002DC35C /* Build configuration list for PBXNativeTarget "sensorTests" */;
+			buildPhases = (
+				BB395DC41AE36927002DC35C /* Sources */,
+				BB395DC51AE36927002DC35C /* Frameworks */,
+				BB395DC61AE36927002DC35C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB395DCA1AE36927002DC35C /* PBXTargetDependency */,
+			);
+			name = sensorTests;
+			productName = sensorTests;
+			productReference = BB395DC81AE36927002DC35C /* sensorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB395DAB1AE36927002DC35C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Eular;
+				TargetAttributes = {
+					BB395DB21AE36927002DC35C = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					BB395DC71AE36927002DC35C = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = BB395DB21AE36927002DC35C;
+					};
+				};
+			};
+			buildConfigurationList = BB395DAE1AE36927002DC35C /* Build configuration list for PBXProject "sensor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB395DAA1AE36927002DC35C;
+			productRefGroup = BB395DB41AE36927002DC35C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB395DB21AE36927002DC35C /* sensor */,
+				BB395DC71AE36927002DC35C /* sensorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB395DB11AE36927002DC35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB395DBE1AE36927002DC35C /* Main.storyboard in Resources */,
+				BB395DC31AE36927002DC35C /* LaunchScreen.xib in Resources */,
+				BB395DC01AE36927002DC35C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB395DC61AE36927002DC35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB395DAF1AE36927002DC35C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB395DBB1AE36927002DC35C /* ViewController.swift in Sources */,
+				BB395DB91AE36927002DC35C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB395DC41AE36927002DC35C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB395DCF1AE36927002DC35C /* sensorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB395DCA1AE36927002DC35C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB395DB21AE36927002DC35C /* sensor */;
+			targetProxy = BB395DC91AE36927002DC35C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB395DBC1AE36927002DC35C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB395DBD1AE36927002DC35C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB395DC11AE36927002DC35C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB395DC21AE36927002DC35C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB395DD01AE36927002DC35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB395DD11AE36927002DC35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB395DD31AE36927002DC35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = sensor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB395DD41AE36927002DC35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = sensor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB395DD61AE36927002DC35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = sensorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sensor.app/sensor";
+			};
+			name = Debug;
+		};
+		BB395DD71AE36927002DC35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = sensorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sensor.app/sensor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB395DAE1AE36927002DC35C /* Build configuration list for PBXProject "sensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB395DD01AE36927002DC35C /* Debug */,
+				BB395DD11AE36927002DC35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB395DD21AE36927002DC35C /* Build configuration list for PBXNativeTarget "sensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB395DD31AE36927002DC35C /* Debug */,
+				BB395DD41AE36927002DC35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB395DD51AE36927002DC35C /* Build configuration list for PBXNativeTarget "sensorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB395DD61AE36927002DC35C /* Debug */,
+				BB395DD71AE36927002DC35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB395DAB1AE36927002DC35C /* Project object */;
+}
