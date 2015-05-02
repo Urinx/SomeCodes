@@ -1,0 +1,20 @@
+<questions>
+    <question text="1+1=?" answer="B">
+        <opt tag="A" text="1"></opt>
+        <opt tag="B" text="2"></opt>
+        <opt tag="C" text="3"></opt>
+        <opt tag="D" text="4"></opt>
+    </question>
+    <question text="2+1=?" answer="C">
+        <opt tag="A" text="1"></opt>
+        <opt tag="B" text="2"></opt>
+        <opt tag="C" text="3"></opt>
+        <opt tag="D" text="4"></opt>
+    </question>
+    <question text="1+3=?" answer="D">
+        <opt tag="A" text="1"></opt>
+        <opt tag="B" text="2"></opt>
+        <opt tag="C" text="3"></opt>
+        <opt tag="D" text="4"></opt>
+    </question>
+</questions>
