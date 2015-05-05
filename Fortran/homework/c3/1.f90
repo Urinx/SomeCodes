@@ -96,7 +96,7 @@ module interpolation
         print '(f9.5,f9.5,f9.5,f9.5,f9.5,f9.5,f9.5,f9.5)',a
         print *
 
-        open(101,file="data.txt")
+        open(101,file="newton_data.txt")
         do i=1,101
             ! There is a bug if you comment the following code，I don't know why this would happen.
             write(101,'(f9.5,f9.5)') x(i),Nn(x(i),a)
@@ -106,18 +106,87 @@ module interpolation
 
     end subroutine newton_interpolation
 
-    ! Cubic Spline Curve
-    subroutine cubic_spline_curve()
+    ! 追赶法
+    subroutine chasing(matrix,x)
         implicit none
-        real :: h(N-1),mu(N-2),lambda(N-2),d(N-2),M(N-2)
-        integer :: i
+        real :: matrix(:,:),x(:)
+        real,allocatable :: u(:),q(:)
+        integer :: i,m,n
+        m=size(matrix(1,:))
+        n=size(matrix(:,1))
 
-h=(/ (x_(i)-x_(i-1),i=2,N) /)
-mu=(/ (h(i)/(h(i)+h(i+1)),i=1,N-2) /)
-lambda=(/ (1-mu(i),i=1,N-2) /)
-d=(/ (6*f_(i-1,i+1),i=2,N-1) /)
+        allocate(u(n-1),q(n))
+        u(1)=matrix(1,2)/matrix(1,1)
+        q(1)=matrix(1,m)/matrix(1,1)
 
-print *,d
+        do i=2,n-1
+            u(i)=matrix(i,i+1)/(matrix(i,i)-u(i-1)*matrix(i,i-1))
+        end do
+
+        do i=2,n
+            q(i)=(matrix(i,m)-q(i-1)*matrix(i,i-1))/(matrix(i,i)-u(i-1)*matrix(i,i-1))
+        end do
+
+        x(n)=q(n)
+        do i=n-1,1,-1
+            x(i)=q(i)-u(i)*x(i+1)
+        end do
+
+        deallocate(u,q)
+    end subroutine chasing
+
+    ! Cubic Spline Curve
+    subroutine cubic_spline_curve(x,y)
+        implicit none
+        real :: h(N-1),mu(N-2),lambda(N-2),d(N-2),M(N),mat(N-2,N-1),x(:),y(:)
+        integer :: i,j
+
+        h=(/ (x_(i)-x_(i-1),i=2,N) /)
+        mu=(/ (h(i)/(h(i)+h(i+1)),i=1,N-2) /)
+        lambda=(/ (1-mu(i),i=1,N-2) /)
+        d=(/ (6*f_(i-1,i+1),i=2,N-1) /)
+        M=0
+
+        mat=0
+        do i=1,N-2
+            if (i /= 1) mat(i,i-1)=mu(i)
+            mat(i,i)=2
+            if (i /= N-2) mat(i,i+1)=lambda(i)
+            mat(i,N-1)=d(i)
+        end do
+        call chasing(mat,M(2:N-1))
+
+        y=0
+        do i=1,size(x)
+            do j=2,size(x_)
+                if ( x(i)<=x_(j) ) exit
+            end do
+            y(i)=M(j-1)*(x_(j)-x(i))/(6*h(j-1))
+            y(i)=y(i)+M(j)*(x(i)-x_(j-1))/(6*h(j-1))
+            y(i)=y(i)+(y_(j-1)-M(j-1)*h(j-1)*h(j-1)/6)*(x_(j)-x(i))/h(j-1)
+            y(i)=y(i)+(y_(j)-M(j)*h(j-1)*h(j-1)/6)*(x(i)-x_(j-1))/h(j-1)
+        end do
+
+        ! 输出一些基本信息到屏幕上
+        print *
+        print *,'h='
+        print '(f9.5,f9.5,f9.5,f9.5,f9.5,f9.5,f9.5,f9.5)',h
+        print *
+        print *,'mu='
+        print '(f9.5,f9.5,f9.5,f9.5,f9.5,f9.5,f9.5)',mu
+        print *
+        print *,'lambda='
+        print '(f9.5,f9.5,f9.5,f9.5,f9.5,f9.5,f9.5)',lambda
+        print *
+        print *,'d='
+        print '(f9.5,f9.5,f9.5,f9.5,f9.5,f9.5,f9.5)',d
+        print *
+        print *,'Solve the matrix to get M'
+        print '(f6.2,f6.2,f6.2,f6.2,f6.2,f6.2,f6.2,f6.2,f6.2,f6.2,f6.2,f6.2,f6.2,f6.2,f6.2)',(mat(i,:),i=1,N-2)
+        print *
+        print *,'M='
+        print '(f9.5,f9.5,f9.5,f9.5,f9.5,f9.5,f9.5,f9.5)',M
+        print *
 
     end subroutine cubic_spline_curve
 
@@ -136,14 +205,13 @@ program main
     end interface
 
     integer :: i,N=15
-    real :: x0(16),y0(16),x(101),y(101),r(101),y1(101)
+    real :: x0(16),y0(16),x(101),y(101),r(101)
 
     ! init x0 & y0
     x0=(/ (-5+10.0*i/N,i=0,N) /)
     y0=(/ (f(x0(i)),i=1,N+1) /)
     x=(/ (-5+10.0*i/100,i=0,100) /)
     y=0
-    y1=0
     r=0
 
     print *
@@ -158,26 +226,30 @@ program main
     call lagrange_interpolation(x,y)
     call lagrange_interpolation_error_analysis(x,r)
     print '(5x,a9,5x,a9,5x,a9)','x','y','r'
-    do i=1,101,10
-        print '(5x,f9.5,5x,f9.5,5x,f9.5)',x(i),y(i),r(i)
-    end do
+    print '(5x,f9.5,5x,f9.5,5x,f9.5)',(x(i),y(i),r(i),i=1,size(x),10)
     print *
-    print *,'Write the data to file: data.txt'
-    open(101,file="data.txt")
-    write(101,'(f9.5,f9.5,f9.5)') (x(i),y(i),r(i),i=1,101)
+    print *,'Write the data to file: lagrange_data.txt'
+    open(101,file="lagrange_data.txt")
+    write(101,'(f9.5,f9.5,f9.5)') (x(i),y(i),r(i),i=1,size(x))
     close(101)
     print *
     print *,'Newton interpolation'
     call newton_interpolation(x,y)
     print '(5x,a9,5x,a9)','x','y'
-    do i=1,101,10
-        print '(5x,f9.5,5x,f9.5)',x(i),y(i)
-    end do
+    print '(5x,f9.5,5x,f9.5)',(x(i),y(i),i=1,size(x),10)
     print *
-    print *,'Write the data to file: data.txt'
+    print *,'Write the data to file: newton_data.txt'
     print *
     print *,'Cubic spline interpolation'
-    call cubic_spline_curve()
+    call cubic_spline_curve(x,y)
+    print *
+    print '(5x,a9,5x,a9)','x','y'
+    print '(5x,f9.5,5x,f9.5)',(x(i),y(i),i=1,size(x),10)
+    print *
+    print *,'Write the data to file: cubic_data.txt'
+    open(101,file="cubic_data.txt")
+    write(101,'(f9.5,f9.5)') (x(i),y(i),i=1,size(x))
+    close(101)
     print *
 
 end program main
