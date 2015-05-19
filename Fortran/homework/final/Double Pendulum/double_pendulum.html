@@ -1,0 +1,285 @@
+<head>
+	<title>Double Pendulum Simulation</title>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		color: white;
+	}
+	canvas{
+		position: absolute;
+	}
+	.control{
+		position: absolute;
+		right: 0;
+		text-align: right;
+	}
+	.control output{
+		display: inline-block;
+		width: 20px;
+	}
+	.show_btn{
+		position: absolute;
+		right: 0;
+		display: none;
+	}
+	</style>
+</head>
+
+<body>
+
+<canvas></canvas>
+
+<div class="control">
+	<label for="mass">m2/m1</label>
+	<input type="range" id="mass" min="0.1" value="1" max="2" step="0.1" oninput="outputUpdate1(value)">
+	<output for="mass" id="o1">1</output>
+	<br>
+
+	<label for="length">l2/l1</label>
+	<input type="range" id="length" min="0.1" value="1" max="2" step="0.1" oninput="outputUpdate2(value)">
+	<output for="length" id="o2">1</output>
+	<br>
+
+	<label for="angle1">a1</label>
+	<input type="range" id="angle1" min="-90" value="90" max="90" step="1" oninput="outputUpdate3(value)">
+	<output for="angle1" id="o3">90</output>
+	<br>
+
+	<label for="angle2">a2</label>
+	<input type="range" id="angle2" min="-90" value="90" max="90" step="1" oninput="outputUpdate4(value)">
+	<output for="angle2" id="o4">90</output>
+	<br>
+
+	<button onclick="reset()">Reset</button>
+	<button onclick="start()">Start</button>
+	<button onclick="stop()">Stop</button>
+	<button onclick="hide()">Hide</button>
+</div>
+<div class="show_btn">
+	<button onclick="show()">Show</button>
+</div>
+</body>
+
+<script type="text/javascript">
+
+function $(el){
+	return document.querySelector(el);
+}
+
+var canvas=$('canvas'),
+	context=canvas.getContext('2d'),
+	w=window.innerWidth,
+	h=window.innerHeight,
+	canvas2=document.createElement('canvas'),
+    context2=canvas2.getContext('2d');
+
+canvas.width=w;
+canvas.height=h;
+canvas2.width=w;
+canvas2.height=h;
+
+clearOut1();
+clearOut2();
+
+var xo=w/2;
+var yo=h/4;
+var g=0.005;
+var tau=3.0;
+var N=1;
+var m1=h/50;
+var m2=h/50;
+var l1=h/3;
+var l2=h/3;
+var a1=90;
+var a2=90;
+var z=[angle2rad(a1),angle2rad(a2),0.0,0.0];
+var STOP=true;
+
+function outputUpdate1(v){
+	$('#o1').value = v;
+	reset();
+}
+
+function outputUpdate2(v){
+	$('#o2').value = v;
+	reset();
+}
+
+function outputUpdate3(v){
+	$('#o3').value = v;
+	reset();
+}
+
+function outputUpdate4(v){
+	$('#o4').value = v;
+	reset();
+}
+
+function reset(){
+	STOP=true;
+	var l=l1+l2;
+	l1=l/(1+parseFloat($('#o2').value));
+	l2=l*parseFloat($('#o2').value)/(1+parseFloat($('#o2').value));
+	a1=parseFloat($('#o3').value);
+	a2=parseFloat($('#o4').value);
+	m2=m1*parseFloat($('#o1').value);
+	z=[angle2rad(a1),angle2rad(a2),0.0,0.0];
+
+	clearOut1();
+	clearOut2();
+	animate();
+}
+function start(){
+	if (STOP) {
+		STOP=false;
+		animate();
+	}
+}
+function stop(){
+	STOP=true;
+}
+function hide(){
+	$('.control').style.display="none";
+	$('.show_btn').style.display="block";
+}
+function show(){
+	$('.show_btn').style.display="none";
+	$('.control').style.display="block";
+}
+
+function H_a1(a1,a2,p1,p2){
+	return (p1*l2-p2*l1*Math.cos(a1-a2))/(l1*l1*l2*(m1+m2*Math.sin(a1-a2)*Math.sin(a1-a2)));
+}
+
+function H_a2(a1,a2,p1,p2){
+	return (p2*(m1+m2)*l1-p1*m2*l2*Math.cos(a1-a2))/(m2*l1*l2*l2*(m1+m2*Math.sin(a1-a2)*Math.sin(a1-a2)));
+}
+
+function H_p1(a1,a2,p1,p2){
+	var A_1=(p1*p2*Math.sin(a1-a2))/(l1*l2*(m1+m2*Math.sin(a1-a2)*Math.sin(a1-a2)));
+	var tmp=2*l1*l1*l2*l2*(m1+m2*Math.sin(a1-a2)*Math.sin(a1-a2))*(m1+m2*Math.sin(a1-a2)*Math.sin(a1-a2));
+	var A_2=(p1*p1*m2*l2*l2-2*p1*p2*m2*l1*l2*Math.cos(a1-a2)+p2*p2*(m1+m2)*l1*l1)*Math.sin(2*a1-2*a2)/tmp;
+	return -(m1+m2)*g*l1*Math.sin(a1)-A_1+A_2;
+}
+
+function H_p2(a1,a2,p1,p2){
+	var A_1=(p1*p2*Math.sin(a1-a2))/(l1*l2*(m1+m2*Math.sin(a1-a2)*Math.sin(a1-a2)));
+	var tmp=2*l1*l1*l2*l2*(m1+m2*Math.sin(a1-a2)*Math.sin(a1-a2))*(m1+m2*Math.sin(a1-a2)*Math.sin(a1-a2));
+	var A_2=(p1*p1*m2*l2*l2-2*p1*p2*m2*l1*l2*Math.cos(a1-a2)+p2*p2*(m1+m2)*l1*l1)*Math.sin(2*a1-2*a2)/tmp;
+	return -m2*g*l2*Math.sin(a2)+A_1-A_2;
+}
+
+function rk4(z,f1,f2,f3,f4){
+	var a=z[0],
+		b=z[1],
+		c=z[2],
+		d=z[3];
+	var K1=[],K2=[],K3=[],K4=[];
+	for (var i = 0; i < N; i++) {
+		K1[0]=f1(a,b,c,d)*tau;
+	    K1[1]=f2(a,b,c,d)*tau;
+	    K1[2]=f3(a,b,c,d)*tau;
+	    K1[3]=f4(a,b,c,d)*tau;
+	    K2[0]=f1(a+K1[0]/2,b+K1[1]/2,c+K1[2]/2,d+K1[3]/2)*tau;
+	    K2[1]=f2(a+K1[0]/2,b+K1[1]/2,c+K1[2]/2,d+K1[3]/2)*tau;
+	    K2[2]=f3(a+K1[0]/2,b+K1[1]/2,c+K1[2]/2,d+K1[3]/2)*tau;
+	    K2[3]=f4(a+K1[0]/2,b+K1[1]/2,c+K1[2]/2,d+K1[3]/2)*tau;
+	    K3[0]=f1(a+K2[0]/2,b+K2[1]/2,c+K2[2]/2,d+K2[3]/2)*tau;
+	    K3[1]=f2(a+K2[0]/2,b+K2[1]/2,c+K2[2]/2,d+K2[3]/2)*tau;
+	    K3[2]=f3(a+K2[0]/2,b+K2[1]/2,c+K2[2]/2,d+K2[3]/2)*tau;
+	    K3[3]=f4(a+K2[0]/2,b+K2[1]/2,c+K2[2]/2,d+K2[3]/2)*tau;
+	    K4[0]=f1(a+K3[0],b+K3[1],c+K3[2],d+K3[3])*tau;
+	    K4[1]=f2(a+K3[0],b+K3[1],c+K3[2],d+K3[3])*tau;
+	    K4[2]=f3(a+K3[0],b+K3[1],c+K3[2],d+K3[3])*tau;
+	    K4[3]=f4(a+K3[0],b+K3[1],c+K3[2],d+K3[3])*tau;
+	    a=a+(K1[0]+2*K2[0]+2*K3[0]+K4[0])/6;
+	    b=b+(K1[1]+2*K2[1]+2*K3[1]+K4[1])/6;
+	    c=c+(K1[2]+2*K2[2]+2*K3[2]+K4[2])/6;
+	    d=d+(K1[3]+2*K2[3]+2*K3[3]+K4[3])/6;	
+	}
+    return [a,b,c,d];
+}
+
+function angle2rad(a){
+	return a/180*Math.PI;
+}
+
+function rad2angle(r){
+	return r/Math.PI*180;
+}
+
+function get_position(a1,a2){
+	var p=[];
+	p[0]=xo+l1*Math.sin(a1);
+	p[1]=yo+l1*Math.cos(a1);
+	p[2]=p[0]+l2*Math.sin(a2);
+	p[3]=p[1]+l2*Math.cos(a2);
+	return p;
+}
+
+function DrawDot(posx,posy){
+  	context2.beginPath();
+    context2.strokeStyle = 'white';
+	context2.fillStyle = 'white';
+    context2.arc(posx, posy, 1.0, 0, Math.PI*2, false);
+    context2.fill();
+}
+
+function DrawBall(posx,posy,r){
+  	context.beginPath();
+    context.strokeStyle = 'red';
+	context.fillStyle = 'red';
+    context.arc(posx, posy, r, 0, Math.PI*2, false);
+    context.fill();
+}
+
+function DrawRod(pos){
+	var x1=pos[0],
+		y1=pos[1],
+		x2=pos[2],
+		y2=pos[3];
+  	context.strokeStyle = 'white';
+	context.lineWidth = 3;
+	context.beginPath();
+	context.moveTo(xo, yo);
+    context.lineTo(x1, y1);
+    context.lineTo(x2, y2);
+  	context.stroke();
+}
+
+function clearOut1(){
+	context.fillStyle='rgba(0,0,0,1)';
+	context.fillRect(0, 0, w, h);
+}
+
+function clearOut2(){
+	context2.fillStyle='rgba(0,0,0,1)';
+	context2.fillRect(0, 0, w, h);
+}
+
+function animate(){
+	var p=[];
+	var i=0;
+
+	var loop=setInterval(function(){
+		i++;
+		if (STOP) {
+			clearInterval(loop);
+		}
+		z=rk4(z,H_a1,H_a2,H_p1,H_p2);
+		p=get_position(z[0],z[1]);
+		
+		clearOut1();
+		DrawDot(p[2],p[3]);
+		context.drawImage(canvas2, 0, 0);
+		DrawRod(p);
+		DrawBall(xo,yo,5);
+		DrawBall(p[0],p[1],m1);
+		DrawBall(p[2],p[3],m2);
+	},tau);
+}
+animate();
+</script>
