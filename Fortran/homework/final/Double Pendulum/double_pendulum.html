@@ -1,5 +1,6 @@
 <head>
 	<title>Double Pendulum Simulation</title>
+	<meta charset="utf-8">
 	<style type="text/css">
 	* {
 		margin: 0;
@@ -51,6 +52,10 @@
 	<label for="angle2">a2</label>
 	<input type="range" id="angle2" min="-90" value="90" max="90" step="1" oninput="outputUpdate4(value)">
 	<output for="angle2" id="o4">90</output>
+	<br>
+
+	<input type="checkbox" id="c1">轨迹1</input>
+	<input type="checkbox" id="c2" checked>轨迹2</input>
 	<br>
 
 	<button onclick="reset()">Reset</button>
@@ -220,10 +225,10 @@ function get_position(a1,a2){
 	return p;
 }
 
-function DrawDot(posx,posy){
+function DrawDot(posx,posy,color){
   	context2.beginPath();
-    context2.strokeStyle = 'white';
-	context2.fillStyle = 'white';
+    context2.strokeStyle = color;
+	context2.fillStyle = color;
     context2.arc(posx, posy, 1.0, 0, Math.PI*2, false);
     context2.fill();
 }
@@ -273,7 +278,8 @@ function animate(){
 		p=get_position(z[0],z[1]);
 		
 		clearOut1();
-		DrawDot(p[2],p[3]);
+		$('#c1').checked && DrawDot(p[0],p[1],'yellow');
+		$('#c2').checked && DrawDot(p[2],p[3],'white');
 		context.drawImage(canvas2, 0, 0);
 		DrawRod(p);
 		DrawBall(xo,yo,5);

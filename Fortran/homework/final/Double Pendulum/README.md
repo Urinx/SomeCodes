@@ -1,6 +1,8 @@
 Double Pendulum
 ===============
 
+注：本文已经放到简书上了哟，欢迎大家关注我的简书哦。看[这里](http://www.jianshu.com/p/a57bfd91e0a1)。
+
 ### Preface
 小幽表示三体问题被同学玩坏后（才知道三体运动轨迹是如此的美妙-_-||），只能从为数不多剩下很多的几个问题中选了，好吧，就是这个了——《双摆问题》，别看只有两个摆，可毕竟也是混沌运动啊，跟三体一样炫酷哟！
 
@@ -337,50 +339,50 @@ OK，四个一阶微分方程组我们已经有了，现在把它们写在一起
 \[0\]. [Double Pendulum Physics Simulation](http://www.myphysicslab.com/dbl_pendulum.html)<br>
 \[1\]. [Double Pendulum](http://www.math24.net/double-pendulum.html)<br>
 
-[1]: http://latex.codecogs.com/gif.latex?\begin{aligned}%20x_1%20&=l_1sin\varphi_1%20\\%20x_2%20&=x_1+l_2sin\varphi_2%20\\%20y_1%20&=-l_1cos\varphi_1%20\\%20y_2%20&=y_1-l_2cos\varphi_2%20\end{aligned}
+[1]: http://latex.codecogs.com/gif.latex?\\begin{aligned}%20x_1%20&=l_1sin\\varphi_1%20\\\\%20x_2%20&=x_1+l_2sin\\varphi_2%20\\\\%20y_1%20&=-l_1cos\\varphi_1%20\\\\%20y_2%20&=y_1-l_2cos\\varphi_2%20\\end{aligned}
 
-[2]: http://latex.codecogs.com/gif.latex?\begin{aligned}%20T%20&=\frac{m_1^2v_1^2}{2}+\frac{m_2^2v_2^2}{2}=\frac{m_1(\dot%20x_1^2+\dot%20y_1^2)}{2}+\frac{m_2(\dot%20x_2^2+\dot%20y_2^2)}{2}%20\\%20V%20&=m_1gy_1+m_2gy_2%20\end{aligned}
+[2]: http://latex.codecogs.com/gif.latex?\\begin{aligned}%20T%20&=\\frac{m_1^2v_1^2}{2}+\\frac{m_2^2v_2^2}{2}=\\frac{m_1(\\dot%20x_1^2+\\dot%20y_1^2)}{2}+\\frac{m_2(\\dot%20x_2^2+\\dot%20y_2^2)}{2}%20\\\\%20V%20&=m_1gy_1+m_2gy_2%20\\end{aligned}
 
-[3]: http://latex.codecogs.com/gif.latex?\begin{aligned}%20L%20&=%20T-V=T_1+T_2-(V_1+V_2)%20\\%20&=%20\frac{m_1(\dot%20x_1^2+\dot%20y_1^2)}{2}+\frac{m_2(\dot%20x_2^2+\dot%20y_2^2)}{2}-m_1gy_1+m_2gy_2%20\end{aligned}
+[3]: http://latex.codecogs.com/gif.latex?\\begin{aligned}%20L%20&=%20T-V=T_1+T_2-(V_1+V_2)%20\\\\%20&=%20\\frac{m_1(\\dot%20x_1^2+\\dot%20y_1^2)}{2}+\\frac{m_2(\\dot%20x_2^2+\\dot%20y_2^2)}{2}-m_1gy_1+m_2gy_2%20\\end{aligned}
 
-[4]: http://latex.codecogs.com/gif.latex?L=(\frac{m_1}{2}+\frac{m_2}{2})+l_1^2\dot\varphi_1^2+\frac{m_2}{2}l_2^2\dot\varphi_2^2+m_2l_1l_2\dot%20\varphi_1\dot%20\varphi_2cos(\varphi_1-\varphi_2)+(m_1+m_2)gl_1cos\varphi_1+m_2gl_2cos\varphi_2
+[4]: http://latex.codecogs.com/gif.latex?L=(\\frac{m_1}{2}+\\frac{m_2}{2})+l_1^2\\dot\\varphi_1^2+\\frac{m_2}{2}l_2^2\\dot\\varphi_2^2+m_2l_1l_2\\dot%20\\varphi_1\\dot%20\\varphi_2cos(\\varphi_1-\\varphi_2)+(m_1+m_2)gl_1cos\\varphi_1+m_2gl_2cos\\varphi_2
 
-[5]: http://latex.codecogs.com/gif.latex?\frac{d}{dt}(\frac{\partial%20L}{\partial%20\dot\varphi_i})-\frac{\partial%20L}{\partial%20\varphi_i}=0,i=1,2
+[5]: http://latex.codecogs.com/gif.latex?\\frac{d}{dt}(\\frac{\\partial%20L}{\\partial%20\\dot\\varphi_i})-\\frac{\\partial%20L}{\\partial%20\\varphi_i}=0,i=1,2
 
-[6]: http://latex.codecogs.com/gif.latex?\begin{aligned}%20\frac{\partial%20L}{\partial%20\dot\varphi_1}%20&=%20(m_1+m_2)l_1^2\dot\varphi_1+m_2l_1l_2\dot\varphi_2cos(\varphi_1-\varphi_2)%20\\%20\frac{\partial%20L}{\partial%20\dot\varphi_2}%20&=%20m_2l_2^2\dot\varphi_2+m_2l_1l_2\dot\varphi_1cos(\varphi_1-\varphi_2)%20\\%20\frac{\partial%20L}{\partial%20\varphi_1}%20&=%20-m_2l_1l_2\dot\varphi_1\dot\varphi_2sin(\varphi_1-\varphi_2)-(m_1+m_2)gl_1sin\varphi_1%20\\%20\frac{\partial%20L}{\partial%20\varphi_2}%20&=%20m_2l_1l_2\dot\varphi_1\dot\varphi_2sin(\varphi_1-\varphi_2)-m_2gl_2sin\varphi_2%20\end{aligned}
+[6]: http://latex.codecogs.com/gif.latex?\\begin{aligned}%20\\frac{\\partial%20L}{\\partial%20\\dot\\varphi_1}%20&=%20(m_1+m_2)l_1^2\\dot\\varphi_1+m_2l_1l_2\\dot\\varphi_2cos(\\varphi_1-\\varphi_2)%20\\\\%20\\frac{\\partial%20L}{\\partial%20\\dot\\varphi_2}%20&=%20m_2l_2^2\\dot\\varphi_2+m_2l_1l_2\\dot\\varphi_1cos(\\varphi_1-\\varphi_2)%20\\\\%20\\frac{\\partial%20L}{\\partial%20\\varphi_1}%20&=%20-m_2l_1l_2\\dot\\varphi_1\\dot\\varphi_2sin(\\varphi_1-\\varphi_2)-(m_1+m_2)gl_1sin\\varphi_1%20\\\\%20\\frac{\\partial%20L}{\\partial%20\\varphi_2}%20&=%20m_2l_1l_2\\dot\\varphi_1\\dot\\varphi_2sin(\\varphi_1-\\varphi_2)-m_2gl_2sin\\varphi_2%20\\end{aligned}
 
-[7]: http://latex.codecogs.com/gif.latex?(m_1+m_2)l_1\ddot\varphi_1+m_2l_2sin(\varphi_1-\varphi_2)\dot\varphi_2^2+m_2l_2cos(\varphi_1-\varphi_2)\ddot\varphi_2+(m_1+m_2)gsin\varphi_1=0%20\\%20l_2\ddot\varphi_2-l_1sin(\varphi_1-\varphi_2)\dot\varphi_1^2+l_1cos(\varphi_1-\varphi_2)\ddot\varphi_1+gsin\varphi_2=0
+[7]: http://latex.codecogs.com/gif.latex?(m_1+m_2)l_1\\ddot\\varphi_1+m_2l_2sin(\\varphi_1-\\varphi_2)\\dot\\varphi_2^2+m_2l_2cos(\\varphi_1-\\varphi_2)\\ddot\\varphi_2+(m_1+m_2)gsin\\varphi_1=0%20\\\\%20l_2\\ddot\\varphi_2-l_1sin(\\varphi_1-\\varphi_2)\\dot\\varphi_1^2+l_1cos(\\varphi_1-\\varphi_2)\\ddot\\varphi_1+gsin\\varphi_2=0
 
-[8]: http://latex.codecogs.com/gif.latex?\begin{aligned}%20\frac{d\varphi_1}{dt}%20&=%20\omega_1%20\\%20\frac{d\varphi_2}{dt}%20&=%20\omega_2%20\end{aligned}
+[8]: http://latex.codecogs.com/gif.latex?\\begin{aligned}%20\\frac{d\\varphi_1}{dt}%20&=%20\\omega_1%20\\\\%20\\frac{d\\varphi_2}{dt}%20&=%20\\omega_2%20\\end{aligned}
 
-[9]: http://latex.codecogs.com/gif.latex?\dot\varphi_1=\omega_1%20\\%20\dot\varphi_2=\omega_2%20\\%20\dot\omega_1=\frac{-g(2m_1+m_2)sin\varphi_1+m_2gsin(\varphi_1-2\varphi_2)-2sin(\varphi_1-\varphi_2)m_2(\omega_2^2l_2+\omega_1^2l_1cos(\varphi_1-\varphi_2))}{l_1(2m_1+m_2-m_2cos(2\varphi_1-2\varphi_2))}%20\\%20\dot\omega_2=\frac{2sin(\varphi_1-\varphi_2)(\omega_1^2l_1(m_1+m_2)+g(m_1+m_2)cos\varphi_1+\omega_2^2l_2m_2cos(\varphi_1-\varphi_2))}{l_2(2m_1+m_2-m_2cos(2\varphi_1-2\varphi_2))}
+[9]: http://latex.codecogs.com/gif.latex?\\dot\\varphi_1=\\omega_1%20\\\\%20\\dot\\varphi_2=\\omega_2%20\\\\%20\\dot\\omega_1=\\frac{-g(2m_1+m_2)sin\\varphi_1+m_2gsin(\\varphi_1-2\\varphi_2)-2sin(\\varphi_1-\\varphi_2)m_2(\\omega_2^2l_2+\\omega_1^2l_1cos(\\varphi_1-\\varphi_2))}{l_1(2m_1+m_2-m_2cos(2\\varphi_1-2\\varphi_2))}%20\\\\%20\\dot\\omega_2=\\frac{2sin(\\varphi_1-\\varphi_2)(\\omega_1^2l_1(m_1+m_2)+g(m_1+m_2)cos\\varphi_1+\\omega_2^2l_2m_2cos(\\varphi_1-\\varphi_2))}{l_2(2m_1+m_2-m_2cos(2\\varphi_1-2\\varphi_2))}
 
-[10]: http://latex.codecogs.com/gif.latex?\begin{cases}%20y_{n+1}=y_n+\frac{h}{6}(K_1+2K_2+2K_3+K_4)%20\\%20K_1=f(x_n,y_n)%20\\%20K_2=f(x_n+\frac{h}{2},y_n+\frac{h}{2}K_1)%20\\%20K_3=f(x_n+\frac{h}{2},y_n+\frac{h}{2}K_2)%20\\%20K_4=f(x_n+h,y_n+hK_3)%20\end{cases}
+[10]: http://latex.codecogs.com/gif.latex?\\begin{cases}%20y_{n+1}=y_n+\\frac{h}{6}(K_1+2K_2+2K_3+K_4)%20\\\\%20K_1=f(x_n,y_n)%20\\\\%20K_2=f(x_n+\\frac{h}{2},y_n+\\frac{h}{2}K_1)%20\\\\%20K_3=f(x_n+\\frac{h}{2},y_n+\\frac{h}{2}K_2)%20\\\\%20K_4=f(x_n+h,y_n+hK_3)%20\\end{cases}
 
-[11]: http://latex.codecogs.com/gif.latex?\begin{cases}%20\bar%20a_n=\bar%20f(\bar%20x_n)%20\\%20\bar%20b_n=\bar%20f(\bar%20x_n+\frac{h}{2}\bar%20a_n)%20\\%20\bar%20c_n=\bar%20f(\bar%20x_n+\frac{h}{2}\bar%20b_n)%20\\%20\bar%20d_n=\bar%20f(\bar%20x_n+h\bar%20c_n)%20\\%20\bar%20x_{n+1}=\bar%20x_n+\frac{h}{6}(\bar%20a_n+2\bar%20b_n+2\bar%20c_n+\bar%20d_n)%20\end{cases}
+[11]: http://latex.codecogs.com/gif.latex?\\begin{cases}%20\\bar%20a_n=\\bar%20f(\\bar%20x_n)%20\\\\%20\\bar%20b_n=\\bar%20f(\\bar%20x_n+\\frac{h}{2}\\bar%20a_n)%20\\\\%20\\bar%20c_n=\\bar%20f(\\bar%20x_n+\\frac{h}{2}\\bar%20b_n)%20\\\\%20\\bar%20d_n=\\bar%20f(\\bar%20x_n+h\\bar%20c_n)%20\\\\%20\\bar%20x_{n+1}=\\bar%20x_n+\\frac{h}{6}(\\bar%20a_n+2\\bar%20b_n+2\\bar%20c_n+\\bar%20d_n)%20\\end{cases}
 
-[12]: http://latex.codecogs.com/gif.latex?\begin{cases}%20(m_1+m_2)l_1\ddot\varphi_1+m_2l_2sin(\varphi_1-\varphi_2)\dot\varphi_2^2+m_2l_2cos(\varphi_1-\varphi_2)\ddot\varphi_2+(m_1+m_2)gsin\varphi_1=0%20\\%20l_2\ddot\varphi_2-l_1sin(\varphi_1-\varphi_2)\dot\varphi_1^2+l_1cos(\varphi_1-\varphi_2)\ddot\varphi_1+gsin\varphi_2=0%20\end{cases}
+[12]: http://latex.codecogs.com/gif.latex?\\begin{cases}%20(m_1+m_2)l_1\\ddot\\varphi_1+m_2l_2sin(\\varphi_1-\\varphi_2)\\dot\\varphi_2^2+m_2l_2cos(\\varphi_1-\\varphi_2)\\ddot\\varphi_2+(m_1+m_2)gsin\\varphi_1=0%20\\\\%20l_2\\ddot\\varphi_2-l_1sin(\\varphi_1-\\varphi_2)\\dot\\varphi_1^2+l_1cos(\\varphi_1-\\varphi_2)\\ddot\\varphi_1+gsin\\varphi_2=0%20\\end{cases}
 
-[13]: http://latex.codecogs.com/gif.latex?p_i=\frac{\partial%20L}{\partial%20\dot%20\varphi_i}%20,%20i=1,2
+[13]: http://latex.codecogs.com/gif.latex?p_i=\\frac{\\partial%20L}{\\partial%20\\dot%20\\varphi_i}%20,%20i=1,2
 
-[14]: http://latex.codecogs.com/gif.latex?H(\varphi_1,\varphi_2,p_1,p_2)=\dot%20\varphi_1p_1+\dot%20\varphi_2p_2-L(\varphi_1,\varphi_2,\dot%20\varphi_1,\dot%20\varphi_2)
+[14]: http://latex.codecogs.com/gif.latex?H(\\varphi_1,\\varphi_2,p_1,p_2)=\\dot%20\\varphi_1p_1+\\dot%20\\varphi_2p_2-L(\\varphi_1,\\varphi_2,\\dot%20\\varphi_1,\\dot%20\\varphi_2)
 
-[15]: http://latex.codecogs.com/gif.latex?\frac{d}{dt}\frac{\partial%20L}{\partial%20\dot\varphi_i}=\frac{\partial%20L}{\partial%20\varphi_i}%20\Rightarrow%20\begin{cases}%20\dot%20p_i=-\frac{\partial%20H}{\partial%20\varphi_i}%20\\%20\dot%20\varphi_i=\frac{\partial%20H}{\partial%20p_i}%20\end{cases}
+[15]: http://latex.codecogs.com/gif.latex?\\frac{d}{dt}\\frac{\\partial%20L}{\\partial%20\\dot\\varphi_i}=\\frac{\\partial%20L}{\\partial%20\\varphi_i}%20\\Rightarrow%20\\begin{cases}%20\\dot%20p_i=-\\frac{\\partial%20H}{\\partial%20\\varphi_i}%20\\\\%20\\dot%20\\varphi_i=\\frac{\\partial%20H}{\\partial%20p_i}%20\\end{cases}
 
-[16]: http://latex.codecogs.com/gif.latex?\begin{cases}%20p_1=\frac{\partial%20L}{\partial%20\dot\varphi_1}=(m_1+m_2)l_1^2\dot\varphi_1+m_2l_1l_2\dot\varphi_2cos(\varphi_1-\varphi_2)%20\\%20p_2=\frac{\partial%20L}{\partial%20\dot\varphi_2}=m_2l_2^2\dot\varphi_2+m_2l_1l_2\dot\varphi_1cos(\varphi_1-\varphi_2)%20\end{cases}
+[16]: http://latex.codecogs.com/gif.latex?\\begin{cases}%20p_1=\\frac{\\partial%20L}{\\partial%20\\dot\\varphi_1}=(m_1+m_2)l_1^2\\dot\\varphi_1+m_2l_1l_2\\dot\\varphi_2cos(\\varphi_1-\\varphi_2)%20\\\\%20p_2=\\frac{\\partial%20L}{\\partial%20\\dot\\varphi_2}=m_2l_2^2\\dot\\varphi_2+m_2l_1l_2\\dot\\varphi_1cos(\\varphi_1-\\varphi_2)%20\\end{cases}
 
-[17]: http://latex.codecogs.com/gif.latex?\begin{cases}%20\dot\varphi_1=\frac{p_1l_2-p_2l_1cos(\varphi_1-\varphi_2)}{l_1^2l_2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}%20\\%20\dot\varphi_2=\frac{p_2(m_1+m_2)l_1-p_1m_2l_2cos(\varphi_1-\varphi_2)}{m_2l_1l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}%20\end{cases}
+[17]: http://latex.codecogs.com/gif.latex?\\begin{cases}%20\\dot\\varphi_1=\\frac{p_1l_2-p_2l_1cos(\\varphi_1-\\varphi_2)}{l_1^2l_2[m_1+m_2sin^2(\\varphi_1-\\varphi_2)]}%20\\\\%20\\dot\\varphi_2=\\frac{p_2(m_1+m_2)l_1-p_1m_2l_2cos(\\varphi_1-\\varphi_2)}{m_2l_1l_2^2[m_1+m_2sin^2(\\varphi_1-\\varphi_2)]}%20\\end{cases}
 
-[18]: http://latex.codecogs.com/gif.latex?H=\frac{p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\varphi_1-\varphi_2)+p_2^2(m_1+m_2)l_1^2}{2m_2l_1^2l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}-(m_1+m_2)gl_1cos\varphi_1-m_2gl_2cos\varphi_2
+[18]: http://latex.codecogs.com/gif.latex?H=\\frac{p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\\varphi_1-\\varphi_2)+p_2^2(m_1+m_2)l_1^2}{2m_2l_1^2l_2^2[m_1+m_2sin^2(\\varphi_1-\\varphi_2)]}-(m_1+m_2)gl_1cos\\varphi_1-m_2gl_2cos\\varphi_2
 
 [19]: http://latex.codecogs.com/gif.latex?H=T-V
 
-[20]: http://latex.codecogs.com/gif.latex?T=\frac{p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\varphi_1-\varphi_2)+p_2^2(m_1+m_2)l_1^2}{2m_2l_1^2l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}
+[20]: http://latex.codecogs.com/gif.latex?T=\\frac{p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\\varphi_1-\\varphi_2)+p_2^2(m_1+m_2)l_1^2}{2m_2l_1^2l_2^2[m_1+m_2sin^2(\\varphi_1-\\varphi_2)]}
 
-[21]: http://latex.codecogs.com/gif.latex?V=(m_1+m_2)gl_1cos\varphi_1-m_2gl_2cos\varphi_2
+[21]: http://latex.codecogs.com/gif.latex?V=(m_1+m_2)gl_1cos\\varphi_1-m_2gl_2cos\\varphi_2
 
-[22]: http://latex.codecogs.com/gif.latex?\begin{cases}%20\dot%20p_1=-\frac{\partial%20H}{\partial%20\varphi_1}=-\frac{\partial%20T}{\partial%20\varphi_1}-\frac{\partial%20V}{\partial%20\varphi_1}=-A_1+A_2-(m_1+m_2)gl_1sin\varphi_1%20\\%20\dot%20p_2=-\frac{\partial%20H}{\partial%20\varphi_2}=-\frac{\partial%20T}{\partial%20\varphi_2}-\frac{\partial%20V}{\partial%20\varphi_2}=A_1-A_2-m_2gl_2sin\varphi_2%20\end{cases}
+[22]: http://latex.codecogs.com/gif.latex?\\begin{cases}%20\\dot%20p_1=-\\frac{\\partial%20H}{\\partial%20\\varphi_1}=-\\frac{\\partial%20T}{\\partial%20\\varphi_1}-\\frac{\\partial%20V}{\\partial%20\\varphi_1}=-A_1+A_2-(m_1+m_2)gl_1sin\\varphi_1%20\\\\%20\\dot%20p_2=-\\frac{\\partial%20H}{\\partial%20\\varphi_2}=-\\frac{\\partial%20T}{\\partial%20\\varphi_2}-\\frac{\\partial%20V}{\\partial%20\\varphi_2}=A_1-A_2-m_2gl_2sin\\varphi_2%20\\end{cases}
 
-[23]: http://latex.codecogs.com/gif.latex?\begin{cases}%20A_1=\frac{p_1p_2sin(\varphi_1-\varphi_2)}{l_1l_2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}%20\\%20A_2=\frac{[p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\varphi_1-\varphi_2)+p_2^2(m_1+m_2)l_1^2]sin[2(\varphi_1-\varphi_2)]}{sl_1^2l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]^2}%20\end{cases}
+[23]: http://latex.codecogs.com/gif.latex?\\begin{cases}%20A_1=\\frac{p_1p_2sin(\\varphi_1-\\varphi_2)}{l_1l_2[m_1+m_2sin^2(\\varphi_1-\\varphi_2)]}%20\\\\%20A_2=\\frac{[p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\\varphi_1-\\varphi_2)+p_2^2(m_1+m_2)l_1^2]sin[2(\\varphi_1-\\varphi_2)]}{sl_1^2l_2^2[m_1+m_2sin^2(\\varphi_1-\\varphi_2)]^2}%20\\end{cases}
 
-[24]: http://latex.codecogs.com/gif.latex?\begin{cases}%20\dot\varphi_1=\frac{p_1l_2-p_2l_1cos(\varphi_1-\varphi_2)}{l_1^2l_2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}%20\\%20\dot\varphi_2=\frac{p_2(m_1+m_2)l_1-p_1m_2l_2cos(\varphi_1-\varphi_2)}{m_2l_1l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}%20\\%20\dot%20p_1=-A_1+A_2-(m_1+m_2)gl_1sin\varphi_1%20\\%20\dot%20p_2=A_1-A_2-m_2gl_2sin\varphi_2%20\end{cases}
+[24]: http://latex.codecogs.com/gif.latex?\\begin{cases}%20\\dot\\varphi_1=\\frac{p_1l_2-p_2l_1cos(\\varphi_1-\\varphi_2)}{l_1^2l_2[m_1+m_2sin^2(\\varphi_1-\\varphi_2)]}%20\\\\%20\\dot\\varphi_2=\\frac{p_2(m_1+m_2)l_1-p_1m_2l_2cos(\\varphi_1-\\varphi_2)}{m_2l_1l_2^2[m_1+m_2sin^2(\\varphi_1-\\varphi_2)]}%20\\\\%20\\dot%20p_1=-A_1+A_2-(m_1+m_2)gl_1sin\\varphi_1%20\\\\%20\\dot%20p_2=A_1-A_2-m_2gl_2sin\\varphi_2%20\\end{cases}
