@@ -14,82 +14,46 @@ A simplified model of the double pendulum is shown in Figure. We assume that the
 问题很简单，但是我们用简单的牛顿力学那套动力学方法来解这个问题的话就显得相当的复杂，毕竟理论力学也不是白学的，（我勒个去，理论力学和计算物理都是他教），现在就看我分分钟搞定。
 
 > The coordinates
-> $$ \begin{aligned}
-x_1 &=l_1sin\varphi_1 \\
-x_2 &=x_1+l_2sin\varphi_2 \\
-y_1 &=-l_1cos\varphi_1 \\
-y_2 &=y_1-l_2cos\varphi_2
-\end{aligned} $$
+> ![][1]
 > 
 > The kinetic and potential energy
-> $$ \begin{aligned}
-T &=\frac{m_1^2v_1^2}{2}+\frac{m_2^2v_2^2}{2}=\frac{m_1(\dot x_1^2+\dot y_1^2)}{2}+\frac{m_2(\dot x_2^2+\dot y_2^2)}{2} \\
-V &=m_1gy_1+m_2gy_2
-\end{aligned} $$
+> ![][2]
 > 
 > The Lagrangian of the system
-> $$ \begin{aligned}
-L &= T-V=T_1+T_2-(V_1+V_2) \\
-&= \frac{m_1(\dot x_1^2+\dot y_1^2)}{2}+\frac{m_2(\dot x_2^2+\dot y_2^2)}{2}-m_1gy_1+m_2gy_2
-\end{aligned} $$
+> ![][3]
 
 有了上面这些基本条件，下面我们就来解拉格朗日方程：
 > The Lagrangian can be written in the following form
-> $$ L=(\frac{m_1}{2}+\frac{m_2}{2})+l_1^2\dot\varphi_1^2+\frac{m_2}{2}l_2^2\dot\varphi_2^2+m_2l_1l_2\dot \varphi_1\dot \varphi_2cos(\varphi_1-\varphi_2)+(m_1+m_2)gl_1cos\varphi_1+m_2gl_2cos\varphi_2 $$
+> ![][4]
 > 
 > Lagrange equations
-> $$ \frac{d}{dt}(\frac{\partial L}{\partial \dot\varphi_i})-\frac{\partial L}{\partial \varphi_i}=0,i=1,2$$
+> ![][5]
 > 
 > The partial derivatives
-> $$ \begin{aligned}
-\frac{\partial L}{\partial \dot\varphi_1} &= (m_1+m_2)l_1^2\dot\varphi_1+m_2l_1l_2\dot\varphi_2cos(\varphi_1-\varphi_2) \\
-\frac{\partial L}{\partial \dot\varphi_2} &= m_2l_2^2\dot\varphi_2+m_2l_1l_2\dot\varphi_1cos(\varphi_1-\varphi_2) \\
-\frac{\partial L}{\partial \varphi_1} &= -m_2l_1l_2\dot\varphi_1\dot\varphi_2sin(\varphi_1-\varphi_2)-(m_1+m_2)gl_1sin\varphi_1 \\
-\frac{\partial L}{\partial \varphi_2} &= m_2l_1l_2\dot\varphi_1\dot\varphi_2sin(\varphi_1-\varphi_2)-m_2gl_2sin\varphi_2
-\end{aligned} $$
+> ![][6]
 > 
 > Hence, we get the equations
-> $$ (m_1+m_2)l_1\ddot\varphi_1+m_2l_2sin(\varphi_1-\varphi_2)\dot\varphi_2^2+m_2l_2cos(\varphi_1-\varphi_2)\ddot\varphi_2+(m_1+m_2)gsin\varphi_1=0 \\
-l_2\ddot\varphi_2-l_1sin(\varphi_1-\varphi_2)\dot\varphi_1^2+l_1cos(\varphi_1-\varphi_2)\ddot\varphi_1+gsin\varphi_2=0 $$
+> ![][7]
 
 ### Numerical Solution
-至此，可以舒一口气了，理论力学部分到此结束，因为对于这个微分方程组想解出$ \varphi_1 $和$ \varphi_2 $的解析解来就连数学物理方法都表示无力。没办法，只好搬出大招了——数值解。
+至此，可以舒一口气了，理论力学部分到此结束，因为对于这个微分方程组想解出`a1`和`a2`的解析解来就连数学物理方法都表示无力。没办法，只好搬出大招了——数值解。
 
 对于这类问题，不管三七二十一，一上来直接用`4阶Runge-Kutta`方法。
 
 由于`Runge-Kutta`方法适用于一阶微分方程，而上面我们得到的是两个二阶微分方程组，所以首先要转换成四个一阶微分方程组。
 > Define the first derivatives as separate variables
-> $$ \begin{aligned}
-\frac{d\varphi_1}{dt} &= \omega_1 \\
-\frac{d\varphi_2}{dt} &= \omega_2
-\end{aligned} $$
+> ![][8]
 > 
 > Four 1st order equations
-> $$
-\dot\varphi_1=\omega_1 \\
-\dot\varphi_2=\omega_2 \\
-\dot\omega_1=\frac{-g(2m_1+m_2)sin\varphi_1+m_2gsin(\varphi_1-2\varphi_2)-2sin(\varphi_1-\varphi_2)m_2(\omega_2^2l_2+\omega_1^2l_1cos(\varphi_1-\varphi_2))}{l_1(2m_1+m_2-m_2cos(2\varphi_1-2\varphi_2))} \\
-\dot\omega_2=\frac{2sin(\varphi_1-\varphi_2)(\omega_1^2l_1(m_1+m_2)+g(m_1+m_2)cos\varphi_1+\omega_2^2l_2m_2cos(\varphi_1-\varphi_2))}{l_2(2m_1+m_2-m_2cos(2\varphi_1-2\varphi_2))}
-$$
+> ![][9]
 
 **Four Order Runge-Kutta Method**：
-$$ \begin{cases}
-y_{n+1}=y_n+\frac{h}{6}(K_1+2K_2+2K_3+K_4) \\
-K_1=f(x_n,y_n) \\
-K_2=f(x_n+\frac{h}{2},y_n+\frac{h}{2}K_1) \\
-K_3=f(x_n+\frac{h}{2},y_n+\frac{h}{2}K_2) \\
-K_4=f(x_n+h,y_n+hK_3) 
-\end{cases} $$
+![][10]
+
 四阶龙格库塔法的公式很简单，其原理这里就不在啰嗦。可是，总感觉某些地方怪怪的，上面的公式是单变量的不知你发现没，而我们要求的是方程组，所以嘛，下面引入多变量龙格库塔方法。
 
 **Multi-variable Runge-Kutta Algorithm**:
-$$ \begin{cases}
-\bar a_n=\bar f(\bar x_n) \\
-\bar b_n=\bar f(\bar x_n+\frac{h}{2}\bar a_n) \\
-\bar c_n=\bar f(\bar x_n+\frac{h}{2}\bar b_n) \\
-\bar d_n=\bar f(\bar x_n+h\bar c_n) \\
-\bar x_{n+1}=\bar x_n+\frac{h}{6}(\bar a_n+2\bar b_n+2\bar c_n+\bar d_n)
-\end{cases} $$
+![][11]
 
 接下来呢，就把上面的公式转化成代码咯，这里采用`Fortran`语言，代码如下：
 ```
@@ -288,32 +252,24 @@ end program main
 拉格朗日方程已经够炫酷了，奈何哈密顿方程更是炫酷到没朋友。
 
 在最上面，我们得到了两个二阶微分方程组：
-$$ (m_1+m_2)l_1\ddot\varphi_1+m_2l_2sin(\varphi_1-\varphi_2)\dot\varphi_2^2+m_2l_2cos(\varphi_1-\varphi_2)\ddot\varphi_2+(m_1+m_2)gsin\varphi_1=0 \\
-l_2\ddot\varphi_2-l_1sin(\varphi_1-\varphi_2)\dot\varphi_1^2+l_1cos(\varphi_1-\varphi_2)\ddot\varphi_1+gsin\varphi_2=0 $$
+![][12]
+
 这次，我们通过`Legendre`变换将其转化为哈密顿方程。
 
 > Generalized momenta
-> $$ p_i=\frac{\partial L}{\partial \dot \varphi_i} , i=1,2$$
+> ![][13]
 > 
 > Lagrangian to the Hamiltonian ( by Legendre transformation )
-> $$ H(\varphi_1,\varphi_2,p_1,p_2)=\dot \varphi_1p_1+\dot \varphi_2p_2-L(\varphi_1,\varphi_2,\dot \varphi_1,\dot \varphi_2) $$
+> ![][14]
 > 
 > Then, Lagrange equation becomes two Hamilton's equations
-> $$ \frac{d}{dt}\frac{\partial L}{\partial \dot\varphi_i}=\frac{\partial L}{\partial \varphi_i} => \begin{cases}
-\dot p_i=-\frac{\partial H}{\partial \varphi_i} \\
-\dot \varphi_i=\frac{\partial H}{\partial p_i}
-\end{cases} $$
+> ![][15]
 
 由
-$$ \begin{cases}
-p_1=\frac{\partial L}{\partial \dot\varphi_1}=(m_1+m_2)l_1^2\dot\varphi_1+m_2l_1l_2\dot\varphi_2cos(\varphi_1-\varphi_2) \\
-p_2=\frac{\partial L}{\partial \dot\varphi_2}=m_2l_2^2\dot\varphi_2+m_2l_1l_2\dot\varphi_1cos(\varphi_1-\varphi_2) 
-\end{cases} $$
+![][16]
+
 我们可以得到
-$$ \begin{cases}
-\dot\varphi_1=\frac{p_1l_2-p_2l_1cos(\varphi_1-\varphi_2)}{l_1^2l_2[m_1+m_2sin^2(\varphi_1-\varphi_2)]} \\
-\dot\varphi_2=\frac{p_2(m_1+m_2)l_1-p_1m_2l_2cos(\varphi_1-\varphi_2)}{m_2l_1l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}
-\end{cases} $$
+![][17]
 
 下面我们再计算哈密顿算子(Hamiltonian)，那过程是相当的复杂。。可以看别人家的图：
 
@@ -322,41 +278,30 @@ $$ \begin{cases}
 ![Alt text](./screenshots/2.gif)
 
 这里我们直接附上化简后的结果
-> $$ H=\frac{p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\varphi_1-\varphi_2)+p_2^2(m_1+m_2)l_1^2}{2m_2l_1^2l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}-(m_1+m_2)gl_1cos\varphi_1-m_2gl_2cos\varphi_2 $$
+> ![][18]
 > 
 > Then define the Hamiltonian H as
-> $$ H=T-V $$
+> ![][19]
 > 
 > Generalized kinetic energy T
-> $$ T=\frac{p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\varphi_1-\varphi_2)+p_2^2(m_1+m_2)l_1^2}{2m_2l_1^2l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]} $$
+> ![][20]
 > 
 > Potential energy V
-> $$ V=(m_1+m_2)gl_1cos\varphi_1-m_2gl_2cos\varphi_2 $$
+> ![][21]
 
 最后我们求出动量p的方程
-> $$ \begin{cases}
-\dot p_1=-\frac{\partial H}{\partial \varphi_1}=-\frac{\partial T}{\partial \varphi_1}-\frac{\partial V}{\partial \varphi_1}=-A_1+A_2-(m_1+m_2)gl_1sin\varphi_1 \\
-\dot p_2=-\frac{\partial H}{\partial \varphi_2}=-\frac{\partial T}{\partial \varphi_2}-\frac{\partial V}{\partial \varphi_2}=A_1-A_2-m_2gl_2sin\varphi_2
-\end{cases} $$
+> ![][22]
 > 
 > where
-> $$ \begin{cases}
-A_1=\frac{p_1p_2sin(\varphi_1-\varphi_2)}{l_1l_2[m_1+m_2sin^2(\varphi_1-\varphi_2)]} \\
-A_2=\frac{[p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\varphi_1-\varphi_2)+p_2^2(m_1+m_2)l_1^2]sin[2(\varphi_1-\varphi_2)]}{sl_1^2l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]^2}
-\end{cases} $$
+> ![][23]
 
 OK，四个一阶微分方程组我们已经有了，现在把它们写在一起。
-$$ \begin{cases}
-\dot\varphi_1=\frac{p_1l_2-p_2l_1cos(\varphi_1-\varphi_2)}{l_1^2l_2[m_1+m_2sin^2(\varphi_1-\varphi_2)]} \\
-\dot\varphi_2=\frac{p_2(m_1+m_2)l_1-p_1m_2l_2cos(\varphi_1-\varphi_2)}{m_2l_1l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]} \\
-\dot p_1=-A_1+A_2-(m_1+m_2)gl_1sin\varphi_1 \\
-\dot p_2=A_1-A_2-m_2gl_2sin\varphi_2
-\end{cases}$$
+![][24]
 
 然后还是像之前的那样用四阶龙哥库塔方法求解就可以了。
 
 ### Result
-我们分别用两种方法计算出$ \varphi_1 $和$ \varphi_2 $，画出第二个小球的轨迹，如下图：
+我们分别用两种方法计算出`a1`和`a2`，画出第二个小球的轨迹，如下图：
 
 ![Alt text](./screenshots/3.png)
 
@@ -389,5 +334,53 @@ $$ \begin{cases}
 效果还是挺不错的，链接在[这里](http://urinx.github.io/app/double-pendulum/)。
 
 ### References
-[0]. [Double Pendulum Physics Simulation](http://www.myphysicslab.com/dbl_pendulum.html)<br>
-[1]. [Double Pendulum](http://www.math24.net/double-pendulum.html)<br>
+\[0\]. [Double Pendulum Physics Simulation](http://www.myphysicslab.com/dbl_pendulum.html)<br>
+\[1\]. [Double Pendulum](http://www.math24.net/double-pendulum.html)<br>
+
+[1]: http://latex.codecogs.com/gif.latex?\begin{aligned}%20x_1%20&=l_1sin\varphi_1%20\\%20x_2%20&=x_1+l_2sin\varphi_2%20\\%20y_1%20&=-l_1cos\varphi_1%20\\%20y_2%20&=y_1-l_2cos\varphi_2%20\end{aligned}
+
+[2]: http://latex.codecogs.com/gif.latex?\begin{aligned}%20T%20&=\frac{m_1^2v_1^2}{2}+\frac{m_2^2v_2^2}{2}=\frac{m_1(\dot%20x_1^2+\dot%20y_1^2)}{2}+\frac{m_2(\dot%20x_2^2+\dot%20y_2^2)}{2}%20\\%20V%20&=m_1gy_1+m_2gy_2%20\end{aligned}
+
+[3]: http://latex.codecogs.com/gif.latex?\begin{aligned}%20L%20&=%20T-V=T_1+T_2-(V_1+V_2)%20\\%20&=%20\frac{m_1(\dot%20x_1^2+\dot%20y_1^2)}{2}+\frac{m_2(\dot%20x_2^2+\dot%20y_2^2)}{2}-m_1gy_1+m_2gy_2%20\end{aligned}
+
+[4]: http://latex.codecogs.com/gif.latex?L=(\frac{m_1}{2}+\frac{m_2}{2})+l_1^2\dot\varphi_1^2+\frac{m_2}{2}l_2^2\dot\varphi_2^2+m_2l_1l_2\dot%20\varphi_1\dot%20\varphi_2cos(\varphi_1-\varphi_2)+(m_1+m_2)gl_1cos\varphi_1+m_2gl_2cos\varphi_2
+
+[5]: http://latex.codecogs.com/gif.latex?\frac{d}{dt}(\frac{\partial%20L}{\partial%20\dot\varphi_i})-\frac{\partial%20L}{\partial%20\varphi_i}=0,i=1,2
+
+[6]: http://latex.codecogs.com/gif.latex?\begin{aligned}%20\frac{\partial%20L}{\partial%20\dot\varphi_1}%20&=%20(m_1+m_2)l_1^2\dot\varphi_1+m_2l_1l_2\dot\varphi_2cos(\varphi_1-\varphi_2)%20\\%20\frac{\partial%20L}{\partial%20\dot\varphi_2}%20&=%20m_2l_2^2\dot\varphi_2+m_2l_1l_2\dot\varphi_1cos(\varphi_1-\varphi_2)%20\\%20\frac{\partial%20L}{\partial%20\varphi_1}%20&=%20-m_2l_1l_2\dot\varphi_1\dot\varphi_2sin(\varphi_1-\varphi_2)-(m_1+m_2)gl_1sin\varphi_1%20\\%20\frac{\partial%20L}{\partial%20\varphi_2}%20&=%20m_2l_1l_2\dot\varphi_1\dot\varphi_2sin(\varphi_1-\varphi_2)-m_2gl_2sin\varphi_2%20\end{aligned}
+
+[7]: http://latex.codecogs.com/gif.latex?(m_1+m_2)l_1\ddot\varphi_1+m_2l_2sin(\varphi_1-\varphi_2)\dot\varphi_2^2+m_2l_2cos(\varphi_1-\varphi_2)\ddot\varphi_2+(m_1+m_2)gsin\varphi_1=0%20\\%20l_2\ddot\varphi_2-l_1sin(\varphi_1-\varphi_2)\dot\varphi_1^2+l_1cos(\varphi_1-\varphi_2)\ddot\varphi_1+gsin\varphi_2=0
+
+[8]: http://latex.codecogs.com/gif.latex?\begin{aligned}%20\frac{d\varphi_1}{dt}%20&=%20\omega_1%20\\%20\frac{d\varphi_2}{dt}%20&=%20\omega_2%20\end{aligned}
+
+[9]: http://latex.codecogs.com/gif.latex?\dot\varphi_1=\omega_1%20\\%20\dot\varphi_2=\omega_2%20\\%20\dot\omega_1=\frac{-g(2m_1+m_2)sin\varphi_1+m_2gsin(\varphi_1-2\varphi_2)-2sin(\varphi_1-\varphi_2)m_2(\omega_2^2l_2+\omega_1^2l_1cos(\varphi_1-\varphi_2))}{l_1(2m_1+m_2-m_2cos(2\varphi_1-2\varphi_2))}%20\\%20\dot\omega_2=\frac{2sin(\varphi_1-\varphi_2)(\omega_1^2l_1(m_1+m_2)+g(m_1+m_2)cos\varphi_1+\omega_2^2l_2m_2cos(\varphi_1-\varphi_2))}{l_2(2m_1+m_2-m_2cos(2\varphi_1-2\varphi_2))}
+
+[10]: http://latex.codecogs.com/gif.latex?\begin{cases}%20y_{n+1}=y_n+\frac{h}{6}(K_1+2K_2+2K_3+K_4)%20\\%20K_1=f(x_n,y_n)%20\\%20K_2=f(x_n+\frac{h}{2},y_n+\frac{h}{2}K_1)%20\\%20K_3=f(x_n+\frac{h}{2},y_n+\frac{h}{2}K_2)%20\\%20K_4=f(x_n+h,y_n+hK_3)%20\end{cases}
+
+[11]: http://latex.codecogs.com/gif.latex?\begin{cases}%20\bar%20a_n=\bar%20f(\bar%20x_n)%20\\%20\bar%20b_n=\bar%20f(\bar%20x_n+\frac{h}{2}\bar%20a_n)%20\\%20\bar%20c_n=\bar%20f(\bar%20x_n+\frac{h}{2}\bar%20b_n)%20\\%20\bar%20d_n=\bar%20f(\bar%20x_n+h\bar%20c_n)%20\\%20\bar%20x_{n+1}=\bar%20x_n+\frac{h}{6}(\bar%20a_n+2\bar%20b_n+2\bar%20c_n+\bar%20d_n)%20\end{cases}
+
+[12]: http://latex.codecogs.com/gif.latex?\begin{cases}%20(m_1+m_2)l_1\ddot\varphi_1+m_2l_2sin(\varphi_1-\varphi_2)\dot\varphi_2^2+m_2l_2cos(\varphi_1-\varphi_2)\ddot\varphi_2+(m_1+m_2)gsin\varphi_1=0%20\\%20l_2\ddot\varphi_2-l_1sin(\varphi_1-\varphi_2)\dot\varphi_1^2+l_1cos(\varphi_1-\varphi_2)\ddot\varphi_1+gsin\varphi_2=0%20\end{cases}
+
+[13]: http://latex.codecogs.com/gif.latex?p_i=\frac{\partial%20L}{\partial%20\dot%20\varphi_i}%20,%20i=1,2
+
+[14]: http://latex.codecogs.com/gif.latex?H(\varphi_1,\varphi_2,p_1,p_2)=\dot%20\varphi_1p_1+\dot%20\varphi_2p_2-L(\varphi_1,\varphi_2,\dot%20\varphi_1,\dot%20\varphi_2)
+
+[15]: http://latex.codecogs.com/gif.latex?\frac{d}{dt}\frac{\partial%20L}{\partial%20\dot\varphi_i}=\frac{\partial%20L}{\partial%20\varphi_i}%20\Rightarrow%20\begin{cases}%20\dot%20p_i=-\frac{\partial%20H}{\partial%20\varphi_i}%20\\%20\dot%20\varphi_i=\frac{\partial%20H}{\partial%20p_i}%20\end{cases}
+
+[16]: http://latex.codecogs.com/gif.latex?\begin{cases}%20p_1=\frac{\partial%20L}{\partial%20\dot\varphi_1}=(m_1+m_2)l_1^2\dot\varphi_1+m_2l_1l_2\dot\varphi_2cos(\varphi_1-\varphi_2)%20\\%20p_2=\frac{\partial%20L}{\partial%20\dot\varphi_2}=m_2l_2^2\dot\varphi_2+m_2l_1l_2\dot\varphi_1cos(\varphi_1-\varphi_2)%20\end{cases}
+
+[17]: http://latex.codecogs.com/gif.latex?\begin{cases}%20\dot\varphi_1=\frac{p_1l_2-p_2l_1cos(\varphi_1-\varphi_2)}{l_1^2l_2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}%20\\%20\dot\varphi_2=\frac{p_2(m_1+m_2)l_1-p_1m_2l_2cos(\varphi_1-\varphi_2)}{m_2l_1l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}%20\end{cases}
+
+[18]: http://latex.codecogs.com/gif.latex?H=\frac{p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\varphi_1-\varphi_2)+p_2^2(m_1+m_2)l_1^2}{2m_2l_1^2l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}-(m_1+m_2)gl_1cos\varphi_1-m_2gl_2cos\varphi_2
+
+[19]: http://latex.codecogs.com/gif.latex?H=T-V
+
+[20]: http://latex.codecogs.com/gif.latex?T=\frac{p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\varphi_1-\varphi_2)+p_2^2(m_1+m_2)l_1^2}{2m_2l_1^2l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}
+
+[21]: http://latex.codecogs.com/gif.latex?V=(m_1+m_2)gl_1cos\varphi_1-m_2gl_2cos\varphi_2
+
+[22]: http://latex.codecogs.com/gif.latex?\begin{cases}%20\dot%20p_1=-\frac{\partial%20H}{\partial%20\varphi_1}=-\frac{\partial%20T}{\partial%20\varphi_1}-\frac{\partial%20V}{\partial%20\varphi_1}=-A_1+A_2-(m_1+m_2)gl_1sin\varphi_1%20\\%20\dot%20p_2=-\frac{\partial%20H}{\partial%20\varphi_2}=-\frac{\partial%20T}{\partial%20\varphi_2}-\frac{\partial%20V}{\partial%20\varphi_2}=A_1-A_2-m_2gl_2sin\varphi_2%20\end{cases}
+
+[23]: http://latex.codecogs.com/gif.latex?\begin{cases}%20A_1=\frac{p_1p_2sin(\varphi_1-\varphi_2)}{l_1l_2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}%20\\%20A_2=\frac{[p_1^2m_2l_2^2-2p_1p_2m_2l_1l_2cos(\varphi_1-\varphi_2)+p_2^2(m_1+m_2)l_1^2]sin[2(\varphi_1-\varphi_2)]}{sl_1^2l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]^2}%20\end{cases}
+
+[24]: http://latex.codecogs.com/gif.latex?\begin{cases}%20\dot\varphi_1=\frac{p_1l_2-p_2l_1cos(\varphi_1-\varphi_2)}{l_1^2l_2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}%20\\%20\dot\varphi_2=\frac{p_2(m_1+m_2)l_1-p_1m_2l_2cos(\varphi_1-\varphi_2)}{m_2l_1l_2^2[m_1+m_2sin^2(\varphi_1-\varphi_2)]}%20\\%20\dot%20p_1=-A_1+A_2-(m_1+m_2)gl_1sin\varphi_1%20\\%20\dot%20p_2=A_1-A_2-m_2gl_2sin\varphi_2%20\end{cases}
