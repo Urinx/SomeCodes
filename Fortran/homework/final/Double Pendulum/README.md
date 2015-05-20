@@ -16,25 +16,32 @@ A simplified model of the double pendulum is shown in Figure. We assume that the
 问题很简单，但是我们用简单的牛顿力学那套动力学方法来解这个问题的话就显得相当的复杂，毕竟理论力学也不是白学的，（我勒个去，理论力学和计算物理都是他教），现在就看我分分钟搞定。
 
 > The coordinates
+> 
 > ![][1]
 > 
 > The kinetic and potential energy
+> 
 > ![][2]
 > 
 > The Lagrangian of the system
+> 
 > ![][3]
 
 有了上面这些基本条件，下面我们就来解拉格朗日方程：
 > The Lagrangian can be written in the following form
+> 
 > ![][4]
 > 
 > Lagrange equations
+> 
 > ![][5]
 > 
 > The partial derivatives
+> 
 > ![][6]
 > 
 > Hence, we get the equations
+> 
 > ![][7]
 
 ### Numerical Solution
@@ -44,17 +51,21 @@ A simplified model of the double pendulum is shown in Figure. We assume that the
 
 由于`Runge-Kutta`方法适用于一阶微分方程，而上面我们得到的是两个二阶微分方程组，所以首先要转换成四个一阶微分方程组。
 > Define the first derivatives as separate variables
+> 
 > ![][8]
 > 
 > Four 1st order equations
+> 
 > ![][9]
 
 **Four Order Runge-Kutta Method**：
+
 ![][10]
 
 四阶龙格库塔法的公式很简单，其原理这里就不在啰嗦。可是，总感觉某些地方怪怪的，上面的公式是单变量的不知你发现没，而我们要求的是方程组，所以嘛，下面引入多变量龙格库塔方法。
 
 **Multi-variable Runge-Kutta Algorithm**:
+
 ![][11]
 
 接下来呢，就把上面的公式转化成代码咯，这里采用`Fortran`语言，代码如下：
@@ -254,23 +265,29 @@ end program main
 拉格朗日方程已经够炫酷了，奈何哈密顿方程更是炫酷到没朋友。
 
 在最上面，我们得到了两个二阶微分方程组：
+
 ![][12]
 
 这次，我们通过`Legendre`变换将其转化为哈密顿方程。
 
 > Generalized momenta
+> 
 > ![][13]
 > 
 > Lagrangian to the Hamiltonian ( by Legendre transformation )
+> 
 > ![][14]
 > 
 > Then, Lagrange equation becomes two Hamilton's equations
+> 
 > ![][15]
 
 由
+
 ![][16]
 
 我们可以得到
+
 ![][17]
 
 下面我们再计算哈密顿算子(Hamiltonian)，那过程是相当的复杂。。可以看别人家的图：
@@ -280,24 +297,31 @@ end program main
 ![Alt text](./screenshots/2.gif)
 
 这里我们直接附上化简后的结果
+> 
 > ![][18]
 > 
 > Then define the Hamiltonian H as
+> 
 > ![][19]
 > 
 > Generalized kinetic energy T
+> 
 > ![][20]
 > 
 > Potential energy V
+> 
 > ![][21]
 
 最后我们求出动量p的方程
+> 
 > ![][22]
 > 
 > where
+> 
 > ![][23]
 
 OK，四个一阶微分方程组我们已经有了，现在把它们写在一起。
+
 ![][24]
 
 然后还是像之前的那样用四阶龙哥库塔方法求解就可以了。
