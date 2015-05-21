@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="nearbyPeople_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="left" text=" " textAlignment="center" id="D9H-11-gWr"/>
+                        <imageView width="79" height="83" alignment="center" image="p0" id="U4T-Bq-lRy"/>
+                        <button width="1" alignment="left" title="搜索附近的人" id="gHn-SW-ROE">
+                            <connections>
+                                <action selector="searchNearbyPeople" destination="AgC-eL-Hgc" id="mcg-yw-gSc"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="infoLable" destination="D9H-11-gWr" id="Nb9-qP-Eje"/>
+                        <outlet property="peopleImg" destination="U4T-Bq-lRy" id="2Hw-mE-ECh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="380" y="290"/>
+        </scene>
+    </scenes>
+</document>

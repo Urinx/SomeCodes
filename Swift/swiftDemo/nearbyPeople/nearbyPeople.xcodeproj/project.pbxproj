@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0F3D131B0E2AF0000B0339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F3D121B0E2AF0000B0339 /* AppDelegate.swift */; };
+		BB0F3D151B0E2AF0000B0339 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F3D141B0E2AF0000B0339 /* ViewController.swift */; };
+		BB0F3D181B0E2AF0000B0339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0F3D161B0E2AF0000B0339 /* Main.storyboard */; };
+		BB0F3D1A1B0E2AF0000B0339 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0F3D191B0E2AF0000B0339 /* Images.xcassets */; };
+		BB0F3D1D1B0E2AF0000B0339 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0F3D1B1B0E2AF0000B0339 /* LaunchScreen.xib */; };
+		BB0F3D291B0E2AF0000B0339 /* nearbyPeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F3D281B0E2AF0000B0339 /* nearbyPeopleTests.swift */; };
+		BB0F3D3B1B0E2B48000B0339 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F3D3A1B0E2B48000B0339 /* InterfaceController.swift */; };
+		BB0F3D3D1B0E2B48000B0339 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0F3D3C1B0E2B48000B0339 /* Images.xcassets */; };
+		BB0F3D411B0E2B48000B0339 /* nearbyPeople WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = BB0F3D401B0E2B48000B0339 /* nearbyPeople WatchKit App.app */; };
+		BB0F3D491B0E2B48000B0339 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0F3D471B0E2B48000B0339 /* Interface.storyboard */; };
+		BB0F3D4B1B0E2B48000B0339 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0F3D4A1B0E2B48000B0339 /* Images.xcassets */; };
+		BB0F3D4E1B0E2B48000B0339 /* nearbyPeople WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB0F3D361B0E2B48000B0339 /* nearbyPeople WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB0F3D231B0E2AF0000B0339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0F3D051B0E2AF0000B0339 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB0F3D0C1B0E2AF0000B0339;
+			remoteInfo = nearbyPeople;
+		};
+		BB0F3D421B0E2B48000B0339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0F3D051B0E2AF0000B0339 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB0F3D3F1B0E2B48000B0339;
+			remoteInfo = "nearbyPeople WatchKit App";
+		};
+		BB0F3D4C1B0E2B48000B0339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0F3D051B0E2AF0000B0339 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB0F3D351B0E2B48000B0339;
+			remoteInfo = "nearbyPeople WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB0F3D551B0E2B48000B0339 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB0F3D4E1B0E2B48000B0339 /* nearbyPeople WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BB0F3D0D1B0E2AF0000B0339 /* nearbyPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nearbyPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0F3D111B0E2AF0000B0339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0F3D121B0E2AF0000B0339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB0F3D141B0E2AF0000B0339 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB0F3D171B0E2AF0000B0339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB0F3D191B0E2AF0000B0339 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB0F3D1C1B0E2AF0000B0339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BB0F3D221B0E2AF0000B0339 /* nearbyPeopleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nearbyPeopleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0F3D271B0E2AF0000B0339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0F3D281B0E2AF0000B0339 /* nearbyPeopleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nearbyPeopleTests.swift; sourceTree = "<group>"; };
+		BB0F3D361B0E2B48000B0339 /* nearbyPeople WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "nearbyPeople WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0F3D391B0E2B48000B0339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0F3D3A1B0E2B48000B0339 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BB0F3D3C1B0E2B48000B0339 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB0F3D401B0E2B48000B0339 /* nearbyPeople WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nearbyPeople WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0F3D461B0E2B48000B0339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0F3D481B0E2B48000B0339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BB0F3D4A1B0E2B48000B0339 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB0F3D0A1B0E2AF0000B0339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F3D1F1B0E2AF0000B0339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F3D331B0E2B48000B0339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB0F3D041B0E2AF0000B0339 = {
+			isa = PBXGroup;
+			children = (
+				BB0F3D0F1B0E2AF0000B0339 /* nearbyPeople */,
+				BB0F3D251B0E2AF0000B0339 /* nearbyPeopleTests */,
+				BB0F3D371B0E2B48000B0339 /* nearbyPeople WatchKit Extension */,
+				BB0F3D441B0E2B48000B0339 /* nearbyPeople WatchKit App */,
+				BB0F3D0E1B0E2AF0000B0339 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB0F3D0E1B0E2AF0000B0339 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F3D0D1B0E2AF0000B0339 /* nearbyPeople.app */,
+				BB0F3D221B0E2AF0000B0339 /* nearbyPeopleTests.xctest */,
+				BB0F3D361B0E2B48000B0339 /* nearbyPeople WatchKit Extension.appex */,
+				BB0F3D401B0E2B48000B0339 /* nearbyPeople WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB0F3D0F1B0E2AF0000B0339 /* nearbyPeople */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F3D121B0E2AF0000B0339 /* AppDelegate.swift */,
+				BB0F3D141B0E2AF0000B0339 /* ViewController.swift */,
+				BB0F3D161B0E2AF0000B0339 /* Main.storyboard */,
+				BB0F3D191B0E2AF0000B0339 /* Images.xcassets */,
+				BB0F3D1B1B0E2AF0000B0339 /* LaunchScreen.xib */,
+				BB0F3D101B0E2AF0000B0339 /* Supporting Files */,
+			);
+			path = nearbyPeople;
+			sourceTree = "<group>";
+		};
+		BB0F3D101B0E2AF0000B0339 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F3D111B0E2AF0000B0339 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB0F3D251B0E2AF0000B0339 /* nearbyPeopleTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F3D281B0E2AF0000B0339 /* nearbyPeopleTests.swift */,
+				BB0F3D261B0E2AF0000B0339 /* Supporting Files */,
+			);
+			path = nearbyPeopleTests;
+			sourceTree = "<group>";
+		};
+		BB0F3D261B0E2AF0000B0339 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F3D271B0E2AF0000B0339 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB0F3D371B0E2B48000B0339 /* nearbyPeople WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F3D3A1B0E2B48000B0339 /* InterfaceController.swift */,
+				BB0F3D3C1B0E2B48000B0339 /* Images.xcassets */,
+				BB0F3D381B0E2B48000B0339 /* Supporting Files */,
+			);
+			path = "nearbyPeople WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		BB0F3D381B0E2B48000B0339 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F3D391B0E2B48000B0339 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB0F3D441B0E2B48000B0339 /* nearbyPeople WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F3D471B0E2B48000B0339 /* Interface.storyboard */,
+				BB0F3D4A1B0E2B48000B0339 /* Images.xcassets */,
+				BB0F3D451B0E2B48000B0339 /* Supporting Files */,
+			);
+			path = "nearbyPeople WatchKit App";
+			sourceTree = "<group>";
+		};
+		BB0F3D451B0E2B48000B0339 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F3D461B0E2B48000B0339 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB0F3D0C1B0E2AF0000B0339 /* nearbyPeople */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0F3D2C1B0E2AF0000B0339 /* Build configuration list for PBXNativeTarget "nearbyPeople" */;
+			buildPhases = (
+				BB0F3D091B0E2AF0000B0339 /* Sources */,
+				BB0F3D0A1B0E2AF0000B0339 /* Frameworks */,
+				BB0F3D0B1B0E2AF0000B0339 /* Resources */,
+				BB0F3D551B0E2B48000B0339 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0F3D4D1B0E2B48000B0339 /* PBXTargetDependency */,
+			);
+			name = nearbyPeople;
+			productName = nearbyPeople;
+			productReference = BB0F3D0D1B0E2AF0000B0339 /* nearbyPeople.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB0F3D211B0E2AF0000B0339 /* nearbyPeopleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0F3D2F1B0E2AF0000B0339 /* Build configuration list for PBXNativeTarget "nearbyPeopleTests" */;
+			buildPhases = (
+				BB0F3D1E1B0E2AF0000B0339 /* Sources */,
+				BB0F3D1F1B0E2AF0000B0339 /* Frameworks */,
+				BB0F3D201B0E2AF0000B0339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0F3D241B0E2AF0000B0339 /* PBXTargetDependency */,
+			);
+			name = nearbyPeopleTests;
+			productName = nearbyPeopleTests;
+			productReference = BB0F3D221B0E2AF0000B0339 /* nearbyPeopleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB0F3D351B0E2B48000B0339 /* nearbyPeople WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0F3D521B0E2B48000B0339 /* Build configuration list for PBXNativeTarget "nearbyPeople WatchKit Extension" */;
+			buildPhases = (
+				BB0F3D321B0E2B48000B0339 /* Sources */,
+				BB0F3D331B0E2B48000B0339 /* Frameworks */,
+				BB0F3D341B0E2B48000B0339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0F3D431B0E2B48000B0339 /* PBXTargetDependency */,
+			);
+			name = "nearbyPeople WatchKit Extension";
+			productName = "nearbyPeople WatchKit Extension";
+			productReference = BB0F3D361B0E2B48000B0339 /* nearbyPeople WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		BB0F3D3F1B0E2B48000B0339 /* nearbyPeople WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0F3D4F1B0E2B48000B0339 /* Build configuration list for PBXNativeTarget "nearbyPeople WatchKit App" */;
+			buildPhases = (
+				BB0F3D3E1B0E2B48000B0339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nearbyPeople WatchKit App";
+			productName = "nearbyPeople WatchKit App";
+			productReference = BB0F3D401B0E2B48000B0339 /* nearbyPeople WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB0F3D051B0E2AF0000B0339 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Eular;
+				TargetAttributes = {
+					BB0F3D0C1B0E2AF0000B0339 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					BB0F3D211B0E2AF0000B0339 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = BB0F3D0C1B0E2AF0000B0339;
+					};
+					BB0F3D351B0E2B48000B0339 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					BB0F3D3F1B0E2B48000B0339 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = BB0F3D081B0E2AF0000B0339 /* Build configuration list for PBXProject "nearbyPeople" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB0F3D041B0E2AF0000B0339;
+			productRefGroup = BB0F3D0E1B0E2AF0000B0339 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB0F3D0C1B0E2AF0000B0339 /* nearbyPeople */,
+				BB0F3D211B0E2AF0000B0339 /* nearbyPeopleTests */,
+				BB0F3D351B0E2B48000B0339 /* nearbyPeople WatchKit Extension */,
+				BB0F3D3F1B0E2B48000B0339 /* nearbyPeople WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB0F3D0B1B0E2AF0000B0339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0F3D181B0E2AF0000B0339 /* Main.storyboard in Resources */,
+				BB0F3D1D1B0E2AF0000B0339 /* LaunchScreen.xib in Resources */,
+				BB0F3D1A1B0E2AF0000B0339 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F3D201B0E2AF0000B0339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F3D341B0E2B48000B0339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0F3D411B0E2B48000B0339 /* nearbyPeople WatchKit App.app in Resources */,
+				BB0F3D3D1B0E2B48000B0339 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F3D3E1B0E2B48000B0339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0F3D491B0E2B48000B0339 /* Interface.storyboard in Resources */,
+				BB0F3D4B1B0E2B48000B0339 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB0F3D091B0E2AF0000B0339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0F3D151B0E2AF0000B0339 /* ViewController.swift in Sources */,
+				BB0F3D131B0E2AF0000B0339 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F3D1E1B0E2AF0000B0339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0F3D291B0E2AF0000B0339 /* nearbyPeopleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F3D321B0E2B48000B0339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0F3D3B1B0E2B48000B0339 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB0F3D241B0E2AF0000B0339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB0F3D0C1B0E2AF0000B0339 /* nearbyPeople */;
+			targetProxy = BB0F3D231B0E2AF0000B0339 /* PBXContainerItemProxy */;
+		};
+		BB0F3D431B0E2B48000B0339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB0F3D3F1B0E2B48000B0339 /* nearbyPeople WatchKit App */;
+			targetProxy = BB0F3D421B0E2B48000B0339 /* PBXContainerItemProxy */;
+		};
+		BB0F3D4D1B0E2B48000B0339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB0F3D351B0E2B48000B0339 /* nearbyPeople WatchKit Extension */;
+			targetProxy = BB0F3D4C1B0E2B48000B0339 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB0F3D161B0E2AF0000B0339 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0F3D171B0E2AF0000B0339 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB0F3D1B1B0E2AF0000B0339 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0F3D1C1B0E2AF0000B0339 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		BB0F3D471B0E2B48000B0339 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0F3D481B0E2B48000B0339 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB0F3D2A1B0E2AF0000B0339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB0F3D2B1B0E2AF0000B0339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB0F3D2D1B0E2AF0000B0339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = nearbyPeople/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB0F3D2E1B0E2AF0000B0339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = nearbyPeople/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB0F3D301B0E2AF0000B0339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = nearbyPeopleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nearbyPeople.app/nearbyPeople";
+			};
+			name = Debug;
+		};
+		BB0F3D311B0E2AF0000B0339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = nearbyPeopleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nearbyPeople.app/nearbyPeople";
+			};
+			name = Release;
+		};
+		BB0F3D501B0E2B48000B0339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = nearbyPeople_WatchKit_Extension;
+				INFOPLIST_FILE = "nearbyPeople WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		BB0F3D511B0E2B48000B0339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = nearbyPeople_WatchKit_Extension;
+				INFOPLIST_FILE = "nearbyPeople WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		BB0F3D531B0E2B48000B0339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "nearbyPeople WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BB0F3D541B0E2B48000B0339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "nearbyPeople WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB0F3D081B0E2AF0000B0339 /* Build configuration list for PBXProject "nearbyPeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0F3D2A1B0E2AF0000B0339 /* Debug */,
+				BB0F3D2B1B0E2AF0000B0339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0F3D2C1B0E2AF0000B0339 /* Build configuration list for PBXNativeTarget "nearbyPeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0F3D2D1B0E2AF0000B0339 /* Debug */,
+				BB0F3D2E1B0E2AF0000B0339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB0F3D2F1B0E2AF0000B0339 /* Build configuration list for PBXNativeTarget "nearbyPeopleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0F3D301B0E2AF0000B0339 /* Debug */,
+				BB0F3D311B0E2AF0000B0339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB0F3D4F1B0E2B48000B0339 /* Build configuration list for PBXNativeTarget "nearbyPeople WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0F3D501B0E2B48000B0339 /* Debug */,
+				BB0F3D511B0E2B48000B0339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB0F3D521B0E2B48000B0339 /* Build configuration list for PBXNativeTarget "nearbyPeople WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0F3D531B0E2B48000B0339 /* Debug */,
+				BB0F3D541B0E2B48000B0339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB0F3D051B0E2AF0000B0339 /* Project object */;
+}
