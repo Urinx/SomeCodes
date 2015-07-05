@@ -25,11 +25,11 @@ class PositionViewController: UIViewController {
             self.pinkBox.center.x = self.view.bounds.width - self.pinkBox.center.x
         })
         
-        UIView.animateWithDuration(1, delay: 0.5, options: nil,animations: {
+        UIView.animateWithDuration(1, delay: 0.5, options: UIViewAnimationOptions.CurveLinear, animations: {
             self.blueBox.center.y = self.view.bounds.height - self.blueBox.center.y
         }, completion: nil)
         
-        UIView.animateWithDuration(1, delay: 1, options: nil,animations: {
+        UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.CurveLinear, animations: {
             self.greenBox.center.x = self.view.bounds.width - self.greenBox.center.x
             self.greenBox.center.y = self.view.bounds.height - self.greenBox.center.y
             }, completion: nil)

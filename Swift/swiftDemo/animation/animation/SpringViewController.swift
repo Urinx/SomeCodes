@@ -23,7 +23,7 @@ class SpringViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        UIView.animateWithDuration(4, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: nil, animations: {
+        UIView.animateWithDuration(4, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             self.redBox.center.y = self.view.bounds.height - self.redBox.center.y
         }, completion: nil)
     }

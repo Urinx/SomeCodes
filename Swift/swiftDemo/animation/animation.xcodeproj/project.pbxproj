@@ -14,6 +14,7 @@
 		BB4F76951B48E9E100F9CFD1 /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F76941B48E9E100F9CFD1 /* RepeatViewController.swift */; };
 		BB4F76971B48EB6200F9CFD1 /* EasingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F76961B48EB6200F9CFD1 /* EasingViewController.swift */; };
 		BB4F76991B48EB7300F9CFD1 /* SpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F76981B48EB7300F9CFD1 /* SpringViewController.swift */; };
+		BB4F769B1B493BE600F9CFD1 /* demoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F769A1B493BE600F9CFD1 /* demoViewController.swift */; };
 		BB704D351B4829E000F7C763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB704D341B4829E000F7C763 /* AppDelegate.swift */; };
 		BB704D3A1B4829E000F7C763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB704D381B4829E000F7C763 /* Main.storyboard */; };
 		BB704D3C1B4829E000F7C763 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB704D3B1B4829E000F7C763 /* Images.xcassets */; };
@@ -40,6 +41,7 @@
 		BB4F76941B48E9E100F9CFD1 /* RepeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
 		BB4F76961B48EB6200F9CFD1 /* EasingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingViewController.swift; sourceTree = "<group>"; };
 		BB4F76981B48EB7300F9CFD1 /* SpringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringViewController.swift; sourceTree = "<group>"; };
+		BB4F769A1B493BE600F9CFD1 /* demoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demoViewController.swift; sourceTree = "<group>"; };
 		BB704D2F1B4829E000F7C763 /* animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB704D331B4829E000F7C763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB704D341B4829E000F7C763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				BB4F76941B48E9E100F9CFD1 /* RepeatViewController.swift */,
 				BB4F76961B48EB6200F9CFD1 /* EasingViewController.swift */,
 				BB4F76981B48EB7300F9CFD1 /* SpringViewController.swift */,
+				BB4F769A1B493BE600F9CFD1 /* demoViewController.swift */,
 			);
 			path = animation;
 			sourceTree = "<group>";
@@ -177,11 +180,13 @@
 		BB704D271B4829E000F7C763 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Eular;
 				TargetAttributes = {
 					BB704D2E1B4829E000F7C763 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 952J324HNJ;
 					};
 					BB704D431B4829E000F7C763 = {
 						CreatedOnToolsVersion = 6.4;
@@ -240,6 +245,7 @@
 				BB4F76931B48AB0C00F9CFD1 /* RotationViewController.swift in Sources */,
 				BB4F76991B48EB7300F9CFD1 /* SpringViewController.swift in Sources */,
 				BB704D551B48473400F7C763 /* PositionViewController.swift in Sources */,
+				BB4F769B1B493BE600F9CFD1 /* demoViewController.swift in Sources */,
 				BB4F76911B48AAEF00F9CFD1 /* ColorViewController.swift in Sources */,
 				BB4F768D1B48AA9E00F9CFD1 /* ScaleViewController.swift in Sources */,
 			);
@@ -304,6 +310,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -368,9 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = animation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -378,9 +389,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = animation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -398,6 +413,7 @@
 				);
 				INFOPLIST_FILE = animationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/animation.app/animation";
 			};
@@ -413,6 +429,7 @@
 				);
 				INFOPLIST_FILE = animationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/animation.app/animation";
 			};

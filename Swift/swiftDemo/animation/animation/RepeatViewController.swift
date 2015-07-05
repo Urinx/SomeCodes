@@ -34,7 +34,7 @@ class RepeatViewController: UIViewController {
             self.blueBox.center.x = self.view.bounds.width - self.blueBox.center.x
         }, completion: nil)
         
-        UIView.animateWithDuration(1, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse, animations: {
+        UIView.animateWithDuration(1, delay: 0, options: [.Repeat, .Autoreverse], animations: {
             self.greenBox.center.x = self.view.bounds.width - self.greenBox.center.x
             }, completion: nil)
     }
