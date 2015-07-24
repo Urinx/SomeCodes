@@ -233,6 +233,26 @@
                                             <segue destination="FdW-G9-bcE" kind="push" id="5lO-g6-5Cj"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Pwy-hb-Utm" style="IBUITableViewCellStyleDefault" id="hDh-6i-OLb">
+                                        <rect key="frame" x="0.0" y="460" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hDh-6i-OLb" id="P99-e2-cc4">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pwy-hb-Utm">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="VDu-Qh-Dbb" kind="push" id="HDW-mc-0dC"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -373,6 +393,88 @@
             </objects>
             <point key="canvasLocation" x="1397" y="838"/>
         </scene>
+        <!--Login-->
+        <scene sceneID="ytT-gb-kXT">
+            <objects>
+                <viewController id="VDu-Qh-Dbb" customClass="loginViewController" customModule="animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwx-ap-8RE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Background" id="bec-d9-QTN">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="569"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble1" id="zPt-ju-Emw">
+                                <rect key="frame" x="0.0" y="136" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble2" id="Uch-n8-hFB">
+                                <rect key="frame" x="191" y="166" width="124" height="124"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble3" id="4kN-fs-Lf7">
+                                <rect key="frame" x="112" y="288" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble4" id="2LY-rH-KJx">
+                                <rect key="frame" x="20" y="380" width="84" height="84"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble5" id="uZG-2b-0wt">
+                                <rect key="frame" x="220" y="399" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="AnimateHub" id="cEm-W3-6TR">
+                                <rect key="frame" x="23" y="136" width="274" height="36"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Dot" id="jlI-P3-TwZ">
+                                <rect key="frame" x="84" y="124" width="11" height="11"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User" minimumFontSize="17" background="Text Field" id="zR8-eE-xWB">
+                                <rect key="frame" x="42" y="226" width="237" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field" id="WPG-fS-8TH">
+                                <rect key="frame" x="42" y="288" width="237" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nUG-Lj-ZTb">
+                                <rect key="frame" x="42" y="352" width="237" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Log in" backgroundImage="Button Background"/>
+                                <connections>
+                                    <action selector="loginTapped:" destination="VDu-Qh-Dbb" eventType="touchUpInside" id="ZeS-SW-5Ge"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="MVo-KV-KIu"/>
+                    <connections>
+                        <outlet property="bubble1" destination="zPt-ju-Emw" id="uS2-yg-qrz"/>
+                        <outlet property="bubble2" destination="Uch-n8-hFB" id="vPV-nk-yYf"/>
+                        <outlet property="bubble3" destination="4kN-fs-Lf7" id="qZz-HZ-QO1"/>
+                        <outlet property="bubble4" destination="2LY-rH-KJx" id="iJW-op-vQm"/>
+                        <outlet property="bubble5" destination="uZG-2b-0wt" id="fcZ-WW-0FQ"/>
+                        <outlet property="dot" destination="jlI-P3-TwZ" id="WOG-xW-pnr"/>
+                        <outlet property="loginBtn" destination="nUG-Lj-ZTb" id="dkq-MQ-lZj"/>
+                        <outlet property="password" destination="WPG-fS-8TH" id="W38-Lv-bK1"/>
+                        <outlet property="titleText" destination="cEm-W3-6TR" id="LxO-np-anj"/>
+                        <outlet property="user" destination="zR8-eE-xWB" id="6u2-fl-hD6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="geY-Ji-jdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2046" y="1268"/>
+        </scene>
         <!--Color-->
         <scene sceneID="u3g-1v-jeW">
             <objects>
@@ -490,6 +592,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AnimateHub" width="274" height="36"/>
+        <image name="Background" width="375" height="667"/>
+        <image name="Bubble1" width="130" height="130"/>
+        <image name="Bubble2" width="124" height="124"/>
+        <image name="Bubble3" width="120" height="120"/>
+        <image name="Bubble4" width="84" height="84"/>
+        <image name="Bubble5" width="100" height="100"/>
+        <image name="Button Background" width="321" height="61"/>
+        <image name="Dot" width="11" height="11"/>
+        <image name="Text Field" width="320" height="40"/>
         <image name="reload_filled-100" width="100" height="100"/>
     </resources>
 </document>

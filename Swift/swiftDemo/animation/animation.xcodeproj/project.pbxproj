@@ -21,6 +21,7 @@
 		BB704D3F1B4829E000F7C763 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB704D3D1B4829E000F7C763 /* LaunchScreen.xib */; };
 		BB704D4B1B4829E000F7C763 /* animationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB704D4A1B4829E000F7C763 /* animationTests.swift */; };
 		BB704D551B48473400F7C763 /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB704D541B48473400F7C763 /* PositionViewController.swift */; };
+		BB787C361B623D0600A05F6B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB787C351B623D0600A05F6B /* loginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BB704D491B4829E000F7C763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB704D4A1B4829E000F7C763 /* animationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationTests.swift; sourceTree = "<group>"; };
 		BB704D541B48473400F7C763 /* PositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
+		BB787C351B623D0600A05F6B /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				BB4F76961B48EB6200F9CFD1 /* EasingViewController.swift */,
 				BB4F76981B48EB7300F9CFD1 /* SpringViewController.swift */,
 				BB4F769A1B493BE600F9CFD1 /* demoViewController.swift */,
+				BB787C351B623D0600A05F6B /* loginViewController.swift */,
 			);
 			path = animation;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB4F76951B48E9E100F9CFD1 /* RepeatViewController.swift in Sources */,
+				BB787C361B623D0600A05F6B /* loginViewController.swift in Sources */,
 				BB4F768B1B48AA0400F9CFD1 /* OpacityViewController.swift in Sources */,
 				BB704D351B4829E000F7C763 /* AppDelegate.swift in Sources */,
 				BB4F76971B48EB6200F9CFD1 /* EasingViewController.swift in Sources */,
