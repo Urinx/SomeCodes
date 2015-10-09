@@ -1,0 +1,22 @@
+PODS:
+  - JSAnimatedImagesView (1.0.0):
+    - MSWeakTimer (~> 1.0)
+  - KxMenu (1)
+  - MSWeakTimer (1.1.0)
+  - RongCloudIMKit (2.3.2)
+  - SSWeChatSDK (1.6.0)
+
+DEPENDENCIES:
+  - JSAnimatedImagesView
+  - KxMenu
+  - RongCloudIMKit
+  - SSWeChatSDK
+
+SPEC CHECKSUMS:
+  JSAnimatedImagesView: d5c5f561280171ce13f1f08ba9834c47a1f27bfc
+  KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
+  MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
+  RongCloudIMKit: c20f1301326ffd9e0b073325a5ad8799b077dc1a
+  SSWeChatSDK: beb140f738cc66c6e9b37933ff41d4686c72e745
+
+COCOAPODS: 0.39.0.rc.1

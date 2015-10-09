@@ -1,0 +1,4 @@
+pod 'RongCloudIMKit'
+pod 'KxMenu'
+pod 'JSAnimatedImagesView'
+pod 'SSWeChatSDK'

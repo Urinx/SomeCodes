@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07EAF3047539F07AB3F9E0553D7458E0 /* JSAnimatedImagesView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE1F59C4A4EF199405E2DC3D25D8558 /* JSAnimatedImagesView-dummy.m */; };
+		08D46FF23223A44A71589F25103A1226 /* KxMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5B2A0B5BFDF2B97350B4F587479F0E /* KxMenu-dummy.m */; };
+		0B594E1EFAD173C5DE0FA7278D8D71F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		0B610E183A26FF8A99D3CC185931FEB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		159D6563C4B75C7F7F2A3D0B7D1E5575 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		19D07F015D89261D744633621B41AF13 /* MSWeakTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EB7A3321D8F19F8332E79916F10A /* MSWeakTimer-dummy.m */; };
+		4FA130C5901AF104149154CB06AE061C /* JSAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8EEF4801C707C833696C7D797D7 /* JSAnimatedImagesView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		67D241207539FD1C28E665594F114DBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		6C8D509604C5676646F4D1B4F9C1902B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		76FAD72A9DA7ABED5A7F74151CC4F6D0 /* MSWeakTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C7EDD81344FCBC3542B313C7CD93B3 /* MSWeakTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86854E827E79182ADC0A1CEE901E6F8D /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4354247A00A0B6B55EEAC0005218EE /* KxMenu.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AA9CCF3F14F8F15A24BEF450D9DA2143 /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8A5812516628C3F347ABE93130C9D /* MSWeakTimer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B06661C07D6C293775A85E9ACEBF544E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		D734CFC1470ED60F5142B1D669A782DC /* JSAnimatedImagesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB51D7B1A12287C3EC4C938EC96C837 /* JSAnimatedImagesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E31C1A29A033CFD18BF31CA359C9CA56 /* KxMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCDA39C3389C577118AC4D7E6FD840E /* KxMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30C1B2FA6B4540DD61E41D3A5B05464B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB658585BF9CF06C3CC471ECC82B9D08;
+			remoteInfo = MSWeakTimer;
+		};
+		49E63107FB97709C0659EC75AE39AB66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB658585BF9CF06C3CC471ECC82B9D08;
+			remoteInfo = MSWeakTimer;
+		};
+		66020B72A9945B2EAE2563A9CA40425D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B2E2DFEAB9164C3966D663E68547E9C;
+			remoteInfo = JSAnimatedImagesView;
+		};
+		6785824E1D6ECAEF234BC6D874863B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F06F49D64E04DCD9683D916034330CE;
+			remoteInfo = KxMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		21AF93B2577C7F038E71CE9840931283 /* libMSWeakTimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMSWeakTimer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		243C6EE4D5EFA81C609A2DCCE14BC98B /* RongCloud.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RongCloud.bundle; path = Rong_Cloud_iOS_SDK_v2_3_2_stable/RongCloud.bundle; sourceTree = "<group>"; };
+		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		2806D494E186D15A18617DB6FDB7EB8E /* KxMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KxMenu.xcconfig; sourceTree = "<group>"; };
+		2F39EB7A3321D8F19F8332E79916F10A /* MSWeakTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSWeakTimer-dummy.m"; sourceTree = "<group>"; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3DB119715156068B36ACD3BB7C995865 /* MSWeakTimer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSWeakTimer-prefix.pch"; sourceTree = "<group>"; };
+		45C7EDD81344FCBC3542B313C7CD93B3 /* MSWeakTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSWeakTimer.h; sourceTree = "<group>"; };
+		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		5B3833BDB9939A5AEFCB82919BAE804E /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = SDKExport/WXApiObject.h; sourceTree = "<group>"; };
+		5B794D1E00F9CD6D27A2B07FC5BB7EFE /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongIMLib.framework; path = Rong_Cloud_iOS_SDK_v2_3_2_stable/RongIMLib.framework; sourceTree = "<group>"; };
+		5D4354247A00A0B6B55EEAC0005218EE /* KxMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KxMenu.m; path = Source/KxMenu.m; sourceTree = "<group>"; };
+		5EB51D7B1A12287C3EC4C938EC96C837 /* JSAnimatedImagesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JSAnimatedImagesView.h; sourceTree = "<group>"; };
+		5F813E352129CD695657DB32FD7C5CFD /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = SDKExport/WXApi.h; sourceTree = "<group>"; };
+		5FE8A5812516628C3F347ABE93130C9D /* MSWeakTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		6C6AECAFDACC35973B40B8FF873B765D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7EF20512B09F0B59A3F64E807AD205C0 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = Rong_Cloud_iOS_SDK_v2_3_2_stable/en.lproj; sourceTree = "<group>"; };
+		853ACFAB4466E54F986CBB34CFCF7F14 /* JSAnimatedImagesView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSAnimatedImagesView-prefix.pch"; sourceTree = "<group>"; };
+		8FCDA39C3389C577118AC4D7E6FD840E /* KxMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KxMenu.h; path = Source/KxMenu.h; sourceTree = "<group>"; };
+		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		AA5B2A0B5BFDF2B97350B4F587479F0E /* KxMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KxMenu-dummy.m"; sourceTree = "<group>"; };
+		AD5D1508820CC437D38D8A3A8A30DA31 /* RongIMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongIMKit.framework; path = Rong_Cloud_iOS_SDK_v2_3_2_stable/RongIMKit.framework; sourceTree = "<group>"; };
+		B013FEB93608EA5C188A1B0E28855488 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "Rong_Cloud_iOS_SDK_v2_3_2_stable/zh-Hans.lproj"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB2B3FD6EE79709F90CE0795EA10C4B7 /* libKxMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKxMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE1F59C4A4EF199405E2DC3D25D8558 /* JSAnimatedImagesView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSAnimatedImagesView-dummy.m"; sourceTree = "<group>"; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CD00F88E8E77B94416581D48467D8785 /* libJSAnimatedImagesView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSAnimatedImagesView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A69D57712A244D6936453DCE5D77EB /* libopencore-amrnb.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "Rong_Cloud_iOS_SDK_v2_3_2_stable/libopencore-amrnb.a"; sourceTree = "<group>"; };
+		D3855D83F4571AFDF42C6138C0095AF1 /* Emoji.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Emoji.plist; path = Rong_Cloud_iOS_SDK_v2_3_2_stable/Emoji.plist; sourceTree = "<group>"; };
+		EA8564FD7E6DE6C26E4B799F557E743B /* MSWeakTimer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSWeakTimer.xcconfig; sourceTree = "<group>"; };
+		EC3B54BB28BBBED3451E0AFBBE36738A /* KxMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KxMenu-prefix.pch"; sourceTree = "<group>"; };
+		F6EF9DA041E440A220877E63AFDAFCA9 /* JSAnimatedImagesView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSAnimatedImagesView.xcconfig; sourceTree = "<group>"; };
+		FAF9E8EEF4801C707C833696C7D797D7 /* JSAnimatedImagesView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JSAnimatedImagesView.m; sourceTree = "<group>"; };
+		FB0EEAE35268A5104059DF7BEB4CCA72 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = SDKExport/libWeChatSDK.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		003BEAA452F64AD73620510A8693A2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67D241207539FD1C28E665594F114DBB /* Foundation.framework in Frameworks */,
+				6C8D509604C5676646F4D1B4F9C1902B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F23C982E4E80AF32AE2F6BAAA7F13E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06661C07D6C293775A85E9ACEBF544E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7F2497C75BAFE565C7D34960EB4AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B594E1EFAD173C5DE0FA7278D8D71F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A4CB57B0E3F794844F2CA25A042B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B610E183A26FF8A99D3CC185931FEB5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02698BC85DF6297184E0550C7E077AAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD00F88E8E77B94416581D48467D8785 /* libJSAnimatedImagesView.a */,
+				BB2B3FD6EE79709F90CE0795EA10C4B7 /* libKxMenu.a */,
+				21AF93B2577C7F038E71CE9840931283 /* libMSWeakTimer.a */,
+				6C6AECAFDACC35973B40B8FF873B765D /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0A4AB4A2241004EE351951B5FB2CB658 /* JSAnimatedImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				5EB51D7B1A12287C3EC4C938EC96C837 /* JSAnimatedImagesView.h */,
+				FAF9E8EEF4801C707C833696C7D797D7 /* JSAnimatedImagesView.m */,
+				6823FDD87914A08FE2F4D6E932FF7BA1 /* Support Files */,
+			);
+			path = JSAnimatedImagesView;
+			sourceTree = "<group>";
+		};
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		24AC1C01F6441594E37FF4BCF2D5A3E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3855D83F4571AFDF42C6138C0095AF1 /* Emoji.plist */,
+				7EF20512B09F0B59A3F64E807AD205C0 /* en.lproj */,
+				243C6EE4D5EFA81C609A2DCCE14BC98B /* RongCloud.bundle */,
+				B013FEB93608EA5C188A1B0E28855488 /* zh-Hans.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		431C01BD606B42B5D7504E50C68E11E1 /* SSWeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5F813E352129CD695657DB32FD7C5CFD /* WXApi.h */,
+				5B3833BDB9939A5AEFCB82919BAE804E /* WXApiObject.h */,
+				6F9C74FDD7C77884A0CB78DF7942401F /* Frameworks */,
+			);
+			path = SSWeChatSDK;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6823FDD87914A08FE2F4D6E932FF7BA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF9DA041E440A220877E63AFDAFCA9 /* JSAnimatedImagesView.xcconfig */,
+				BDE1F59C4A4EF199405E2DC3D25D8558 /* JSAnimatedImagesView-dummy.m */,
+				853ACFAB4466E54F986CBB34CFCF7F14 /* JSAnimatedImagesView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSAnimatedImagesView";
+			sourceTree = "<group>";
+		};
+		6F9C74FDD7C77884A0CB78DF7942401F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EEAE35268A5104059DF7BEB4CCA72 /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FAD8190373400D5531629B2BCC35E0C /* MSWeakTimer */ = {
+			isa = PBXGroup;
+			children = (
+				45C7EDD81344FCBC3542B313C7CD93B3 /* MSWeakTimer.h */,
+				5FE8A5812516628C3F347ABE93130C9D /* MSWeakTimer.m */,
+				88AA13E5B2555ACF4C099D8C905D85B4 /* Support Files */,
+			);
+			path = MSWeakTimer;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D207738ED7C60E5315BE2494A6324889 /* Pods */,
+				02698BC85DF6297184E0550C7E077AAA /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8399BB58D9198AF48ED4F7FD9A26BFBE /* RongCloudIMKit */ = {
+			isa = PBXGroup;
+			children = (
+				F593D8E0DD49269EA3B975E3FABCA98D /* Frameworks */,
+				24AC1C01F6441594E37FF4BCF2D5A3E0 /* Resources */,
+			);
+			path = RongCloudIMKit;
+			sourceTree = "<group>";
+		};
+		88AA13E5B2555ACF4C099D8C905D85B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA8564FD7E6DE6C26E4B799F557E743B /* MSWeakTimer.xcconfig */,
+				2F39EB7A3321D8F19F8332E79916F10A /* MSWeakTimer-dummy.m */,
+				3DB119715156068B36ACD3BB7C995865 /* MSWeakTimer-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MSWeakTimer";
+			sourceTree = "<group>";
+		};
+		A4C934548BA4A1E5CE2D930C99AB3C7A /* KxMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8FCDA39C3389C577118AC4D7E6FD840E /* KxMenu.h */,
+				5D4354247A00A0B6B55EEAC0005218EE /* KxMenu.m */,
+				CD6B46C560A44D7866FACBC62AA3B8F9 /* Support Files */,
+			);
+			path = KxMenu;
+			sourceTree = "<group>";
+		};
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
+				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
+				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
+				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		CD6B46C560A44D7866FACBC62AA3B8F9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2806D494E186D15A18617DB6FDB7EB8E /* KxMenu.xcconfig */,
+				AA5B2A0B5BFDF2B97350B4F587479F0E /* KxMenu-dummy.m */,
+				EC3B54BB28BBBED3451E0AFBBE36738A /* KxMenu-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KxMenu";
+			sourceTree = "<group>";
+		};
+		D207738ED7C60E5315BE2494A6324889 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A4AB4A2241004EE351951B5FB2CB658 /* JSAnimatedImagesView */,
+				A4C934548BA4A1E5CE2D930C99AB3C7A /* KxMenu */,
+				6FAD8190373400D5531629B2BCC35E0C /* MSWeakTimer */,
+				8399BB58D9198AF48ED4F7FD9A26BFBE /* RongCloudIMKit */,
+				431C01BD606B42B5D7504E50C68E11E1 /* SSWeChatSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F593D8E0DD49269EA3B975E3FABCA98D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0A69D57712A244D6936453DCE5D77EB /* libopencore-amrnb.a */,
+				AD5D1508820CC437D38D8A3A8A30DA31 /* RongIMKit.framework */,
+				5B794D1E00F9CD6D27A2B07FC5BB7EFE /* RongIMLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		719C08C62212F7F36D905248BE60E3F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FAD72A9DA7ABED5A7F74151CC4F6D0 /* MSWeakTimer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6116D74921BB68E396C9290C0867438 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D734CFC1470ED60F5142B1D669A782DC /* JSAnimatedImagesView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88FAF3B4D73847D7B4CE1B8090C578E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31C1A29A033CFD18BF31CA359C9CA56 /* KxMenu.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4B2E2DFEAB9164C3966D663E68547E9C /* JSAnimatedImagesView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E84FB2FBD86C04A7828A525A39EF56E1 /* Build configuration list for PBXNativeTarget "JSAnimatedImagesView" */;
+			buildPhases = (
+				B530CF14247A98CD70FB32E379F7C311 /* Sources */,
+				B9A4CB57B0E3F794844F2CA25A042B23 /* Frameworks */,
+				A6116D74921BB68E396C9290C0867438 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B7B5BE56455F7C42486976FC18FEFD2 /* PBXTargetDependency */,
+			);
+			name = JSAnimatedImagesView;
+			productName = JSAnimatedImagesView;
+			productReference = CD00F88E8E77B94416581D48467D8785 /* libJSAnimatedImagesView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8F06F49D64E04DCD9683D916034330CE /* KxMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 868F5BDD93C4412EFC9FEB23F7A0C2E1 /* Build configuration list for PBXNativeTarget "KxMenu" */;
+			buildPhases = (
+				4E770D1C1A8ACB3B529A84ED2AF714D3 /* Sources */,
+				003BEAA452F64AD73620510A8693A2F3 /* Frameworks */,
+				C88FAF3B4D73847D7B4CE1B8090C578E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KxMenu;
+			productName = KxMenu;
+			productReference = BB2B3FD6EE79709F90CE0795EA10C4B7 /* libKxMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BB658585BF9CF06C3CC471ECC82B9D08 /* MSWeakTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB5230E322E803147E4DD3A4659691C /* Build configuration list for PBXNativeTarget "MSWeakTimer" */;
+			buildPhases = (
+				5371476F3A7F2BDDDC7CE7EC43C89078 /* Sources */,
+				4F23C982E4E80AF32AE2F6BAAA7F13E1 /* Frameworks */,
+				719C08C62212F7F36D905248BE60E3F0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSWeakTimer;
+			productName = MSWeakTimer;
+			productReference = 21AF93B2577C7F038E71CE9840931283 /* libMSWeakTimer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D4D2F029492727B9165039026FE65A48 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6A995055F8865968CAD4F291CAD1A1F /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				72F8D67D80916AD630EBE965552A0E2A /* Sources */,
+				6B7F2497C75BAFE565C7D34960EB4AA2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A11DC365D8CCEAD9A7BAB629AA5368F /* PBXTargetDependency */,
+				3947AA838BBFCB6B4844C521574A2802 /* PBXTargetDependency */,
+				E510FCB65487895899533421E51BE8F8 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 6C6AECAFDACC35973B40B8FF873B765D /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 02698BC85DF6297184E0550C7E077AAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B2E2DFEAB9164C3966D663E68547E9C /* JSAnimatedImagesView */,
+				8F06F49D64E04DCD9683D916034330CE /* KxMenu */,
+				BB658585BF9CF06C3CC471ECC82B9D08 /* MSWeakTimer */,
+				D4D2F029492727B9165039026FE65A48 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E770D1C1A8ACB3B529A84ED2AF714D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D46FF23223A44A71589F25103A1226 /* KxMenu-dummy.m in Sources */,
+				86854E827E79182ADC0A1CEE901E6F8D /* KxMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5371476F3A7F2BDDDC7CE7EC43C89078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D07F015D89261D744633621B41AF13 /* MSWeakTimer-dummy.m in Sources */,
+				AA9CCF3F14F8F15A24BEF450D9DA2143 /* MSWeakTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F8D67D80916AD630EBE965552A0E2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				159D6563C4B75C7F7F2A3D0B7D1E5575 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B530CF14247A98CD70FB32E379F7C311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EAF3047539F07AB3F9E0553D7458E0 /* JSAnimatedImagesView-dummy.m in Sources */,
+				4FA130C5901AF104149154CB06AE061C /* JSAnimatedImagesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B7B5BE56455F7C42486976FC18FEFD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MSWeakTimer;
+			target = BB658585BF9CF06C3CC471ECC82B9D08 /* MSWeakTimer */;
+			targetProxy = 30C1B2FA6B4540DD61E41D3A5B05464B /* PBXContainerItemProxy */;
+		};
+		3947AA838BBFCB6B4844C521574A2802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KxMenu;
+			target = 8F06F49D64E04DCD9683D916034330CE /* KxMenu */;
+			targetProxy = 6785824E1D6ECAEF234BC6D874863B8D /* PBXContainerItemProxy */;
+		};
+		7A11DC365D8CCEAD9A7BAB629AA5368F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSAnimatedImagesView;
+			target = 4B2E2DFEAB9164C3966D663E68547E9C /* JSAnimatedImagesView */;
+			targetProxy = 66020B72A9945B2EAE2563A9CA40425D /* PBXContainerItemProxy */;
+		};
+		E510FCB65487895899533421E51BE8F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MSWeakTimer;
+			target = BB658585BF9CF06C3CC471ECC82B9D08 /* MSWeakTimer */;
+			targetProxy = 49E63107FB97709C0659EC75AE39AB66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AF1D4D8E30D0D27652A78A9B5BF6210 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6EF9DA041E440A220877E63AFDAFCA9 /* JSAnimatedImagesView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSAnimatedImagesView/JSAnimatedImagesView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3220008B98A2C301BFA1369A1E1BA573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8564FD7E6DE6C26E4B799F557E743B /* MSWeakTimer.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MSWeakTimer/MSWeakTimer-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6E4EF192878BA136D8D4BCB7F5242F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		82C49A5FAD3011486CF658E9EF06C550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		92FE627B3E1C559982C1AE338C7CD89C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2806D494E186D15A18617DB6FDB7EB8E /* KxMenu.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KxMenu/KxMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B08325AEDF238EB38683118A23216E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2806D494E186D15A18617DB6FDB7EB8E /* KxMenu.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KxMenu/KxMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C5BDA511F58DE52CB4BFF38DCB4BA496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8564FD7E6DE6C26E4B799F557E743B /* MSWeakTimer.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MSWeakTimer/MSWeakTimer-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D0F463812AA301F448A2185D24FA022D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6EF9DA041E440A220877E63AFDAFCA9 /* JSAnimatedImagesView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSAnimatedImagesView/JSAnimatedImagesView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E43846B588E1892F3093F3B7082B6DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */,
+				E43846B588E1892F3093F3B7082B6DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB5230E322E803147E4DD3A4659691C /* Build configuration list for PBXNativeTarget "MSWeakTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3220008B98A2C301BFA1369A1E1BA573 /* Debug */,
+				C5BDA511F58DE52CB4BFF38DCB4BA496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		868F5BDD93C4412EFC9FEB23F7A0C2E1 /* Build configuration list for PBXNativeTarget "KxMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B08325AEDF238EB38683118A23216E4C /* Debug */,
+				92FE627B3E1C559982C1AE338C7CD89C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6A995055F8865968CAD4F291CAD1A1F /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E4EF192878BA136D8D4BCB7F5242F29 /* Debug */,
+				82C49A5FAD3011486CF658E9EF06C550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E84FB2FBD86C04A7828A525A39EF56E1 /* Build configuration list for PBXNativeTarget "JSAnimatedImagesView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF1D4D8E30D0D27652A78A9B5BF6210 /* Debug */,
+				D0F463812AA301F448A2185D24FA022D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
