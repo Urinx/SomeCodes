@@ -1,0 +1,36 @@
+\documentclass[titlepage]{article}
+
+% Page Numbering and Headings
+% ---------------------------
+\pagestyle{plain} % is the default
+% which puts the page number at the center of the bottom of the page and provides no headings.
+\pagestyle{empty}
+\pagestyle{headings}
+\pagestyle{myheadings} % will provide page numbers and custom headings.
+
+% Creating a Title Page
+% ---------------------
+\title{your title here}
+\author{your name}
+\date{\today{}}
+
+\begin{document}
+\maketitle
+
+% Abstracts
+\begin{abstract}
+To create an abstract, place your text in an abstract environment, i.e., between begin\{abstract\} and end\{abstract\} commands. The abstract should come immediately after your maketitle command, but before any tableofcontents command.
+\end{abstract}
+
+\tableofcontents
+
+% Section
+\section{Section 1}\label{sec1}
+\section{Section 2}
+\section{Section 3}
+\section{Section 4}
+\section*{Section 2} % no numbers
+
+I've written text in section \ref{sec1}
+
+\end{document}

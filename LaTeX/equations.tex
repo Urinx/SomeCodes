@@ -1,0 +1,52 @@
+\documentclass{article}
+\begin{document}
+\section{Multiline Equations}
+\subsection{Multi-line Equations}
+
+\begin{eqnarray*}
+1+2+\ldots+n &=& \frac{1}{2}((1+2+\ldots+n)+(n+\ldots+2+1)) \\
+&=& \frac{1}{2}\underbrace{(n+1)+(n+1)+\ldots+(n+1)}_{\mbox{$n$ copies}}\\
+&=& \frac{n(n+1)}{2} \\
+\end{eqnarray*}
+
+\subsection{Accents}
+$\hat{a}, \dot{a}, \ddot{a}, \tilde{a}, \bar{a}, \vec{a}$
+
+\subsection{Bracket Symbols}
+$$
+\left[
+\begin{array}{cc}
+1 & 2 \\
+3 & 4 \\
+\end{array}
+\right]
+$$
+
+$$
+|x| = \left\{
+\begin{array}{lr}
+-x & x\le 0 \\
+x & x\ge 0
+\end{array}
+\right.
+$$
+
+\subsection{Dots}
+$a_1,\ldots,a_n$
+
+$$
+\left(
+\begin{array}{ccc}
+a_{11} & \cdots & a_{1n} \\
+\vdots & \ddots & \vdots \\
+a_{m1} & \cdots & a_{mn} \\
+\end{array}
+\right)
+$$
+
+\subsection{Indenting}
+The default for a LaTeX document is to indent new paragraphs unless the paragraph follows a section heading. If you want to change the indentation, use the indent and noindent commands respectively, at the beginning of the paragraph in question.
+\\
+\indent The default for a LaTeX document is to indent new paragraphs unless the paragraph follows a section heading. If you want to change the indentation, use the indent and noindent commands respectively, at the beginning of the paragraph in question.
+
+\end{document}

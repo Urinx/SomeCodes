@@ -1,0 +1,62 @@
+% Preamble
+% --------
+\documentclass{article}
+
+% Packages
+% --------
+\usepackage{amsmath} % Advanced math typesetting
+\usepackage[utf8]{inputenc} % Unicode support
+\usepackage[ngerman]{babel} % Change hyphenation rules
+\usepackage{hyperref} % Add a link to your document
+\usepackage{graphicx} % Add pictures to your document
+\usepackage{listings} % Source code formatting and highlighting
+\usepackage[backend=bibtex,style=verbose-trad2]{biblatex} % Use biblatex package
+
+% Main document
+\begin{document}
+
+\author{Urinx} % The authors name
+\title{A quick start to \LaTeX{}} % The title of the documnet
+\date{\today{}} % Sets date you can remove \today{} and type a date manually
+\maketitle{} % Generates title
+\tableofcontents{} % Cenerates table of contents from sections and subsections
+
+\\ % Linebreak
+
+\newpage{} %Pagebreak
+
+\section{Text goes here} % On top of document hierarchy; automatically numbered
+\subsection{}
+\subsubsection{}
+\paragraph{Paragraph} % Paragraphs have no numbering
+\subparagraph{}
+
+hello, world!
+
+% Adding a math
+\begin{align}
+f(x) &= x^2\\
+f'(x) &= 2x\\
+F(x) &= \int f(x)dx\\
+F(x) &= \frac{1}{3}x^3
+\end{align}
+
+% Sourcecode formatting
+\begin{lstlisting}[language={[LaTeX]TeX},caption=,breaklines=true,frame=single]
+% Source code goes here
+\end{lstlisting}
+
+\section{Section Title}\label{sec:YOURLABEL}
+% ...
+I've written text in section \ref{sec:YOURLABEL}
+
+\printbibliography
+
+% Adding a picture
+\begin{figure}
+\includegraphics[width=\textwidth]{wechat.jpg}
+\caption{This figure shows the logo of my website.}
+\end{figure}
+
+\end{document}
+
