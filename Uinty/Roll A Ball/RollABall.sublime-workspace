@@ -1,0 +1,1139 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sc",
+				"scoreText"
+			],
+			[
+				"Coll",
+				"Collider	Collider"
+			],
+			[
+				"col",
+				"collision"
+			],
+			[
+				"Colli",
+				"Collision	Collision"
+			],
+			[
+				"Col",
+				"Collider	Collider"
+			],
+			[
+				"rota",
+				"Rotate(Vector3 eulerAngles)	void"
+			],
+			[
+				"_pl",
+				"_playerTransform	Transform"
+			],
+			[
+				"Ver",
+				"Vector3	(Player.cs)"
+			],
+			[
+				"getA",
+				"GetAxis(string axisName)	float"
+			],
+			[
+				"Ga",
+				"GameObject	GameObject"
+			],
+			[
+				"GameObject",
+				"gameObject	GameObject { get; }"
+			],
+			[
+				"game",
+				"GameObject	GameObject"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"in",
+				"intranet_scan"
+			],
+			[
+				"pos",
+				"ports"
+			],
+			[
+				"du",
+				"document"
+			],
+			[
+				"get",
+				"getIPs"
+			],
+			[
+				"ip",
+				"ip_addr"
+			],
+			[
+				"ip_",
+				"ip_regex"
+			],
+			[
+				"Source",
+				"Sourcecode"
+			],
+			[
+				"Pr",
+				"Preview.app"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"uni",
+				"unittest"
+			],
+			[
+				"sq",
+				"sqMap"
+			],
+			[
+				"load",
+				"load_fasta"
+			],
+			[
+				"file",
+				"filename	(Traindata.py)"
+			],
+			[
+				"1",
+				"11283351_neg.mitab"
+			],
+			[
+				"hum",
+				"human.db.all.201108-201008.intm"
+			],
+			[
+				"hu",
+				"human.db.all.201108-201008.intm"
+			],
+			[
+				"def",
+				"defs	Method"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"tot",
+				"totalTime"
+			],
+			[
+				"AA",
+				"AAIndex1"
+			],
+			[
+				"data",
+				"data2"
+			],
+			[
+				"re",
+				"recommen	(index.html)"
+			],
+			[
+				"com",
+				"comment"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"Ma",
+				"MaterialIcons-Regular"
+			],
+			[
+				"da",
+				"dataScore"
+			],
+			[
+				"di",
+				"direction"
+			],
+			[
+				"wea",
+				"weather"
+			],
+			[
+				"brr",
+				"border-radius"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"url",
+				"url()"
+			],
+			[
+				"topS",
+				"topSortHelper"
+			],
+			[
+				"o",
+				"origAmt"
+			],
+			[
+				"rem",
+				"remainAmt"
+			],
+			[
+				"coin",
+				"coinNum"
+			],
+			[
+				"or",
+				"origAmt"
+			],
+			[
+				"word",
+				"word2"
+			],
+			[
+				"le",
+				"length	(hashTable.js)"
+			],
+			[
+				"ins",
+				"insertionSort"
+			],
+			[
+				"num",
+				"numElements"
+			],
+			[
+				"nem",
+				"numElements"
+			],
+			[
+				"edge",
+				"edgeTo"
+			],
+			[
+				"has",
+				"hasPathTo"
+			],
+			[
+				"ed",
+				"edgeTo"
+			],
+			[
+				"sh",
+				"shift	(queue.js)"
+			],
+			[
+				"add",
+				"addEdge"
+			],
+			[
+				"co",
+				"contains"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"pre",
+				"preNode"
+			],
+			[
+				"new",
+				"newNode"
+			],
+			[
+				"cur",
+				"currNode"
+			],
+			[
+				"fin",
+				"findPrevious"
+			],
+			[
+				"cu",
+				"currNode"
+			],
+			[
+				"im",
+				"imgDat"
+			],
+			[
+				"cha",
+				"changePoints"
+			],
+			[
+				"cre",
+				"createImageData	(index.html)"
+			],
+			[
+				"getC",
+				"getCameraPermission	(motionCapture.js)"
+			],
+			[
+				"mo",
+				"motionCapture	(motionCapture.js)"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"remo",
+				"removeNode"
+			],
+			[
+				"pto",
+				"prototype	(stack.js)"
+			],
+			[
+				"mu",
+				"muzik"
+			],
+			[
+				"m",
+				"material-icon.css"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"we",
+				"wechat_public.jpg	w:258 h:258"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"lin",
+				"linkedin.png	w:80 h:80"
+			],
+			[
+				"al",
+				"align"
+			],
+			[
+				"ba",
+				"background2.jpg	w:1440 h:801"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"test",
+				"test_find_top_N_recurring_words"
+			],
+			[
+				"modu",
+				"module_name"
+			],
+			[
+				"mod",
+				"module_name"
+			],
+			[
+				"__",
+				"__main__"
+			],
+			[
+				"find",
+				"finding_prime_fermat"
+			],
+			[
+				"finding",
+				"finding_prime_sqrt"
+			],
+			[
+				"finding_",
+				"finding_prime"
+			],
+			[
+				"convert",
+				"test_convert_dec_to_any_base_rec"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"visi",
+				"visibility"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"is",
+				"isMobile"
+			],
+			[
+				"app",
+				"appItem"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"pag",
+				"page-index"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"sy",
+				"SystemPal.app.png	w:-1 h:-1"
+			],
+			[
+				"pho",
+				"Photos.app.png	w:-1 h:-1"
+			],
+			[
+				"ga",
+				"GarageBand.app.png	w:-1 h:-1"
+			],
+			[
+				"sys",
+				"System Preferences.app.png	w:-1 h:-1"
+			],
+			[
+				"cal",
+				"Calculator.app.png	w:-1 h:-1"
+			],
+			[
+				"wi",
+				"white"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"w",
+				"white"
+			],
+			[
+				"img",
+				"img_src"
+			],
+			[
+				"ke",
+				"keyCode"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"ove",
+				"overflow"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"L",
+				"LINE1"
+			],
+			[
+				"Li",
+				"LINE2"
+			],
+			[
+				"Dr",
+				"DrawDot"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assets/Scripts/Player.cs",
+			"settings":
+			{
+				"buffer_size": 1003,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/FollowBall.cs",
+			"settings":
+			{
+				"buffer_size": 382,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/PickUp.cs",
+			"settings":
+			{
+				"buffer_size": 251,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "in",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"rello",
+				"OmniSharpSublime: Reload Solution"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 431.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/eular/Documents/Works/Roll A Ball",
+		"/Users/eular/Documents/Works/Roll A Ball/Assets",
+		"/Users/eular/Documents/Works/Roll A Ball/Assets/Materials",
+		"/Users/eular/Documents/Works/Roll A Ball/Assets/Scenes",
+		"/Users/eular/Documents/Works/Roll A Ball/Assets/Scripts"
+	],
+	"file_history":
+	[
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/OmniSharp/OmniSharpSublime.sublime-settings",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/DocBlockr/README.md",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/User/UnityC#.sublime-settings",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/User/OmniSharpSublime.sublime-settings",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/OmniSharp/Default.sublime-keymap",
+		"/Users/eular/Documents/Works/Roll A Ball/RollABall.sublime-project",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/User/Default.sublime-keymap",
+		"/Users/eular/Documents/Works/Roll A Ball/Assets/Scripts/Player.cs",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/eular/Desktop/mkk/Tools/1AFX.pdb",
+		"/Users/eular/Applications/天行助手.app/Contents/Resources/shadowsocks-config-template",
+		"/Users/eular/Applications/天行助手.app/Contents/Resources/dsa_pub.pem",
+		"/Users/eular/Applications/天行助手.app/Contents/Resources/Podfile",
+		"/Users/eular/Applications/天行助手.app/Contents/Resources/About.txt",
+		"/Users/eular/Desktop/untitled.py",
+		"/Users/eular/Desktop/Unknown.py",
+		"/Users/eular/Documents/Works/ppsspp/build-ios/PPSSPP.build/Debug-iphonesimulator/PPSSPP.build/Script-F3726348CE07472F9074C763.sh",
+		"/Users/eular/Documents/Git/Iconista/build/Iconista",
+		"/Users/eular/Documents/Works/smartchildweb/app/assets/scripts/services/StatsService.coffee",
+		"/Users/eular/Desktop/forensic/papers_fingerprint_url",
+		"/Users/eular/Downloads/手中纸，心中爱.txt",
+		"/Users/eular/Documents/Git/urinx.github.io/v5/js/app.js",
+		"/Users/eular/Documents/Git/urinx.github.io/v5/index.html",
+		"/Users/eular/Desktop/mkk/123/review.js",
+		"/Users/eular/Documents/iOS/iOS-Runtime-Headers/PrivateFrameworks/HealthDaemon.framework/HDHealthService.h",
+		"/Users/eular/Documents/iOS/iOS-Runtime-Headers/PrivateFrameworks/HealthDaemon.framework/HDDeviceManager.h",
+		"/Users/eular/Documents/iOS/iOS-Runtime-Headers/PrivateFrameworks/HealthDaemon.framework/HDHealthThermometerService.h",
+		"/Users/eular/Documents/iOS/iOS-Runtime-Headers/Frameworks/ModelIO.framework/MDLPhysicallyPlausibleLight.h",
+		"/Users/eular/Documents/iOS/iOS-Runtime-Headers/Frameworks/ModelIO.framework/MDLColorSwatchTexture.h",
+		"/Users/eular/Documents/iOS/iOS-Runtime-Headers/Frameworks/CoreMotion.framework/CMMotionManagerInternal.h",
+		"/Users/eular/Documents/Git/Iconista/README.md",
+		"/Users/eular/Downloads/web-master/Gruntfile.js",
+		"/Users/eular/Downloads/psp/使用前必看.txt",
+		"/Users/eular/Documents/iOS/iOS-Runtime-Headers/Frameworks/Accounts.framework/ACAccount.h",
+		"/System/Library/Frameworks/Kernel.framework/Versions/A/Headers/mach/processor_info.h",
+		"/Users/eular/Documents/Git/browspy/browspy.js",
+		"/Users/eular/Documents/Git/browspy/README.md",
+		"/Users/eular/Desktop/lan.js",
+		"/Users/eular/Documents/Git/browspy/browspy.php",
+		"/Users/eular/Desktop/Desktop/pymol/INSTALL",
+		"/Users/eular/Desktop/Desktop/pymol/README",
+		"/Volumes/class-dump-3.5/README.md",
+		"/Users/eular/Downloads/IDA Pro Standard v6.1 (MacOS) (Fraunhofer-Institut) (c) Hex-Rays/ida_fd31ad2a566fa5f0f8f0a5053d830bdc.key",
+		"/Users/eular/Documents/git/SomeCodes/LaTeX/equations.tex",
+		"/Users/eular/Desktop/multicol.tex",
+		"/Users/eular/Desktop/1.tex",
+		"/Users/eular/Documents/git/Books/LaTeX/lesson/lecture08.pdf",
+		"/Users/eular/Desktop/LaTeX/letter.tex",
+		"/Users/eular/Desktop/LaTeX/graphics.tex",
+		"/Users/eular/Desktop/LaTeX/slides.tex",
+		"/Users/eular/Desktop/LaTeX/bibliography.tex",
+		"/Users/eular/Desktop/LaTeX/formatting.tex",
+		"/Users/eular/Desktop/LaTeX/equations.tex",
+		"/Users/eular/Desktop/LaTeX/table_array.tex",
+		"/Users/eular/Desktop/LaTeX/accents_font.tex",
+		"/Users/eular/Desktop/LaTeX/spacing.tex",
+		"/Users/eular/Desktop/LaTeX/mathematical.tex",
+		"/Users/eular/Desktop/LaTeX/document_structure.tex",
+		"/Users/eular/Desktop/LaTeX/documentclass.tex",
+		"/Users/eular/Desktop/LaTeX/tutorial.tex",
+		"/Users/eular/Desktop/LaTeX/plotdata.tex",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/Users/eular/Desktop/LaTeX/bibliography.bib",
+		"/Users/eular/Desktop/test.tex",
+		"/Users/eular/Desktop/test.log",
+		"/Users/eular/Desktop/test",
+		"/private/etc/fstab.hd",
+		"/Users/eular/Desktop/WindListener/WindListener/ViewController.swift",
+		"/Users/eular/Downloads/tuhao.hustonline.net/1.md",
+		"/Users/eular/Downloads/Tuhao-master/core/user.inc.php",
+		"/Users/eular/Downloads/Tuhao-master/include.php",
+		"/Users/eular/Downloads/Tuhao-master/lib/upload.func.php",
+		"/Users/eular/Downloads/Tuhao-master/lib/mysql.func.php",
+		"/Users/eular/Downloads/Tuhao-master/lib/common.func.php",
+		"/Users/eular/Downloads/2shoujie/1.md",
+		"/Users/eular/Desktop/1.md",
+		"/Users/eular/Downloads/Tuhao-master/core/regexTool.class.php",
+		"/Users/eular/Downloads/Tuhao-master/Smarty/smarty.inc.php",
+		"/Users/eular/Downloads/Tuhao-master/lib/class.pop3.php",
+		"/Users/eular/Downloads/Tuhao-master/lib/class.phpmailer.php",
+		"/Users/eular/Downloads/Tuhao-master/config/config.php",
+		"/Users/eular/Downloads/Tuhao-master/lib/sendEmail.php",
+		"/Users/eular/Documents/git/SomeCodes/Swift/swiftDemo/sensor/sensor/ViewController.swift",
+		"/Users/eular/Documents/git/SomeCodes/Swift/swiftDemo/sensor/sensor/AppDelegate.swift",
+		"/Users/eular/Documents/git/Device-9/README.md",
+		"/Users/eular/Documents/git/Device-9/Device 9/ipa.sh",
+		"/Users/eular/Downloads/Curator-iOS-develop/Podfile",
+		"/Users/eular/Documents/work/smartchildweb/app/assets/scripts/admin.coffee",
+		"/Users/eular/Documents/work/smartchildweb/app/controllers/Application.scala",
+		"/Users/eular/Documents/git/urinx.github.io/v5/index.html",
+		"/Users/eular/Documents/git/urinx.github.io/v5/js/app.js",
+		"/Users/eular/Documents/git/urinx.github.io/v5/app.js",
+		"/Users/eular/Desktop/D9 app/Device 9/ipa.sh",
+		"/Users/eular/Documents/git/SomeCodes/iOS/CloudIMTest/ipa",
+		"/Users/eular/Desktop/123/review.js",
+		"/Users/eular/Downloads/TL-WR745N V3.0…˝º∂»Ìº˛20140306/wr745nv3.bin",
+		"/Users/eular/Downloads/scada-tools-master/s7-1200_brute_offline.py",
+		"/Users/eular/Downloads/BEMSimpleLineGraph-master/README.md",
+		"/Users/eular/Downloads/BEMSimpleLineGraph-master/BEMSimpleLineGraph.podspec.json",
+		"/Users/eular/Downloads/BEMSimpleLineGraph-master/CHANGELOG.md",
+		"/Users/eular/Downloads/NewEBuy-master-master/README.md",
+		"/Users/eular/Downloads/ml-master/ml.js",
+		"/Users/eular/Downloads/NewEBuy-master-master/sourceCode/ipa-build.sh",
+		"/Users/eular/Downloads/xcode_shell-master/ipa-build",
+		"/Users/eular/Downloads/of_v0.8.4_osx_release/README.md",
+		"/Users/eular/Downloads/VIPs-master/iqiyi",
+		"/Users/eular/Downloads/VIPs-master/Letv",
+		"/Users/eular/Downloads/VIPs-master/QQfilm",
+		"/Users/eular/Downloads/VIPs-master/Youtu",
+		"/Users/eular/Downloads/VIPs-master/Thunder",
+		"/Users/eular/Downloads/VIPs-master/NEW",
+		"/Users/eular/Desktop/books.md",
+		"/Users/eular/Downloads/电视直播.pls",
+		"/Users/eular/Desktop/bio/code/main.py",
+		"/Users/eular/Documents/git/Vu/唯舞/唯舞/IndexViewController.swift",
+		"/Users/eular/Documents/git/Vu/唯舞/唯舞/AppDelegate.swift",
+		"/Users/eular/Desktop/D9 app/Device 9/ipa",
+		"/Users/eular/Desktop/D9 app/ipa",
+		"/Users/eular/Desktop/github_hacking.py",
+		"/Users/eular/Desktop/github.md",
+		"/Users/eular/Documents/git/SomeCodes/Swift/swiftDemo/today/todayWidget/TodayViewController.swift",
+		"/Users/eular/Library/Preferences/com.ittybittyapps.Reveal.plist",
+		"/Users/eular/Desktop/github_hacking.md",
+		"/Users/eular/Desktop/ipa",
+		"/Users/eular/Documents/git/Iconista/build/Iconista",
+		"/Users/eular/Desktop/D9 app/Device 9/Chart/Chart.swift",
+		"/Users/eular/Documents/git/WeixinWalk/微信运动/微信运动/MainViewController.swift"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 91.0,
+		"where_history":
+		[
+			"/Users/eular/Downloads/Tuhao-master"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			");\n",
+			"GameObject",
+			"POCBase",
+			"temperature",
+			"fin",
+			"install",
+			"INSTALL",
+			" \n",
+			"autoLogin",
+			"getUniqueName",
+			"\",\"",
+			"define(\"",
+			"LSUIElement",
+			"lng",
+			"<br>",
+			"font-size",
+			"aaindex1",
+			"van der",
+			"van",
+			"Screenshots",
+			"sho",
+			"cr",
+			"App Screenshot",
+			"editing",
+			"Editing",
+			"editing",
+			"Editing",
+			"editing",
+			"Editing",
+			"editing",
+			"g",
+			"'new'",
+			"hoverable",
+			"orange",
+			"div",
+			"span",
+			"i",
+			"pTrainingSample",
+			"wind",
+			"p",
+			"test",
+			"div",
+			"    ",
+			"     ",
+			"    ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"(\"/",
+			"address",
+			"hover",
+			".device section:not(:hover) .weather:first-child",
+			"active",
+			"hover",
+			"active",
+			"hover",
+			"Lato",
+			"        ",
+			"       ",
+			"      ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"            ",
+			"           ",
+			"          ",
+			"            ",
+			"          ",
+			"         ",
+			"        ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"this.dataStore",
+			"head",
+			"listSize",
+			";\n",
+			"b",
+			"j",
+			"newArr",
+			"temp",
+			"copyImgData",
+			"400",
+			"self",
+			"this",
+			"self",
+			"videoObj",
+			"  ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"  1 ",
+			"left",
+			"top",
+			"portfolio",
+			"scrolly",
+			"text",
+			"					",
+			"				",
+			"20",
+			"4",
+			"  ",
+			"	",
+			"work",
+			"阅读原文",
+			"<i class=\"material-icons right\">more_vert</i>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assets/Scripts/Player.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1003,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								988,
+								988
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"229,230": "Initializing field by default value is redundant",
+								"799,807": "Parameter can be declared with base type",
+								"808,816": "Parameter 'collider' hides property 'UnityEngine.Component.collider'"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Scripts/FollowBall.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 382,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								376,
+								376
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"19,24": "Using directive is not used by code and can be removed safely."
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Scripts/PickUp.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								238,
+								238
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"19,24": "Using directive is not used by code and can be removed safely."
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 156.0
+	},
+	"pinned_build_system": "",
+	"project": "RollABall.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
