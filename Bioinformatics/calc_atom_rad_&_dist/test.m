@@ -1,0 +1,11 @@
+disp('[*] Read PDB file: 3ADC.pdb');
+pdb_3ADC = pdbatom('3ADC.pdb');
+disp('[*] Done! Load data...');
+disp(sprintf('[*] 3ADC has %d atoms, %d heterogen atoms', length(pdb_3ADC.Atom), length(pdb_3ADC.HeterogenAtom)));
+disp('[*] The distence of first 5 atoms in 3ADC:');
+atom_dist = atomdist(pdb_3ADC.Atom(1:5));
+disp(atom_dist);
+disp('[*] The rad of first 5 atoms in 3ADC:');
+atom_rad = atomrad(pdb_3ADC.Atom(1:5));
+disp(atom_rad);
+disp('[*] End');
