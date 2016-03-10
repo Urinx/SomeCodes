@@ -1,0 +1,1054 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wi",
+				"width"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"sen",
+				"sendMsgToAll"
+			],
+			[
+				"get",
+				"getUserRemarkName"
+			],
+			[
+				"webwxg",
+				"webwxgetvideo?msgid"
+			],
+			[
+				"lo",
+				"loads"
+			],
+			[
+				"json",
+				"jsonfmt"
+			],
+			[
+				"sl",
+				"sleep"
+			],
+			[
+				"K",
+				"KeyboardInterrupt"
+			],
+			[
+				"_s",
+				"_searchContent"
+			],
+			[
+				"msg",
+				"msgType"
+			],
+			[
+				"se",
+				"search"
+			],
+			[
+				"Con",
+				"ContactList"
+			],
+			[
+				"We",
+				"WebWeixin"
+			],
+			[
+				"di",
+				"deviceId"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"req",
+				"requests"
+			],
+			[
+				"ex",
+				"except"
+			],
+			[
+				"me",
+				"member"
+			],
+			[
+				"sle",
+				"selector"
+			],
+			[
+				"webs",
+				"webwxsync"
+			],
+			[
+				"el",
+				"elif"
+			],
+			[
+				"Msg",
+				"MsgID"
+			],
+			[
+				"BaseRe",
+				"BaseResponse"
+			],
+			[
+				"ap",
+				"append	(wdf.py)"
+			],
+			[
+				"pa",
+				"params"
+			],
+			[
+				"pas",
+				"pass_ticket"
+			],
+			[
+				"ret",
+				"retcode"
+			],
+			[
+				"de",
+				"deviceId"
+			],
+			[
+				"wx",
+				"wxsid"
+			],
+			[
+				"Me",
+				"MemberList"
+			],
+			[
+				"g",
+				"global"
+			],
+			[
+				"init",
+				"initMap"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"emi",
+				"emitjumps"
+			],
+			[
+				"emit",
+				"emitlabel"
+			],
+			[
+				"I",
+				"INDEX"
+			],
+			[
+				"fl",
+				"Float"
+			],
+			[
+				"is",
+				"isdigit"
+			],
+			[
+				"read",
+				"readch"
+			],
+			[
+				"lex",
+				"lexeme"
+			],
+			[
+				"DO",
+				"DOMAIN1_1"
+			],
+			[
+				"tes",
+				"test_ranked.DI"
+			],
+			[
+				"send",
+				"sendQueue"
+			],
+			[
+				"q",
+				"queue"
+			],
+			[
+				"en",
+				"encode"
+			],
+			[
+				"seM",
+				"sendMarkdown"
+			],
+			[
+				"Setting",
+				"Settings"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"wa",
+				"waitForAns"
+			],
+			[
+				"tak",
+				"talkQueue"
+			],
+			[
+				"sendC",
+				"sendChoice"
+			],
+			[
+				"talk",
+				"talkQueue"
+			],
+			[
+				"S",
+				"SCENES"
+			],
+			[
+				"ch",
+				"chat_id"
+			],
+			[
+				"lan",
+				"lang_set"
+			],
+			[
+				"if",
+				"if_line"
+			],
+			[
+				"hand",
+				"handleChoice"
+			],
+			[
+				"han",
+				"handleTalk"
+			],
+			[
+				"ha",
+				"handleSet"
+			],
+			[
+				"ran",
+				"random"
+			],
+			[
+				"dela",
+				"delay_time"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"loadS",
+				"loadStatusData"
+			],
+			[
+				"start",
+				"startStory"
+			],
+			[
+				"load",
+				"loadString"
+			],
+			[
+				"str",
+				"strings"
+			],
+			[
+				"loadStr",
+				"loadStoryData"
+			],
+			[
+				"hide",
+				"hideCustomKeyboards"
+			],
+			[
+				"te",
+				"telegram"
+			],
+			[
+				"upd",
+				"update"
+			],
+			[
+				"s",
+				"sendMessage"
+			],
+			[
+				"upda",
+				"updater"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"cal",
+				"calculate_p"
+			],
+			[
+				"tim",
+				"timeit"
+			],
+			[
+				"code",
+				"codeSign"
+			],
+			[
+				"xcode",
+				"xcodebuild"
+			],
+			[
+				"atom_",
+				"atom_rad"
+			],
+			[
+				"sc",
+				"scoreText"
+			],
+			[
+				"Coll",
+				"Collider	Collider"
+			],
+			[
+				"Colli",
+				"Collision	Collision"
+			],
+			[
+				"Col",
+				"Collider	Collider"
+			],
+			[
+				"rota",
+				"Rotate(Vector3 eulerAngles)	void"
+			],
+			[
+				"_pl",
+				"_playerTransform	Transform"
+			],
+			[
+				"Ver",
+				"Vector3	(Player.cs)"
+			],
+			[
+				"getA",
+				"GetAxis(string axisName)	float"
+			],
+			[
+				"Ga",
+				"GameObject	GameObject"
+			],
+			[
+				"GameObject",
+				"gameObject	GameObject { get; }"
+			],
+			[
+				"game",
+				"GameObject	GameObject"
+			],
+			[
+				"in",
+				"intranet_scan"
+			],
+			[
+				"pos",
+				"ports"
+			],
+			[
+				"du",
+				"document"
+			],
+			[
+				"ip",
+				"ip_addr"
+			],
+			[
+				"ip_",
+				"ip_regex"
+			],
+			[
+				"Source",
+				"Sourcecode"
+			],
+			[
+				"Pr",
+				"Preview.app"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"uni",
+				"unittest"
+			],
+			[
+				"sq",
+				"sqMap"
+			],
+			[
+				"file",
+				"filename	(Traindata.py)"
+			],
+			[
+				"1",
+				"11283351_neg.mitab"
+			],
+			[
+				"hum",
+				"human.db.all.201108-201008.intm"
+			],
+			[
+				"hu",
+				"human.db.all.201108-201008.intm"
+			],
+			[
+				"def",
+				"defs	Method"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"tot",
+				"totalTime"
+			],
+			[
+				"AA",
+				"AAIndex1"
+			],
+			[
+				"data",
+				"data2"
+			],
+			[
+				"com",
+				"comment"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"Ma",
+				"MaterialIcons-Regular"
+			],
+			[
+				"da",
+				"dataScore"
+			],
+			[
+				"wea",
+				"weather"
+			],
+			[
+				"brr",
+				"border-radius"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"url",
+				"url()"
+			],
+			[
+				"topS",
+				"topSortHelper"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assets/Scripts/TankMovement.cs",
+			"settings":
+			{
+				"buffer_size": 176,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"rello",
+				"OmniSharpSublime: Reload Solution"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 431.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/eular/Documents/Works/Tanks",
+		"/Users/eular/Documents/Works/Tanks/Assets",
+		"/Users/eular/Documents/Works/Tanks/Assets/Scripts"
+	],
+	"file_history":
+	[
+		"/Users/eular/Documents/Works/Tanks/Tanks.sublime-project",
+		"/Users/eular/Documents/Works/Tanks/Assets/Scripts/TankMovement.cs",
+		"/Users/eular/Desktop/DCA/ssh.md",
+		"/Users/eular/Desktop/DCA/notes.md",
+		"/Users/eular/Desktop/DCA/Program/origin_code/dca.m",
+		"/Users/eular/Desktop/ssh.md",
+		"/Users/eular/Desktop/notes.md",
+		"/Users/eular/Downloads/project_part2/dca.m",
+		"/Users/eular/Documents/Git/SomeCodes/Bioinformatics/dca/dca.py",
+		"/Users/eular/Desktop/Sublime/Podfile",
+		"/Users/eular/Desktop/1.html",
+		"/Users/eular/Documents/Git/Moi/Moi/app.html",
+		"/Users/eular/Downloads/TSMarkdownParser-master/README.md",
+		"/Users/eular/Desktop/test.html",
+		"/Users/eular/Desktop/1.b64",
+		"/Users/eular/Desktop/4.svg",
+		"/Users/eular/Desktop/3.svg",
+		"/Users/eular/Desktop/1.svg",
+		"/Users/eular/Desktop/2.svg",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/eular/Desktop/Safari Bookmarks.html",
+		"/Users/eular/Documents/Git/Vu/唯舞/唯舞/IndexViewController.swift",
+		"/Users/eular/Documents/Git/Vu/唯舞/唯舞/AppDelegate.swift",
+		"/Users/eular/Documents/Git/WeixinBot/weixin.py",
+		"/Users/eular/Desktop/Sublime/Pods/Alamofire/LICENSE",
+		"/Users/eular/Desktop/WeChat/WeChat-2.strings",
+		"/Users/eular/Desktop/WeChat/WeChat.strings",
+		"/Users/eular/Desktop/WeChat/petercliu.list",
+		"/Users/eular/Desktop/WeChat/WeChat-3.strings",
+		"/Users/eular/Desktop/WeChat/a.sh",
+		"/Users/eular/Desktop/WeChat/WeChat-dir.strings",
+		"/Users/eular/Desktop/WeChat/mac1.2.list",
+		"/Users/eular/Documents/Git/Iconista/build/Iconista",
+		"/Users/eular/Desktop/WeChat-dir.strings",
+		"/Users/eular/Desktop/WeChat-3.strings",
+		"/Users/eular/Desktop/WeChat-2.strings",
+		"/Users/eular/Desktop/WeChat.strings",
+		"/Users/eular/Library/Developer/CoreSimulator/Devices/6C05C809-C701-4883-89E5-58E3B87DF6BE/data/Containers/Data/Application/894E9DC6-0771-4E8C-BF95-F18AE72EFC48/Documents/var/www/index.html",
+		"/Users/eular/Desktop/index.html",
+		"/Users/eular/Downloads/SJCSimplePDFView-master/README.md",
+		"/Users/eular/Downloads/SJCSimplePDFView-master/SJCSimplePDFViewExample/ViewController.m",
+		"/Users/eular/Downloads/SJCSimplePDFView-master/SJCSimplePDFView/SJCSimplePDFView.m",
+		"/Users/eular/Desktop/xhh-info.md",
+		"/Users/eular/Downloads/iOS_ICE_AND_FIRE-master/Extra_Chapter/Entitlements.plist",
+		"/Users/eular/Downloads/iOS_ICE_AND_FIRE-master/Entitlements.plist",
+		"/Users/eular/Downloads/iOS_ICE_AND_FIRE-master/embedded copy.xml",
+		"/Users/eular/Downloads/iOS_ICE_AND_FIRE-master/embedded copy.plist",
+		"/Users/eular/Downloads/iOS_ICE_AND_FIRE-master/IceAndFire.app/embedded.mobileprovision",
+		"/Users/eular/Documents/Git/SomeCodes/Swift/swiftDemo/video/video/ViewController.swift",
+		"/Users/eular/Desktop/ghostbin.py",
+		"/Users/eular/Downloads/y82v4.txt",
+		"/Users/eular/Downloads/CYRTextView-master/Example/CYRTextViewExample/QEDTextView.m",
+		"/Users/eular/Library/Developer/CoreSimulator/Devices/6C05C809-C701-4883-89E5-58E3B87DF6BE/data/Containers/Data/Application/DDD94A27-0A78-47B7-AC71-03B46EF899EC/Documents/wdf.py",
+		"/Users/eular/Library/Developer/CoreSimulator/Devices/6C05C809-C701-4883-89E5-58E3B87DF6BE/data/Containers/Data/Application/6DD8D1B7-AF3A-4ED9-AA12-A82C979C1AF5/Documents/wdf.py",
+		"/Users/eular/Library/Developer/CoreSimulator/Devices/6C05C809-C701-4883-89E5-58E3B87DF6BE/data/Containers/Data/Application/7BA7A6F9-2214-48BC-819A-F2EEF3FFCA5D/Documents/wdf.py",
+		"/Users/eular/Library/Developer/CoreSimulator/Devices/6C05C809-C701-4883-89E5-58E3B87DF6BE/data/Containers/Data/Application/5D972806-2FBE-4C76-9FA6-8505D7A1EDBC/Documents/wdf.py",
+		"/Users/eular/Library/Developer/CoreSimulator/Devices/6C05C809-C701-4883-89E5-58E3B87DF6BE/data/Containers/Data/Application/672CB08B-A008-4E0E-90A9-618255C389CA/Documents/wdf.py",
+		"/Users/eular/Library/Developer/CoreSimulator/Devices/6C05C809-C701-4883-89E5-58E3B87DF6BE/data/Containers/Data/Application/026C099D-7CF3-463E-9DFB-F139B2DD4BDA/Documents/wdf.py",
+		"/Users/eular/Documents/Git/Device-9/Device 9/Device 9/AboutViewController.swift",
+		"/Users/eular/Documents/Git/Vu/唯舞/唯舞/VideoViewController.swift",
+		"/Users/eular/Documents/Git/Vu/唯舞/唯舞/LikedViewController.swift",
+		"/Users/eular/Documents/Git/Vu/唯舞/唯舞/MeTableViewController.swift",
+		"/Users/eular/Downloads/CYRTextView-master/CRYTextViewKit/CYRTextView.m",
+		"/Users/eular/Downloads/CYRTextView-master/Example/CYRTextViewExample/ViewController.m",
+		"/Users/eular/Downloads/CYRTextView-master/CRYTextViewKit/CYRTextViewKit.h",
+		"/Users/eular/Library/Developer/CoreSimulator/Devices/6C05C809-C701-4883-89E5-58E3B87DF6BE/data/Containers/Data/Application/E4E771A3-557A-47BB-B43F-29EF0355C720/Documents/wdf.py",
+		"/Users/eular/Downloads/Monokai_Sublime.xml",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Cache/Swift/Syntaxes/Swift.tmLanguage.rcache",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Cache/Theme - Default/Widgets.stTheme.cache",
+		"/Users/eular/Documents/Git/Device-9/Device 9/Device9Kit/Network.m",
+		"/Users/eular/Documents/Git/WeixinBot/README.md",
+		"/Users/eular/Documents/Git/WeixinBot/webwxApp.js",
+		"/Users/eular/Documents/Git/WeixinBot/webwxApp2aeaf2.js",
+		"/Users/eular/Documents/Git/Vu/唯舞/唯舞/PageContentViewController.swift",
+		"/Users/eular/Documents/Git/Vu/唯舞/唯舞/PageViewController.swift",
+		"/Users/eular/Downloads/QuickRearrangeTableView-master/QuickRearrangeTableView.swift",
+		"/Users/eular/Downloads/QuickRearrangeTableView-master/Example/App/ViewController.swift",
+		"/Users/eular/Library/Developer/CoreSimulator/Devices/device_set.plist",
+		"/Users/eular/Downloads/DOPNavbarMenu/README.md",
+		"/Users/eular/Desktop/mkk/swift.playground/Contents.swift",
+		"/Users/eular/Documents/Git/Vu/唯舞/唯舞/InfoTableViewController.swift",
+		"/Users/eular/Documents/Git/Vu/唯舞/唯舞/Extension/Extensions.swift",
+		"/Users/eular/Documents/Git/SomeCodes/iOS/CloudIMTest/Pods/KxMenu/Source/KxMenu.m",
+		"/Users/eular/Documents/Git/SomeCodes/iOS/CloudIMTest/Podfile",
+		"/Users/eular/Documents/Git/Vu/唯舞/唯舞/Extension/HRToast+UIView.swift",
+		"/Users/eular/Documents/Git/WeixinBot/client.md",
+		"/Users/eular/Documents/Git/WeixinBot/msg28.json",
+		"/Users/eular/Documents/Git/WeixinBot/msg155.json",
+		"/Users/eular/Documents/Git/WeixinBot/msg811.json",
+		"/Users/eular/Documents/Git/WeixinBot/msg439.json",
+		"/Users/eular/Documents/Git/WeixinBot/msg92.json",
+		"/Users/eular/Documents/Git/WeixinBot/text.html",
+		"/Users/eular/Documents/Git/WeixinBot/msg638.json",
+		"/Users/eular/Documents/Git/WeixinBot/msg302.json",
+		"/Users/eular/Documents/Git/WeixinBot/msg487.json",
+		"/Users/eular/Documents/Git/WeixinBot/msg521.json",
+		"/Users/eular/Documents/Git/WeixinBot/msg223.json",
+		"/Users/eular/Downloads/wechat-deleted-friends-master/wdf.py",
+		"/Users/eular/Documents/Git/WeixinBot/msg571.json",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/DocBlockr/Base File.sublime-settings",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/Users/eular/Documents/Git/WeixinBot/msg713.json",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/Pretty JSON/Pretty JSON.sublime-settings",
+		"/Users/eular/Documents/Git/WeixinBot/msg287.json",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/User/Pretty JSON.sublime-settings",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/eular/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/eular/Downloads/webwxgetcontact.json",
+		"/Users/eular/Downloads/webwxinit.json",
+		"/Users/eular/Documents/Git/Books/README.md",
+		"/Users/eular/Documents/Git/Device-9/README.md",
+		"/Users/eular/Documents/Git/WriteTyper/README.md",
+		"/Users/eular/Downloads/weixin.py",
+		"/Users/eular/Downloads/wechat.py",
+		"/Users/eular/Documents/Git/urinx.github.io/v5/js/app.js",
+		"/Volumes/ETO/WebPage/matrix.html",
+		"/Volumes/ETO/WebPage/Demo/WebPage1.0/page3.html",
+		"/Volumes/ETO/WebPage/Demo/ppt3.0/Presentation.google.html",
+		"/Users/eular/Desktop/pred2/README.txt",
+		"/Users/eular/Downloads/geci.txt",
+		"/Users/eular/Downloads/multi.py",
+		"/Users/eular/Documents/Git/Lifeline_SilentNight/lifeline_on_telegram.py",
+		"/Users/eular/Documents/Git/weChat_php/3.0/wechat-api.php",
+		"/Users/eular/Downloads/wechat.bak.py",
+		"/Users/eular/Downloads/wechat copy.py",
+		"/Users/eular/Downloads/sendmsg.json"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 91.0,
+		"where_history":
+		[
+			"/Users/eular/Downloads/Tuhao-master"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"GCGAG",
+			"AA",
+			"UUAA",
+			"GAUUAA",
+			"ReturnW",
+			"Compute_Results",
+			"bp_link",
+			"ReturnW",
+			"Compute_Results",
+			"Compute_C",
+			"with_pc",
+			"2015",
+			"51",
+			"self",
+			"MMAppWindowMgr",
+			"/Users/petercliu/Documents/",
+			"/Users/yukiyylin/Documents/",
+			"requests",
+			", ",
+			"      ",
+			"     ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"        ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"_post",
+			"webwxgetcontact",
+			"MemberList",
+			"_searchContent",
+			"\\\"",
+			"    ",
+			"      ",
+			"  ",
+			"_get",
+			"webwxgetmsgimg",
+			"fn",
+			"get",
+			"GET",
+			"'",
+			"intent",
+			"    ",
+			"        ",
+			"    ",
+			"        ",
+			"    ",
+			"json",
+			"_post",
+			"WriteTyper",
+			"autoReplyMode",
+			"isMyself",
+			"multiprocessing",
+			"''",
+			"base_uri",
+			"redirect_uri",
+			"waitForLogin",
+			"wxsid",
+			"'.",
+			"@b25f7f1a1c05389c34f961f15d473467ab979b1fc47491b3c1f31c00d1db0533",
+			"Member",
+			"MemberList",
+			"ContactList",
+			"MemberList",
+			"MemberCount",
+			"SyncKey",
+			"synckey",
+			"SyncKey",
+			"synckey",
+			"SyncKey",
+			"webwxsync",
+			"My",
+			"BaseRequest",
+			"webwxstatusnotify",
+			"script",
+			"管道",
+			"Ai",
+			"createChatroom",
+			"skey",
+			"BaseRequest",
+			"retcode",
+			"ContactFlag",
+			"webwxgetcontact",
+			"webwxinit",
+			"deviceId",
+			"UUID",
+			"tip",
+			"login",
+			"waitForLogin",
+			"showQRImage",
+			"getUUID",
+			"main",
+			"seq",
+			"n",
+			"Welcome",
+			"welcome",
+			"introduce",
+			"Introduce",
+			"introduce",
+			"def introduce(bot, update):\n",
+			"db",
+			"main",
+			"requirejs",
+			"requireJs",
+			"requirejs",
+			"global",
+			"Global",
+			"global",
+			"Global",
+			"global",
+			"Global",
+			"global",
+			"require",
+			"href=\"",
+			"src=\"",
+			"WriteTyper",
+			"canvas",
+			"那还真是",
+			"n",
+			"N"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assets/Scripts/TankMovement.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"152,163": "Method 'FixedUpdate' has the same with 'Start'",
+								"19,24": "Using directive is not used by code and can be removed safely."
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 156.0
+	},
+	"pinned_build_system": "",
+	"project": "Tanks.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
