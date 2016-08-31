@@ -1,0 +1,319 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "prompt"
+- "input"
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+- "exit"
+- "Process"
+- "input"
+- "FloatLiteralType"
+- "BooleanLiteralType"
+- ">="
+- "Welcome"
+- "=="
+- "IntegerLiteralType"
+- "UInt32"
+- "print"
+- "Character"
+- "ExtendedGraphemeClusterType"
+- "UnicodeScalar"
+- "StringLiteralType"
+- "prompt"
+- "UnicodeScalarType"
+- "fgetc"
+- "String"
+- "stdin"
+depends-member:
+- ["Ps9AnyObject", "append"]
+- ["Ps9AnyObject", "init"]
+- ["Sa", "Index"]
+- ["Sa", "count"]
+- ["Sa", "subscript"]
+- ["Ps23ArrayLiteralConvertible", "Index"]
+- ["Ps23ArrayLiteralConvertible", "count"]
+- ["Ps23ArrayLiteralConvertible", "subscript"]
+- ["Ps18BidirectionalIndex", "Distance"]
+- ["Ps18BidirectionalIndex", "init"]
+- ["Ps17BitwiseOperations", "Distance"]
+- ["Ps17BitwiseOperations", "init"]
+- ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["Ps7Boolean", "_getBuiltinLogicValue"]
+- ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- ["Ps7CVarArg", "Distance"]
+- ["Ps7CVarArg", "append"]
+- ["Ps7CVarArg", "init"]
+- ["Vs9Character", "deinit"]
+- ["Vs9Character", "init"]
+- ["Ps10Collection", "Index"]
+- ["Ps10Collection", "Iterator"]
+- ["Ps10Collection", "SubSequence"]
+- ["Ps10Collection", "_Element"]
+- ["Ps10Collection", "count"]
+- ["Ps10Collection", "subscript"]
+- ["Ps10Comparable", "Distance"]
+- ["Ps10Comparable", "append"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "Index"]
+- ["Ps28CustomDebugStringConvertible", "append"]
+- ["Ps28CustomDebugStringConvertible", "count"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps29CustomPlaygroundQuickLookable", "Distance"]
+- ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "append"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "Distance"]
+- ["Ps17CustomReflectable", "Index"]
+- ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "append"]
+- ["Ps17CustomReflectable", "count"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "subscript"]
+- ["Ps23CustomStringConvertible", "Distance"]
+- ["Ps23CustomStringConvertible", "Index"]
+- ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "append"]
+- ["Ps23CustomStringConvertible", "count"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "subscript"]
+- ["Sd", "deinit"]
+- ["Ps9Equatable", "Distance"]
+- ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "append"]
+- ["Ps9Equatable", "init"]
+- ["Ps41ExtendedGraphemeClusterLiteralConvertible", "append"]
+- ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- ["Sf", "deinit"]
+- ["Ps12ForwardIndex", "Distance"]
+- ["Ps12ForwardIndex", "init"]
+- ["Ps8Hashable", "Distance"]
+- ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "append"]
+- ["Ps8Hashable", "init"]
+- ["Ps9Indexable", "Index"]
+- ["Ps9Indexable", "Iterator"]
+- ["Ps9Indexable", "SubSequence"]
+- ["Ps9Indexable", "_Element"]
+- ["Ps9Indexable", "count"]
+- ["Ps9Indexable", "subscript"]
+- ["Vs16IndexingIterator", "Element"]
+- ["Si", "Distance"]
+- ["Si", "deinit"]
+- ["Vs5Int16", "deinit"]
+- ["Vs5Int32", "deinit"]
+- ["Vs5Int64", "deinit"]
+- ["Vs4Int8", "deinit"]
+- ["Ps7Integer", "Distance"]
+- ["Ps7Integer", "init"]
+- ["Ps17IntegerArithmetic", "Distance"]
+- ["Ps17IntegerArithmetic", "init"]
+- ["Ps25IntegerLiteralConvertible", "Distance"]
+- ["Ps25IntegerLiteralConvertible", "init"]
+- ["Ps16IteratorProtocol", "Element"]
+- ["Ps10MirrorPath", "Distance"]
+- ["Ps10MirrorPath", "append"]
+- ["Ps10MirrorPath", "init"]
+- ["Ps17MutableCollection", "Index"]
+- ["Ps17MutableCollection", "count"]
+- ["Ps17MutableCollection", "subscript"]
+- ["Ps16MutableIndexable", "Index"]
+- ["Ps16MutableIndexable", "count"]
+- ["Ps16MutableIndexable", "subscript"]
+- ["PSo8NSCoding", "append"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "append"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "append"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "append"]
+- ["CSo8NSObject", "init"]
+- ["PSo16NSObjectProtocol", "append"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo14NSSecureCoding", "append"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "append"]
+- ["CSo8NSString", "init"]
+- ["Ps12OutputStream", "append"]
+- ["Ps12OutputStream", "init"]
+- ["Os7Process", "arguments"]
+- ["Ps17RandomAccessIndex", "Distance"]
+- ["Ps17RandomAccessIndex", "init"]
+- ["Ps26RangeReplaceableCollection", "Index"]
+- ["Ps26RangeReplaceableCollection", "count"]
+- ["Ps26RangeReplaceableCollection", "subscript"]
+- ["Ps8Sequence", "Element"]
+- ["Ps8Sequence", "Index"]
+- ["Ps8Sequence", "Iterator"]
+- ["Ps8Sequence", "SubSequence"]
+- ["Ps8Sequence", "_Element"]
+- ["Ps8Sequence", "count"]
+- ["Ps8Sequence", "subscript"]
+- ["Ps13SignedInteger", "Distance"]
+- ["Ps12SignedNumber", "Distance"]
+- ["Vs5Slice", "Index"]
+- ["Vs5Slice", "Iterator"]
+- ["Vs5Slice", "SubSequence"]
+- ["Vs5Slice", "_Element"]
+- ["Ps10Streamable", "append"]
+- ["Ps10Streamable", "init"]
+- ["Ps10Strideable", "Distance"]
+- ["Ps10Strideable", "init"]
+- ["SS", "append"]
+- ["SS", "init"]
+- ["Ps30StringInterpolationConvertible", "append"]
+- ["Ps30StringInterpolationConvertible", "init"]
+- ["Ps24StringLiteralConvertible", "append"]
+- ["Ps24StringLiteralConvertible", "init"]
+- ["Su", "deinit"]
+- ["Vs6UInt16", "deinit"]
+- ["Vs6UInt32", "deinit"]
+- ["Vs6UInt32", "init"]
+- ["Vs6UInt64", "deinit"]
+- ["Vs5UInt8", "deinit"]
+- ["Sc", "deinit"]
+- ["Sc", "init"]
+- ["Ps31UnicodeScalarLiteralConvertible", "append"]
+- ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- ["Ps15UnsignedInteger", "init"]
+- ["Ps14_ArrayProtocol", "Index"]
+- ["Ps14_ArrayProtocol", "count"]
+- ["Ps14_ArrayProtocol", "subscript"]
+- ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "append"]
+- ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- ["Ps32_BuiltinStringLiteralConvertible", "append"]
+- ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- ["Ps37_BuiltinUTF16StringLiteralConvertible", "append"]
+- ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "append"]
+- ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- ["Ps24_DestructorSafeContainer", "Index"]
+- ["Ps24_DestructorSafeContainer", "count"]
+- ["Ps24_DestructorSafeContainer", "subscript"]
+- ["Ps28_DisallowMixedSignArithmetic", "init"]
+- ["Ps14_Incrementable", "Distance"]
+- ["Ps14_Incrementable", "init"]
+- ["Ps8_Integer", "Distance"]
+- ["Ps8_Integer", "init"]
+- ["Ps18_IntegerArithmetic", "Distance"]
+- ["Ps18_IntegerArithmetic", "init"]
+- ["Ps21_ObjectiveCBridgeable", "Distance"]
+- ["Ps21_ObjectiveCBridgeable", "Index"]
+- ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["Ps21_ObjectiveCBridgeable", "append"]
+- ["Ps21_ObjectiveCBridgeable", "count"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps21_ObjectiveCBridgeable", "subscript"]
+- ["Ps22_RandomAccessAmbiguity", "Distance"]
+- ["Ps22_RandomAccessAmbiguity", "init"]
+- ["Ps14_SignedInteger", "Distance"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23ArrayLiteralConvertible"
+- "Ps18BidirectionalIndex"
+- "Ps17BitwiseOperations"
+- "Sb"
+- "Ps7Boolean"
+- "Ps25BooleanLiteralConvertible"
+- "Ps7CVarArg"
+- "Vs9Character"
+- "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Sd"
+- "Ps9Equatable"
+- "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- "Sf"
+- "Ps12ForwardIndex"
+- "Ps8Hashable"
+- "Ps9Indexable"
+- "Vs16IndexingIterator"
+- "Si"
+- "Vs5Int16"
+- "Vs5Int32"
+- "Vs5Int64"
+- "Vs4Int8"
+- "Ps7Integer"
+- "Ps17IntegerArithmetic"
+- "Ps25IntegerLiteralConvertible"
+- "Ps16IteratorProtocol"
+- "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- "Ps16MutableIndexable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Ps12OutputStream"
+- "Os7Process"
+- "Ps17RandomAccessIndex"
+- "Ps26RangeReplaceableCollection"
+- "Ps8Sequence"
+- "Ps13SignedInteger"
+- "Ps12SignedNumber"
+- "Vs5Slice"
+- "Ps10Streamable"
+- "Ps10Strideable"
+- "SS"
+- "Ps30StringInterpolationConvertible"
+- "Ps24StringLiteralConvertible"
+- "Su"
+- "Vs6UInt16"
+- "Vs6UInt32"
+- "Vs6UInt64"
+- "Vs5UInt8"
+- "Sc"
+- "Ps31UnicodeScalarLiteralConvertible"
+- "Ps15UnsignedInteger"
+- "Ps14_ArrayProtocol"
+- "Ps33_BuiltinBooleanLiteralConvertible"
+- "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- "Ps33_BuiltinIntegerLiteralConvertible"
+- "Ps32_BuiltinStringLiteralConvertible"
+- "Ps37_BuiltinUTF16StringLiteralConvertible"
+- "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- "Ps24_DestructorSafeContainer"
+- "Ps28_DisallowMixedSignArithmetic"
+- "Ps14_Incrementable"
+- "Ps8_Integer"
+- "Ps18_IntegerArithmetic"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps22_RandomAccessAmbiguity"
+- "Ps14_SignedInteger"
+depends-dynamic-lookup:
+depends-external:
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/Visibility.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/LibcShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+interface-hash: "876b98c6c2ecc86ab0693acba651e88e"

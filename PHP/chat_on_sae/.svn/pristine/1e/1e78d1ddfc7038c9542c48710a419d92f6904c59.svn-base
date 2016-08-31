@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+		<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+    </head>
+	<body>
+		<pre>
+			<code>
+&lt;html&gt;
+&lt;link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css"&gt;
+&lt;script src="http://yandex.st/highlightjs/8.0/highlight.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+&lt;div&gt;
+1322321
+&lt;/div&gt;
+&lt;/html&gt;
+			</code>
+		</pre>
+	</body>
+</html>

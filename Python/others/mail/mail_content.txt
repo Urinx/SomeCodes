@@ -1,0 +1,3 @@
+<p> #NAME# 你好：</p>
+<p>邮件发送测试</p>
+<p><a href="http://www.baidu.com">链接</a></p>

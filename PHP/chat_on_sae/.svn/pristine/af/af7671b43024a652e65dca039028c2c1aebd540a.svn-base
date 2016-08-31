@@ -1,0 +1,76 @@
+body,input,div{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #1c1c1c;
+}
+qq{
+	width: 300px;
+	height: 30px;
+	/*---- font ----*/
+	color: white;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bolder;
+	/*---- center ----*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+qq input{
+	width: 195px;
+	height: 30px;
+	border: 0;
+	outline: none;
+	font-size: 20px;
+	background: transparent;
+}
+qq div{
+	width: 300px;
+	height: 100px;
+	overflow: hidden;
+	word-wrap:break-word;
+}
+qq #b1{
+	position: absolute;
+	top: -180px;
+	left: 0;
+}
+qq #b2{
+	position: absolute;
+	top: 100px;
+	left: 0;
+}
+qq div div{
+	margin: 2px;
+	width: 294px;
+	overflow: hidden;
+	text-align: center;
+	line-height: 47px;
+}
+qq #b1 div{
+	height: 0;
+}
+qq #b2 div{
+	height: 94px;
+}
+.lightblue_font{
+	color: white;
+	text-shadow: 0px 1px 1px #5dc8cd,1px 0px 1px #5dc8cd,-1px -1px 1px #5dc8cd,1px 1px 1px #5dc8cd;
+}
+.lightblue_box{
+	border: 1px solid #5dc8cd;
+	box-shadow: 0px 1px 1px #5dc8cd,1px 0px 1px #5dc8cd,-1px -1px 1px #5dc8cd,1px 1px 1px #5dc8cd;
+}
+.lightpink_font{
+	border: 1px solid #e567b1;
+	text-shadow: 0px 1px 1px #e567b1,1px 0px 1px #e567b1,-1px -1px 1px #e567b1,1px 1px 1px #e567b1;
+}
+.lightpink_box{
+	border: 1px solid #e567b1;
+	box-shadow: 0px 1px 1px #e567b1,1px 0px 1px #e567b1,-1px -1px 1px #e567b1,1px 1px 1px #e567b1;
+}

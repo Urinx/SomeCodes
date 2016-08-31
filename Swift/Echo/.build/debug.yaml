@@ -1,0 +1,33 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  test: []
+  main: [<Echo.module>, <Echo.exe>]
+default: main
+commands: 
+  /Users/eular/Desktop/Echo/.build/debug/Echo.build:
+    tool: mkdir
+    outputs: [/Users/eular/Desktop/Echo/.build/debug/Echo.build]
+
+  <Echo.module>:
+    tool: "swift-compiler"
+    executable: "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/bin/swiftc"
+    module-name: Echo
+    module-output-path: /Users/eular/Desktop/Echo/.build/debug/Echo.swiftmodule
+    inputs: []
+    outputs: [<Echo.module>, /Users/eular/Desktop/Echo/.build/debug/Echo.build/main.swift.o, /Users/eular/Desktop/Echo/.build/debug/Echo.build/Welcome.swift.o]
+    import-paths: [/Users/eular/Desktop/Echo/.build/debug]
+    temps-path: /Users/eular/Desktop/Echo/.build/debug/Echo.build
+    objects: [/Users/eular/Desktop/Echo/.build/debug/Echo.build/main.swift.o, /Users/eular/Desktop/Echo/.build/debug/Echo.build/Welcome.swift.o]
+    other-args: ["-j8", "-Onone", "-g", "-D", SWIFT_PACKAGE, "-enable-testing", "-F", /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks, "-target", "x86_64-apple-macosx10.10", "-sdk", /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk]
+    sources: [/Users/eular/Desktop/Echo/Sources/main.swift, /Users/eular/Desktop/Echo/Sources/Welcome.swift]
+    is-library: false
+
+  <Echo.exe>:
+    tool: shell
+    description: "Linking .build/debug/Echo"
+    inputs: [/Users/eular/Desktop/Echo/.build/debug/Echo.build/main.swift.o, /Users/eular/Desktop/Echo/.build/debug/Echo.build/Welcome.swift.o]
+    outputs: [<Echo.exe>, /Users/eular/Desktop/Echo/.build/debug/Echo]
+    args: ["/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-25-a.xctoolchain/usr/bin/swiftc", "-target", "x86_64-apple-macosx10.10", "-sdk", /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk, "-g", "-L/Users/eular/Desktop/Echo/.build/debug", "-o", /Users/eular/Desktop/Echo/.build/debug/Echo, "-emit-executable", /Users/eular/Desktop/Echo/.build/debug/Echo.build/main.swift.o, /Users/eular/Desktop/Echo/.build/debug/Echo.build/Welcome.swift.o]
+

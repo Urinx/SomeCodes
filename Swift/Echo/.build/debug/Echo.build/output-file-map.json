@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/eular/Desktop/Echo/.build/debug/Echo.build/master.swiftdeps"
+  },
+  "/Users/eular/Desktop/Echo/Sources/main.swift": {
+    "dependencies": "/Users/eular/Desktop/Echo/.build/debug/Echo.build/main.d",
+    "object": "/Users/eular/Desktop/Echo/.build/debug/Echo.build/main.swift.o",
+    "swiftmodule": "/Users/eular/Desktop/Echo/.build/debug/Echo.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/eular/Desktop/Echo/.build/debug/Echo.build/main.swiftdeps"
+  },
+  "/Users/eular/Desktop/Echo/Sources/Welcome.swift": {
+    "dependencies": "/Users/eular/Desktop/Echo/.build/debug/Echo.build/Welcome.d",
+    "object": "/Users/eular/Desktop/Echo/.build/debug/Echo.build/Welcome.swift.o",
+    "swiftmodule": "/Users/eular/Desktop/Echo/.build/debug/Echo.build/Welcome~partial.swiftmodule",
+    "swift-dependencies": "/Users/eular/Desktop/Echo/.build/debug/Echo.build/Welcome.swiftdeps"
+  }
+}

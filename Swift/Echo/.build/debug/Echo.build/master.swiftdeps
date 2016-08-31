@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0-dev (LLVM 752e1430fc, Clang 1e6cba3ce3, Swift 56052cfe61)"
+options: "4b63b6d6cc594a74b7159a94014875a0"
+build_time: [518890462, 632209000]
+inputs:
+  "/Users/eular/Desktop/Echo/Sources/main.swift": [518890303, 0]
+  "/Users/eular/Desktop/Echo/Sources/Welcome.swift": [518890191, 0]
